@@ -6,7 +6,7 @@ A doctoral-level nurse practitioner study app. Static site, no accounts, no back
 
 ## Features
 
-- **11 topics, 200+ board-style questions** — pharmacology, pathophysiology, health assessment, clinical management, EBP/research, biostats/epi, policy, informatics, leadership/QI, ethics, population health
+- **15 topics, 300+ board-style questions** — pharmacology, pathophysiology, health assessment, clinical management, diagnostic reasoning, procedures (suturing, I&D, pneumothorax/chest tubes), transfusions & GI emergencies, NP role & standards (AANP 2022), EBP/research, biostats/epi, policy, informatics, leadership/QI, ethics, population health
 - **Search anything** — type "heart failure" or "ANOVA" and the quiz pulls only matching questions
 - **Practice mode** (instant rationale after each answer) or **Exam mode** (graded at the end)
 - **Unfolding case studies** — experiential, multi-step patient scenarios that evolve as you answer
