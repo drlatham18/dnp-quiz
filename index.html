@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>DNP Quiz Coach</title>
+<link rel="stylesheet" href="style.css">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
+</head>
+<body>
+<div id="app">
+
+  <!-- ============ HOME / SETUP ============ -->
+  <section id="screen-home" class="screen">
+    <header class="hero">
+      <h1>🩺 DNP Quiz Coach</h1>
+      <p class="tagline">Doctoral-level practice questions for nurse practitioner studies</p>
+    </header>
+
+    <div class="card">
+      <h2>1 · Pick your topics</h2>
+      <input type="search" id="topic-search" placeholder="Search anything — e.g. heart failure, ANOVA, beta blockers…" autocomplete="off">
+      <p class="hint" id="search-hint"></p>
+      <div id="topic-list" class="chip-grid"></div>
+      <div class="row-links">
+        <button class="link-btn" id="select-all">Select all</button>
+        <button class="link-btn" id="select-none">Clear</button>
+      </div>
+    </div>
+
+    <div class="card">
+      <h2>2 · Quiz settings</h2>
+      <div class="setting-row">
+        <span class="setting-label">Length</span>
+        <div class="seg" id="seg-length">
+          <button data-val="10" class="on">10</button>
+          <button data-val="20">20</button>
+          <button data-val="40">40</button>
+          <button data-val="all">All</button>
+        </div>
+      </div>
+      <div class="setting-row">
+        <span class="setting-label">Mode</span>
+        <div class="seg" id="seg-mode">
+          <button data-val="practice" class="on">Practice · instant feedback</button>
+          <button data-val="exam">Exam · grade at end</button>
+        </div>
+      </div>
+    </div>
+
+    <button id="start-btn" class="big-btn">Start quiz</button>
+    <button id="start-case-btn" class="big-btn secondary">🧪 Unfolding case studies</button>
+    <button id="review-missed-btn" class="big-btn ghost" hidden></button>
+
+    <footer class="foot">
+      <span id="bank-stats"></span> · For study use — verify against current guidelines.
+    </footer>
+  </section>
+
+  <!-- ============ QUIZ ============ -->
+  <section id="screen-quiz" class="screen" hidden>
+    <div class="quiz-top">
+      <button id="quit-btn" class="link-btn">✕ Exit</button>
+      <div class="progress-wrap"><div id="progress-bar"></div></div>
+      <span id="progress-text"></span>
+    </div>
+
+    <div class="card" id="case-intro-card" hidden>
+      <h3 id="case-title"></h3>
+      <p id="case-intro"></p>
+    </div>
+
+    <div class="card">
+      <p class="q-meta" id="q-meta"></p>
+      <p class="q-update" id="q-update" hidden></p>
+      <h2 class="q-stem" id="q-stem"></h2>
+      <div id="q-options" class="options"></div>
+      <button id="submit-btn" class="big-btn" disabled>Check answer</button>
+      <div id="feedback" class="feedback" hidden>
+        <p id="feedback-verdict" class="verdict"></p>
+        <p id="feedback-rationale"></p>
+      </div>
+      <button id="next-btn" class="big-btn" hidden>Next →</button>
+    </div>
+  </section>
+
+  <!-- ============ RESULTS ============ -->
+  <section id="screen-results" class="screen" hidden>
+    <div class="card center">
+      <h1 id="result-emoji"></h1>
+      <h2 id="result-score"></h2>
+      <p id="result-line"></p>
+    </div>
+    <div class="card" id="topic-breakdown-card">
+      <h2>By topic</h2>
+      <div id="topic-breakdown"></div>
+    </div>
+    <div class="card" id="missed-card" hidden>
+      <h2>Review what you missed</h2>
+      <div id="missed-list"></div>
+    </div>
+    <button id="retry-missed-btn" class="big-btn" hidden>Retry missed questions</button>
+    <button id="home-btn" class="big-btn secondary">Back to home</button>
+  </section>
+
+</div>
+
+<script src="data/pharmacology.js"></script>
+<script src="data/pathophysiology.js"></script>
+<script src="data/assessment.js"></script>
+<script src="data/clinical-management.js"></script>
+<script src="data/ebp.js"></script>
+<script src="data/biostats-epi.js"></script>
+<script src="data/policy.js"></script>
+<script src="data/informatics.js"></script>
+<script src="data/leadership-qi.js"></script>
+<script src="data/ethics.js"></script>
+<script src="data/population-health.js"></script>
+<script src="data/cases.js"></script>
+<script src="app.js"></script>
+</body>
+</html>
