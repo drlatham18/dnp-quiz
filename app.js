@@ -11,6 +11,7 @@
   // ---------- state ----------
   var settings = { length: "10", mode: "practice" };
   var selectedTopics = {};   // slug -> true
+  BANK.forEach(function (t) { selectedTopics[t.slug] = true; });
   var searchTerm = "";
   var quiz = null;           // active quiz state
 
@@ -91,11 +92,7 @@
   }
 
   function pool() {
-    var chosen = Object.keys(selectedTopics).filter(function (k) { return selectedTopics[k]; });
-    var qs = allQuestions();
-    if (chosen.length) {
-      qs = qs.filter(function (e) { return selectedTopics[e.slug]; });
-    }
+    var qs = allQuestions().filter(function (e) { return selectedTopics[e.slug]; });
     if (searchTerm) {
       qs = qs.filter(function (e) { return matchesSearch(e, searchTerm); });
     }
@@ -108,7 +105,12 @@
   }
 
   function updateMissedBtn() {
-    var ids = Object.keys(getMissed());
+    var missed = getMissed();
+    var ids = allQuestions().map(function (e) { return e.q.id; });
+    CASES.forEach(function (cs) {
+      cs.steps.forEach(function (_, i) { ids.push(cs.id + "-step" + (i + 1)); });
+    });
+    ids = ids.filter(function (id) { return missed[id]; });
     var btn = $("review-missed-btn");
     if (ids.length) {
       btn.hidden = false;
@@ -149,7 +151,10 @@
 
   function startCases() {
     if (!CASES.length) return;
-    var cs = shuffle(CASES)[0];
+    startCase(shuffle(CASES)[0]);
+  }
+
+  function startCase(cs) {
     var items = cs.steps.map(function (s, i) {
       var order = shuffle(s.options.map(function (_, k) { return k; }));
       return {
@@ -313,7 +318,8 @@
     } else {
       mc.hidden = true;
     }
-    $("retry-missed-btn").hidden = missedItems.length === 0 || quiz.isCase;
+    $("retry-missed-btn").hidden = missedItems.length === 0;
+    $("retry-missed-btn").textContent = quiz.isCase ? "Retry this case in order" : "Retry missed questions";
 
     show("screen-results");
     updateMissedBtn();
@@ -366,11 +372,30 @@
   $("review-missed-btn").onclick = function () {
     var missed = getMissed();
     var qs = allQuestions().filter(function (e) { return missed[e.q.id]; });
-    if (!qs.length) { updateMissedBtn(); return; }
-    startQuiz(qs, { limit: 0, mode: "practice" });
+    var old = $("missed-choices");
+    if (old) old.remove();
+    var choices = document.createElement("div");
+    choices.id = "missed-choices";
+    function choice(label, action) {
+      var button = document.createElement("button");
+      button.textContent = label;
+      button.onclick = function () { choices.remove(); action(); };
+      choices.appendChild(button);
+    }
+    if (qs.length) choice("Review " + qs.length + " standalone questions", function () {
+      startQuiz(qs, { limit: 0, mode: "practice" });
+    });
+    CASES.forEach(function (cs) {
+      if (cs.steps.some(function (_, i) { return missed[cs.id + "-step" + (i + 1)]; })) {
+        choice("Review case: " + cs.title, function () { startCase(cs); });
+      }
+    });
+    $("review-missed-btn").insertAdjacentElement("afterend", choices);
+    updateMissedBtn();
   };
 
   $("retry-missed-btn").onclick = function () {
+    if (quiz.isCase) { startCase(quiz.caseObj); return; }
     var badIds = {};
     quiz.items.forEach(function (i) { if (!i.correct) badIds[i.id] = true; });
     var qs = allQuestions().filter(function (e) { return badIds[e.q.id]; });
