@@ -16,7 +16,7 @@ jobs:
       - uses: actions/setup-java@v4
         with: {distribution: temurin, java-version: '21'}
       - run: npm ci && npm run build && npx cap sync android
-      - run: bash android/gradlew --no-daemon -p android assembleDebug assembleDebugAndroidTest
+      - run: bash android/gradlew --no-daemon -p android :app:assembleDebug :app:assembleDebugAndroidTest
       - run: sudo chmod 666 /dev/kvm
       - name: Capture the installed app during real study flows
         uses: reactivecircus/android-emulator-runner@v2
