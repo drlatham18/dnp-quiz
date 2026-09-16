@@ -1,17 +1,40 @@
 package com.drlatham.nursinglearning;
 import android.webkit.WebView;
+import android.graphics.Bitmap;
 import androidx.test.core.app.ActivityScenario;
 import androidx.test.ext.junit.runners.AndroidJUnit4;
+import androidx.test.platform.app.InstrumentationRegistry;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import java.util.concurrent.CountDownLatch;
 import java.util.concurrent.TimeUnit;
 import java.util.concurrent.atomic.AtomicReference;
+import java.io.File;
+import java.io.FileOutputStream;
 import static org.junit.Assert.*;
 
 @RunWith(AndroidJUnit4.class)
 public class ReleaseSmokeTest {
     private ActivityScenario<MainActivity> scenario;
+    private void capture(String name) throws Exception {
+        var instrumentation = InstrumentationRegistry.getInstrumentation();
+        CountDownLatch visualReady = new CountDownLatch(1);
+        scenario.onActivity(a -> a.getBridge().getWebView().postVisualStateCallback(
+            System.nanoTime(), new WebView.VisualStateCallback() {
+                @Override public void onComplete(long requestId) { visualReady.countDown(); }
+            }));
+        assertTrue("WebView frame did not settle", visualReady.await(10, TimeUnit.SECONDS));
+        instrumentation.waitForIdleSync();
+        // The DOM callback precedes the compositor frame used by takeScreenshot.
+        Thread.sleep(500);
+        Bitmap image = instrumentation.getUiAutomation().takeScreenshot();
+        assertNotNull("Native screenshot unavailable", image);
+        File directory = new File(instrumentation.getTargetContext().getExternalFilesDir(null), "store-screenshots");
+        assertTrue("Cannot create screenshot directory", directory.isDirectory() || directory.mkdirs());
+        try (FileOutputStream output = new FileOutputStream(new File(directory, name + ".png"))) {
+            assertTrue("Screenshot encoding failed", image.compress(Bitmap.CompressFormat.PNG, 100, output));
+        } finally { image.recycle(); }
+    }
     private String js(String script) throws Exception {
         CountDownLatch done = new CountDownLatch(1);
         AtomicReference<String> result = new AtomicReference<>();
@@ -34,11 +57,18 @@ public class ReleaseSmokeTest {
         until("typeof document.getElementById('learning-track')?.onchange === 'function'", 30);
         js("let track=document.getElementById('learning-track'); track.value='bsn'; track.dispatchEvent(new Event('change'))");
         until("document.getElementById('bank-stats').textContent.includes('160 questions')", 10);
+        capture("01-daily-practice");
+        js("document.getElementById('learning-track').closest('.card').scrollIntoView({block:'start'})");
+        capture("02-learning-path");
         js("document.getElementById('start-btn').click()");
         until("!document.getElementById('screen-quiz').hidden && document.querySelectorAll('#q-options button').length >= 2", 10);
+        js("document.getElementById('screen-quiz').scrollIntoView({block:'start'})");
+        capture("03-practice-question");
         js("document.querySelector('#q-options button').click(); document.getElementById('submit-btn').click()");
         until("!document.getElementById('feedback').hidden && document.getElementById('feedback-rationale').textContent.length > 20", 10);
         until("document.querySelectorAll('#feedback-sources a').length > 0", 10);
+        js("document.getElementById('feedback').scrollIntoView({block:'center'})");
+        capture("04-answer-explanation");
         js("location.href='community.html'");
         until("document.body.innerText.includes('question') && document.querySelector('input[type=file]') !== null", 15);
         js("location.href='index.html'");
