@@ -31,7 +31,7 @@ public class ReleaseSmokeTest {
       try(ActivityScenario<MainActivity> opened=ActivityScenario.launch(MainActivity.class)) {
         scenario=opened;
 
-        until("document.body.innerText.includes('160 questions')", 30);
+        until("typeof document.getElementById('learning-track')?.onchange === 'function'", 30);
         js("let track=document.getElementById('learning-track'); track.value='bsn'; track.dispatchEvent(new Event('change'))");
         until("document.getElementById('bank-stats').textContent.includes('160 questions')", 10);
         js("document.getElementById('start-btn').click()");

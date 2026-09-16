@@ -21,3 +21,8 @@ scheme.add_test_target(test)
 scheme.set_launch_target(app)
 project.save
 scheme.save_as(project.path,'ReleaseSmoke',true)
+
+release=Xcodeproj::XCScheme.new
+release.add_build_target(app)
+release.set_launch_target(app)
+release.save_as(project.path,'App',true)
