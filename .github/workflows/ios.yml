@@ -2,8 +2,8 @@ name: iOS release compilation
 on:
   workflow_dispatch:
   push:
-    branches: ['codex/nursing-learning-release']
-    paths: ['ios/**', '.github/workflows/ios.yml']
+    branches: ['codex/nursing-learning-release', 'codex/ios-device-preview']
+    paths: ['ios/**', '.github/workflows/ios.yml', 'tools/capture-ios.py']
 permissions:
   contents: read
 jobs:
@@ -20,8 +20,12 @@ jobs:
         run: xcodebuild -project ios/App/App.xcodeproj -scheme App -sdk iphonesimulator -configuration Release -derivedDataPath build-ios CODE_SIGNING_ALLOWED=NO build > /tmp/nursing-ios-build.log 2>&1 || { tail -120 /tmp/nursing-ios-build.log; exit 1; }
       - name: Package simulator build
         run: ditto -c -k --keepParent build-ios/Build/Products/Release-iphonesimulator/App.app Nursing-Learning-Simulator.zip
+      - name: Launch packaged app on iPhone and iPad simulators
+        run: python3 tools/capture-ios.py
       - uses: actions/upload-artifact@v4
         with:
           name: nursing-ios-simulator
           retention-days: 3
-          path: Nursing-Learning-Simulator.zip
+          path: |
+            Nursing-Learning-Simulator.zip
+            ios-screenshots/
