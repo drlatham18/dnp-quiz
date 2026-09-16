@@ -45,3 +45,13 @@ saved='{"removed-id":true}';
 nodes.get('home-btn').onclick();
 assert.equal(nodes.get('review-missed-btn').hidden,true);
 console.log('Topic selection, missed-case review, case retry, and stale IDs passed');
+// A community question uses the real quiz flow and source objects.
+nodes.get('q-options').children=[];
+context.window.startNursingQuestion({id:'community-test',topic:'Community learning',difficulty:'challenge',type:'mcq',stem:'A source-linked community study question for the UI flow.',options:['Correct','Incorrect','Also incorrect'],answer:[0],rationale:'The explanation appears after submitting the answer.',sources:[{title:'CDC source',url:'https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html'}]});
+assert.equal(nodes.get('q-stem').textContent,'A source-linked community study question for the UI flow.');
+assert(nodes.get('q-meta').textContent.includes('Challenge'));
+nodes.get('q-options').children[0].onclick();
+nodes.get('submit-btn').onclick();
+assert.equal(nodes.get('feedback-sources').children.at(-1).href,'https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html');
+assert.equal(nodes.get('feedback-rationale').textContent,'The explanation appears after submitting the answer.');
+console.log('Daily community question, difficulty, answer flow, and external source feedback passed');

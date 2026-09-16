@@ -3,11 +3,15 @@ window.NURSING_CURRICULUM = {
     {
       "id": "rn",
       "name": "RN foundations",
-      "description": "24 foundation questions on hand hygiene, patient teaching and team communication. A focused starting library, not a complete NCLEX course.",
+      "description": "72 questions in foundational safety, infection prevention, patient teaching, communication, and equitable access.",
       "topics": [
         "rn-safety",
         "rn-communication",
-        "rn-teamwork"
+        "rn-teamwork",
+        "rn-precautions",
+        "rn-injections",
+        "rn-catheter",
+        "rn-equity"
       ],
       "caseAccess": false,
       "sources": [
@@ -20,14 +24,22 @@ window.NURSING_CURRICULUM = {
     {
       "id": "bsn",
       "name": "BSN / RN-to-BSN",
-      "description": "Connect foundational care with evidence appraisal, statistics and quality improvement.",
+      "description": "160 questions connecting nursing foundations, population health, evidence, and quality improvement.",
       "topics": [
         "rn-safety",
         "rn-communication",
         "rn-teamwork",
         "ebp",
         "biostats",
-        "leadqi"
+        "leadqi",
+        "rn-precautions",
+        "rn-injections",
+        "rn-catheter",
+        "rn-equity",
+        "bsn-epidemiology",
+        "bsn-comparisons",
+        "dnp-measurement",
+        "dnp-appraisal"
       ],
       "caseAccess": false,
       "sources": [
@@ -39,11 +51,15 @@ window.NURSING_CURRICULUM = {
     {
       "id": "np",
       "name": "MSN / NP · evidence and systems",
-      "description": "Practice research interpretation and quality improvement. Prescribing, diagnostic and procedure cases are excluded from this first release.",
+      "description": "88 questions in evidence appraisal, population-health reasoning, measurement, and quality improvement.",
       "topics": [
         "ebp",
         "biostats",
-        "leadqi"
+        "leadqi",
+        "bsn-epidemiology",
+        "bsn-comparisons",
+        "dnp-measurement",
+        "dnp-appraisal"
       ],
       "caseAccess": false,
       "sources": [
@@ -55,11 +71,15 @@ window.NURSING_CURRICULUM = {
     {
       "id": "dnp",
       "name": "DNP scholarship",
-      "description": "Practice evidence translation, research interpretation and quality improvement. DNP preparation is distinct from NP specialty certification.",
+      "description": "88 questions in evidence appraisal, population-health reasoning, measurement, and quality improvement.",
       "topics": [
         "ebp",
         "biostats",
-        "leadqi"
+        "leadqi",
+        "bsn-epidemiology",
+        "bsn-comparisons",
+        "dnp-measurement",
+        "dnp-appraisal"
       ],
       "caseAccess": false,
       "sources": [
@@ -109,8 +129,40 @@ window.NURSING_CURRICULUM = {
     "ohrp": {
       "title": "HHS: quality improvement and research",
       "url": "https://www.hhs.gov/ohrp/regulations-and-policy/guidance/faq/quality-improvement-activities/index.html"
+    },
+    "cdc-standard": {
+      "title": "CDC · Standard Precautions",
+      "url": "https://www.cdc.gov/infection-control/hcp/basics/standard-precautions.html"
+    },
+    "cdc-injection": {
+      "title": "CDC · Safe injection practices",
+      "url": "https://www.cdc.gov/injection-safety/hcp/clinical-guidance/index.html"
+    },
+    "cdc-cauti": {
+      "title": "CDC · CAUTI prevention recommendations",
+      "url": "https://www.cdc.gov/infection-control/hcp/cauti/summary-of-recommendations.html"
+    },
+    "hhs-clas": {
+      "title": "HHS · National CLAS Standards",
+      "url": "https://thinkculturalhealth.hhs.gov/clas/standards"
+    },
+    "cdc-frequency": {
+      "title": "CDC · Measures of disease frequency",
+      "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section2.html"
+    },
+    "cdc-association": {
+      "title": "CDC · Measures of association",
+      "url": "https://archive.cdc.gov/www_cdc_gov/csels/dsepd/ss1978/lesson3/section6.html"
+    },
+    "ahrq-measures": {
+      "title": "AHRQ · Types of health care quality measures",
+      "url": "https://www.ahrq.gov/talkingquality/measures/types.html"
+    },
+    "nhlbi-quality": {
+      "title": "NHLBI · Study quality assessment tools",
+      "url": "https://www.nhlbi.nih.gov/health-topics/study-quality-assessment-tools"
     }
   },
   "reviewStatus": "source-checked",
-  "checked": "2026-09-15"
+  "checked": "2026-09-16"
 };

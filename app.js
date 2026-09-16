@@ -143,6 +143,7 @@
         answer: e.q.answer.map(function (a) { return order.indexOf(a); }),
         rationale: e.q.rationale,
         sources: e.q.sources || [],
+        difficulty: e.q.difficulty || null,
         picked: [],
         submitted: false,
         correct: null
@@ -158,6 +159,10 @@
     $("case-intro-card").hidden = true;
     renderQuestion();
   }
+
+  window.startNursingQuestion = function(q) {
+    startQuiz([{q:q,topic:q.topic || 'Daily practice',slug:'community'}], {mode:'practice',limit:1});
+  };
 
   function startCases() {
     if (!activeCases().length) return;
@@ -194,7 +199,8 @@
     var n = quiz.items.length;
     $("progress-bar").style.width = ((quiz.idx) / n * 100) + "%";
     $("progress-text").textContent = (quiz.idx + 1) + " / " + n;
-    $("q-meta").textContent = it.topic + (it.type === "sata" ? "  ·  SELECT ALL THAT APPLY" : "");
+    var difficulty = {foundation:"Foundation",core:"Applied",applied:"Applied",advanced:"Challenge",challenge:"Challenge"}[it.difficulty];
+    $("q-meta").textContent = it.topic + (difficulty ? " · " + difficulty : "") + (it.type === "sata" ? "  ·  SELECT ALL THAT APPLY" : "");
     var upd = $("q-update");
     if (it.update) { upd.hidden = false; upd.textContent = it.update; }
     else { upd.hidden = true; }
@@ -266,7 +272,7 @@
       $("feedback-rationale").textContent = it.rationale;
       $("feedback-sources").innerHTML = "";
       (it.sources || []).forEach(function(id) {
-        var source = CURRICULUM.sources[id]; if (!source) return;
+        var source = typeof id === 'object' ? id : CURRICULUM.sources[id]; if (!source || typeof source.url !== 'string' || !/^https:\/\//.test(source.url)) return;
         var link = document.createElement('a'); link.href = source.url; link.textContent = source.title; link.target = '_blank'; link.rel = 'noopener noreferrer'; $('feedback-sources').appendChild(link);
       });
       $("next-btn").hidden = false;

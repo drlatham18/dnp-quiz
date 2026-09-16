@@ -1,7 +1,8 @@
-# Free study release — September 15, 2026
+# Free study release — September 16, 2026
 
-The public library contains 64 source-linked questions: 24 RN foundation,
-20 statistics, 12 evidence appraisal and 8 quality improvement questions.
+The public library contains 160 source-linked questions. The September 16 expansion
+adds 96 original scenarios in infection prevention, injection and catheter safety,
+communication and access, epidemiology, risk comparisons, measurement, and study appraisal.
 RN, BSN, MSN/NP and DNP paths select relevant parts of this library. Advanced
 paths share research and systems material; they are not full degree curricula.
 The free app provides shuffled quizzes, rationales, source links, missed-item
@@ -28,3 +29,13 @@ Run npm test, npm run build and npm run check:release. Verify production against
 release.json and sw.js, complete a quiz and reload progress. Store distribution
 still requires signed native builds and device acceptance; the free PWA is an
 independent usable release.
+
+## Community release
+
+CSV/JSON uploads are parsed locally and previewed before the user submits each
+question. A separate hosted service stores pending questions privately. Reviewer
+authentication, explicit source/answer/originality checks, estimated difficulty,
+and a publication date are required before an item can become the free daily
+question. An original editorial question fills dates without community approval.
+Receipts authorize status and content withdrawal. The archive enforces active
+server-side membership; no paid subscriptions are on sale yet.
