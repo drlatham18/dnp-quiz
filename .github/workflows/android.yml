@@ -1,0 +1,38 @@
+name: Android release build
+on:
+  workflow_dispatch:
+  push:
+    branches: ['codex/nursing-learning-release']
+    paths: ['android/**', '.github/workflows/android.yml']
+permissions:
+  contents: read
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with:
+          node-version: '22'
+          cache: npm
+      - uses: actions/setup-java@v4
+        with:
+          distribution: temurin
+          java-version: '21'
+      - run: npm ci
+      - run: npm test
+      - run: npm run build && npx cap sync android
+      - name: Build and lint release
+        working-directory: android
+        run: ./gradlew --no-daemon assembleRelease bundleRelease lintRelease
+      - name: Package local signing tool
+        run: cp "$ANDROID_HOME/build-tools/36.0.0/lib/apksigner.jar" android/app/build/outputs/apk/release/apksigner.jar
+      - uses: actions/upload-artifact@v4
+        with:
+          name: nursing-android-release-unsigned
+          retention-days: 3
+          path: |
+            android/app/build/outputs/apk/release/*.apk
+            android/app/build/outputs/apk/release/apksigner.jar
+            android/app/build/outputs/bundle/release/*.aab
+            android/app/build/reports/lint-results-release.html
