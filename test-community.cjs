@@ -1,0 +1,10 @@
+const assert=require('node:assert/strict'),fs=require('node:fs'),parser=require('./community-import.js');
+const qs=parser.parse(fs.readFileSync('question-template.csv','utf8'),'template.csv');assert.equal(qs.length,1);assert.deepEqual(qs[0].answer,[0]);
+const q=qs[0];assert.deepEqual(parser.parse(JSON.stringify([q]),'bank.json')[0],q);
+const quoted=fs.readFileSync('question-template.csv','utf8').replace('A fictional learner','A fictional, ""careful"" learner');assert(parser.parse(quoted,'q.csv')[0].stem.includes('"careful"'));
+assert.throws(()=>parser.parse(JSON.stringify(Array(6).fill(q)),'q.json'),/1–5/);
+assert.throws(()=>parser.normalize({...q,answer:[9]}));assert.throws(()=>parser.normalize({...q,answer:[0,0]}));assert.throws(()=>parser.normalize({...q,sources:[{title:'Unsafe link',url:'javascript:alert(1)'}]}));assert.throws(()=>parser.parse('question,question\na,b','q.csv'),/duplicate/);
+assert.throws(()=>parser.parse('x'.repeat(100001),'q.json'),/100 KB/);
+assert.deepEqual(parser.answers('A,C',4),[0,2]);assert.throws(()=>parser.answers('AA',4));assert.throws(()=>parser.answers('A,B,C',3));
+for(const name of ['community.html','community.js','community-import.js','community.css','daily.js','archive.html','community-terms.html','question-template.csv'])assert(fs.readFileSync('tools/build.cjs','utf8').includes("'"+name+"'"),name+' missing from release');
+console.log('Question import: CSV/JSON, quotes, answer validation, limits, safe sources, and release inclusion passed.');

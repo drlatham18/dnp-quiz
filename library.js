@@ -1,4 +1,4 @@
-// Curated free study library. Clinical treatment and procedure drafts are excluded.
+// Original source-linked educational questions. Advanced treatment drafts are excluded.
 window.QUIZ_DATA = [
   {
     "topic": "RN · Infection prevention",
@@ -1501,6 +1501,2166 @@ window.QUIZ_DATA = [
         "reviewStatus": "source-checked",
         "reviewedAt": "2026-09-15",
         "reviewMethod": "AI-assisted source and consistency check; not independent nursing educator certification"
+      }
+    ]
+  },
+  {
+    "slug": "rn-precautions",
+    "topic": "RN · Precautions in practice",
+    "questions": [
+      {
+        "id": "rn-precautions-001",
+        "type": "mcq",
+        "stem": "A clinic has no patients with a documented infection. Which approach should guide routine care?",
+        "options": [
+          "Apply Standard Precautions to every patient",
+          "Apply precautions only after a positive culture",
+          "Use precautions only for visibly ill patients",
+          "Let each patient decide which precautions are needed"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Standard Precautions apply across patient care; known infection status does not determine whether they are used.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-002",
+        "type": "mcq",
+        "stem": "A task may splash body fluid toward a nurse’s face. How should protection be selected?",
+        "options": [
+          "Match PPE to the anticipated exposure",
+          "Use gloves alone for every task",
+          "Wait for a splash before deciding",
+          "Choose PPE based only on the diagnosis"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Exposure risk guides protective equipment selection, including protection of mucous membranes when splashing is anticipated.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-003",
+        "type": "mcq",
+        "stem": "A blood-pressure cuff is shared between patients. What belongs in the workflow?",
+        "options": [
+          "Clean and disinfect it according to its instructions and facility policy",
+          "Disinfect it only when visibly stained",
+          "Assign cleaning to the next patient",
+          "Cover it with a sheet indefinitely"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Reusable care equipment can transfer microorganisms. Cleaning and disinfection must be appropriate for the device and its use.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-004",
+        "type": "mcq",
+        "stem": "A staff member calls respiratory hygiene an isolation-only practice. Which correction is appropriate?",
+        "options": [
+          "Respiratory hygiene is part of Standard Precautions",
+          "It applies only after laboratory confirmation",
+          "It replaces all other protective measures",
+          "It is only a visitor responsibility"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Respiratory hygiene and cough etiquette are included in Standard Precautions. They do not replace other indicated measures.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-005",
+        "type": "mcq",
+        "stem": "A unit wants to choose precautions before a procedure. Which starting point is most useful?",
+        "options": [
+          "Assess likely contact with blood, body fluids, and contaminated materials",
+          "Copy the previous room’s PPE choice",
+          "Use the patient’s age as the only criterion",
+          "Wait for a confirmed organism"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A task-specific exposure assessment supports appropriate precautions. Demographics alone do not identify the task’s exposure risk.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-006",
+        "type": "mcq",
+        "stem": "After care, soiled linen must be moved. Which approach best fits infection prevention?",
+        "options": [
+          "Handle it carefully using the facility’s containment process",
+          "Shake it vigorously to remove debris",
+          "Place it on a clean supply cart",
+          "Sort it beside uncovered clean equipment"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Careful handling of textiles limits environmental contamination. Clean supply areas should remain separate from soiled materials.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-007",
+        "type": "mcq",
+        "stem": "A quality audit counts glove use but ignores shared equipment. What important area is missing?",
+        "options": [
+          "Equipment cleaning and disinfection",
+          "Only the brand of glove",
+          "The number of beds on the unit",
+          "Staff shoe color"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Standard Precautions include care-equipment handling and environmental cleaning as well as PPE and hand hygiene.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-008",
+        "type": "mcq",
+        "stem": "Which event most clearly calls for reassessing PPE during an encounter?",
+        "options": [
+          "The planned task changes from conversation to one involving potential fluid splash",
+          "The patient changes the television channel",
+          "A different family member enters",
+          "The visit reaches its scheduled midpoint"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Protection should be reconsidered when the exposure-producing task changes, rather than remaining fixed for an entire visit.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-009",
+        "type": "mcq",
+        "stem": "A supply cart contains sterile equipment beside used devices awaiting cleaning. What is the main concern?",
+        "options": [
+          "Contamination of clean equipment during handling",
+          "A mismatch in label font",
+          "A change in room temperature only",
+          "The patient’s insurance category"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Clean and used equipment should be handled to prevent contamination. This is a workflow and environmental infection-prevention issue.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-010",
+        "type": "mcq",
+        "stem": "Which statement best distinguishes cleaning from the whole infection-prevention plan?",
+        "options": [
+          "Cleaning is one component alongside hand hygiene, PPE, safe injections, and other precautions",
+          "Cleaning alone makes every other precaution unnecessary",
+          "Cleaning is relevant only in operating rooms",
+          "Cleaning is only needed after an outbreak"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Standard Precautions combine several complementary practices; no single component covers every route of exposure.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-011",
+        "type": "mcq",
+        "stem": "A protocol applies the same PPE for chart review and a splash-producing procedure. What is its main weakness?",
+        "options": [
+          "It does not account for different exposure risks",
+          "It includes too many job titles",
+          "It names the supply location",
+          "It allows staff to check instructions"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "The required protection depends on anticipated exposure. A uniform rule may underprotect some tasks or add unnecessary equipment to others.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-precautions-012",
+        "type": "mcq",
+        "stem": "Which proposed audit best examines Standard Precautions across a clinic?",
+        "options": [
+          "Observe hand hygiene, task-appropriate PPE, equipment care, and injection practices",
+          "Count only the number of precaution posters",
+          "Measure only patient satisfaction with parking",
+          "Ask one employee whether the clinic is clean"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A multidomain audit examines actual infection-prevention practices. Posters and impressions do not establish reliable implementation.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-standard"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      }
+    ]
+  },
+  {
+    "slug": "rn-injections",
+    "topic": "RN · Injection safety",
+    "questions": [
+      {
+        "id": "rn-injections-001",
+        "type": "mcq",
+        "stem": "A syringe has been used on one patient. Replacing only its needle before using it on another patient is proposed. What is correct?",
+        "options": [
+          "Use a new sterile needle and syringe for the next patient",
+          "A new needle makes the used syringe safe",
+          "Reuse is acceptable if no blood is visible",
+          "Reuse is acceptable within one hour"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Changing a needle does not make a used syringe safe for another patient. Both are single-use items.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-002",
+        "type": "mcq",
+        "stem": "A single-dose vial has medication left after use for one patient. What is appropriate for routine administration?",
+        "options": [
+          "Do not use the leftover contents for another patient",
+          "Pool it with other leftovers",
+          "Save it for the next patient without labeling",
+          "Share it if the patients have the same diagnosis"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Single-dose containers are not shared among patients or pooled for later use in routine care.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-003",
+        "type": "mcq",
+        "stem": "A syringe has connected to a patient’s IV administration set. How should it be regarded?",
+        "options": [
+          "As contaminated for purposes of subsequent medication access",
+          "As sterile if the plunger never moved",
+          "As safe for another patient after changing the connector",
+          "As unused if it contains saline"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Connection to a patient’s infusion bag or administration set is sufficient to regard the syringe as contaminated.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-004",
+        "type": "mcq",
+        "stem": "A multidose vial must be accessed again. Which equipment should be used?",
+        "options": [
+          "A sterile needle and sterile syringe",
+          "A sterile needle on a previously used syringe",
+          "A rinsed needle with the same syringe",
+          "Any syringe reserved for that day"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Each access requires sterile equipment. Replacing only one component does not correct contamination of the other.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-005",
+        "type": "mcq",
+        "stem": "An IV saline bag is kept as a common flush supply for several patients. What is the safety issue?",
+        "options": [
+          "IV solution bags should not serve as a common source for multiple patients",
+          "Saline is never used in health care",
+          "Only the bag size is relevant",
+          "The practice is safe if patients have no symptoms"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Using a shared IV solution source can introduce and spread contamination across patients.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-006",
+        "type": "mcq",
+        "stem": "Where should a multidose vial used for more than one patient generally be kept?",
+        "options": [
+          "Outside the immediate patient treatment area, with proper storage",
+          "On the current patient’s bedside table",
+          "In a pocket alongside used supplies",
+          "Beside discarded needles"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CDC recommends keeping multidose vials out of the immediate treatment area and following storage instructions.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-007",
+        "type": "mcq",
+        "stem": "Sterility of a multidose vial is uncertain after a handling breach. What is the appropriate response?",
+        "options": [
+          "Discard it rather than assume it remains sterile",
+          "Use it only on a patient already receiving antibiotics",
+          "Check whether the solution still looks clear",
+          "Change the label and retain it"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Appearance does not verify sterility. CDC recommends discarding a vial when sterility is compromised or questionable.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-008",
+        "type": "mcq",
+        "stem": "A nurse prepares medication beside a tray of used needles. Which change targets the risk?",
+        "options": [
+          "Separate clean preparation from contaminated equipment handling",
+          "Use a larger preparation tray only",
+          "Reduce the lighting to prevent glare",
+          "Move the labels without moving the used equipment"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Contaminated equipment in a preparation area can compromise aseptic handling of injection supplies and medications.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-009",
+        "type": "mcq",
+        "stem": "Two patients need the same medication. Which circumstance makes sharing one used syringe acceptable?",
+        "options": [
+          "None of the listed circumstances",
+          "The medication came from the same manufacturer",
+          "Both patients have the same diagnosis",
+          "The needle is changed between patients"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Syringes used for patient administration are not shared across patients. Matching medication or diagnosis does not remove contamination risk.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-010",
+        "type": "mcq",
+        "stem": "A team responds to an injection-safety breach with a lecture alone. What additional step is most useful?",
+        "options": [
+          "Incorporate safe practices into policy and monitor actual adherence",
+          "Assume attendance proves safe practice",
+          "Wait for an outbreak before observing technique",
+          "Remove reporting pathways to reduce anxiety"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CDC identifies training, institutional policies, oversight, and follow-up on breaches as important safeguards.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-011",
+        "type": "mcq",
+        "stem": "A learner asks why single-dose vials are preferred when possible. Which explanation fits infection prevention?",
+        "options": [
+          "They reduce opportunities for cross-patient contamination when used correctly",
+          "They eliminate the need for aseptic technique",
+          "They can be shared if the dose is small",
+          "They can be pooled after opening"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Single-dose use avoids repeated shared-container access, but proper aseptic technique remains necessary.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-injections-012",
+        "type": "mcq",
+        "stem": "A nurse reports that a contaminated syringe may have accessed shared medication. What should the organization do?",
+        "options": [
+          "Escalate the breach through its infection-prevention response process",
+          "Dismiss it if no patient is currently symptomatic",
+          "Quietly replace the label",
+          "Wait for several identical reports"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Potential contamination requires prompt organizational assessment and follow-up; lack of immediate symptoms does not establish safety.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-injection"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      }
+    ]
+  },
+  {
+    "slug": "rn-catheter",
+    "topic": "RN · Urinary catheter safety",
+    "questions": [
+      {
+        "id": "rn-catheter-001",
+        "type": "mcq",
+        "stem": "A team wants an indwelling urinary catheter solely to reduce routine incontinence care. How should this proposal be viewed?",
+        "options": [
+          "It is generally an inappropriate indication",
+          "It is appropriate whenever staffing is limited",
+          "It is recommended for all older adults",
+          "It is required for every inpatient"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CDC advises against using an indwelling catheter as a substitute for nursing care of incontinence.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-002",
+        "type": "mcq",
+        "stem": "Which daily review question best supports catheter-associated infection prevention?",
+        "options": [
+          "Does this patient still have an appropriate indication for the catheter?",
+          "Has the collection bag changed color?",
+          "Does the room have a spare catheter?",
+          "Was the catheter inserted on a weekday?"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Limiting catheter use and duration to appropriate indications is a central prevention strategy.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-003",
+        "type": "mcq",
+        "stem": "A patient can voluntarily void and a urine culture is needed. What should be questioned?",
+        "options": [
+          "Placing an indwelling catheter solely to obtain that specimen",
+          "Following the appropriate collection instructions",
+          "Labeling the specimen accurately",
+          "Explaining collection to the patient"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CDC lists obtaining a culture from a person who can voluntarily void as an inappropriate reason for an indwelling catheter.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-004",
+        "type": "mcq",
+        "stem": "An indwelling catheter’s closed drainage system has been disconnected unintentionally. What should guide the response?",
+        "options": [
+          "Replace the catheter and collection system using aseptic technique and sterile equipment",
+          "Reconnect it and assume the closed system is restored",
+          "Rinse the exposed connector with tap water",
+          "Add antibiotic solution to the bag without an order"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A break in the closed system compromises its integrity. CDC recommends replacement of the catheter and collecting system under these circumstances.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-005",
+        "type": "mcq",
+        "stem": "Where should a urinary drainage bag be positioned during routine care?",
+        "options": [
+          "Below bladder level and off the floor",
+          "Above bladder level to improve observation",
+          "Directly on the floor to prevent swinging",
+          "At any height if the tubing is long"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Keeping the bag below the bladder and off the floor supports unobstructed drainage and reduces contamination risk.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-006",
+        "type": "mcq",
+        "stem": "A drainage tube is kinked under the patient’s leg. What is the relevant prevention principle?",
+        "options": [
+          "Maintain unobstructed urine flow",
+          "Clamp the tube until the next shift",
+          "Raise the bag above the bladder",
+          "Disconnect the system routinely to drain it"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Preventing kinks and maintaining urine flow are part of catheter maintenance. Avoid unnecessary disruption of the closed system.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-007",
+        "type": "mcq",
+        "stem": "A protocol mandates changing every urinary catheter at a fixed interval regardless of circumstances. Which revision fits CDC recommendations?",
+        "options": [
+          "Base changes on clinical indications such as obstruction, infection, or a compromised closed system",
+          "Shorten the interval for every patient without assessment",
+          "Keep the catheter indefinitely if no fever occurs",
+          "Replace only the drainage bag at each meal"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Routine fixed-interval changes are not recommended; clinical indications should drive catheter or drainage-system changes.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-008",
+        "type": "mcq",
+        "stem": "A small fresh urine specimen is needed from an indwelling catheter. What is the recommended sampling location?",
+        "options": [
+          "The disinfected needleless sampling port using appropriate aseptic technique",
+          "Urine already pooled in the collection bag for culture",
+          "An open drainage-tube connection",
+          "A container placed under a loosened junction"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Small fresh samples are obtained aseptically from the disinfected sampling port, preserving the closed drainage system.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-009",
+        "type": "mcq",
+        "stem": "Which catheter-insertion strategy generally minimizes urethral trauma while allowing drainage?",
+        "options": [
+          "Use the smallest bore consistent with good drainage, unless otherwise indicated",
+          "Use the largest available catheter for every patient",
+          "Increase size solely because the patient is older",
+          "Choose size based on the collection bag"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CDC recommends the smallest bore compatible with good drainage unless another indication applies.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-010",
+        "type": "mcq",
+        "stem": "A catheter can move freely and tug at its insertion site. Which practice addresses that risk?",
+        "options": [
+          "Secure it appropriately after insertion",
+          "Tape the drainage bag above the bladder",
+          "Increase traction to prevent movement",
+          "Leave it unsecured for easier repositioning"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Appropriate securement reduces movement and urethral traction. It does not justify tension on the catheter.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-011",
+        "type": "mcq",
+        "stem": "Which unit policy best supports appropriate postoperative catheter use?",
+        "options": [
+          "Review the indication and remove as soon as possible, preferably within 24 hours when continued use is not indicated",
+          "Keep every catheter until discharge",
+          "Use a catheter for every operation regardless of need",
+          "Continue until the patient requests removal"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CDC recommends prompt postoperative removal for patients who no longer have an appropriate indication, preferably within 24 hours.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-catheter-012",
+        "type": "mcq",
+        "stem": "A facility teaches catheter insertion but never audits whether catheters are still needed. What is the main gap?",
+        "options": [
+          "Avoiding unnecessary catheter days is also part of prevention",
+          "Insertion training replaces all maintenance practices",
+          "Only the size of the drainage bag matters after insertion",
+          "Need review applies only to long-term care"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Prevention includes appropriate selection, insertion, maintenance, and timely removal; technique alone does not address duration.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-cauti"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      }
+    ]
+  },
+  {
+    "slug": "rn-equity",
+    "topic": "RN · Communication and access",
+    "questions": [
+      {
+        "id": "rn-equity-001",
+        "type": "mcq",
+        "stem": "A patient prefers a language the clinician does not speak. Which service should the organization offer?",
+        "options": [
+          "Timely language assistance at no cost to the patient",
+          "Require the patient to bring an interpreter",
+          "Delay all information until a family member arrives",
+          "Charge an additional interpretation fee"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CLAS standards call for language assistance that supports timely access, offered at no cost.",
+        "difficulty": "foundation",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-002",
+        "type": "mcq",
+        "stem": "A clinic routinely asks minor children to interpret complex health information. What should change?",
+        "options": [
+          "Use competent language assistance and avoid relying on minors",
+          "Use children whenever they are bilingual",
+          "Ask the child to sign a confidentiality form and continue",
+          "Translate only the final diagnosis"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CLAS standards emphasize competent language assistance and avoiding use of untrained individuals or minors as interpreters.",
+        "difficulty": "applied",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-003",
+        "type": "mcq",
+        "stem": "A patient does not know that interpretation is available. Which process is missing?",
+        "options": [
+          "Informing patients about language-assistance availability in their preferred language",
+          "Testing the patient’s English before mentioning services",
+          "Waiting for a complaint",
+          "Posting information only for staff"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Language services are useful only if people know they can obtain them. CLAS includes clear oral and written notice.",
+        "difficulty": "applied",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-004",
+        "type": "mcq",
+        "stem": "A translated discharge handout is written at a highly technical reading level. What improvement is needed?",
+        "options": [
+          "Provide understandable, accessible information in commonly used languages",
+          "Increase the number of technical terms",
+          "Assume translation alone ensures understanding",
+          "Remove all written information"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Language translation and understandability are related but separate needs. CLAS calls for easy-to-understand materials.",
+        "difficulty": "applied",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-005",
+        "type": "mcq",
+        "stem": "A health system seeks community input only after designing its services. What would better support culturally responsive planning?",
+        "options": [
+          "Partner with the community during design, implementation, and evaluation",
+          "Use national averages as the only source",
+          "Ask staff to guess community preferences",
+          "Restrict feedback to annual complaint totals"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CLAS promotes ongoing community partnership rather than treating community input as a final approval step.",
+        "difficulty": "challenge",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-006",
+        "type": "mcq",
+        "stem": "A clinic evaluates patient experience but never examines results by relevant demographic characteristics. What is the limitation?",
+        "options": [
+          "Overall averages may conceal differences in access or experience",
+          "An overall average proves equitable service",
+          "Demographic data automatically explain every difference",
+          "Subgroup comparisons eliminate the need for privacy safeguards"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CLAS supports accurate demographic information and assessment of needs and outcomes. Patterns require careful interpretation and data protection.",
+        "difficulty": "challenge",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-007",
+        "type": "mcq",
+        "stem": "Which leadership action best supports sustained culturally and linguistically appropriate services?",
+        "options": [
+          "Provide resources, accountability, and continuing improvement",
+          "Assign the entire effort to one volunteer without support",
+          "Treat the standards as a one-time poster campaign",
+          "Rely on individual goodwill alone"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Organizational leadership, resources, accountability, and improvement processes help sustain CLAS practices.",
+        "difficulty": "applied",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-008",
+        "type": "mcq",
+        "stem": "A patient’s cultural preferences differ from the clinician’s assumptions. What is a useful communication approach?",
+        "options": [
+          "Ask about the individual’s needs and preferences",
+          "Apply a fixed rule based on ethnicity",
+          "Assume all members of the same group want identical care",
+          "Ignore the preference to avoid disagreement"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Responsive care considers each person’s needs and preferences. Group stereotypes cannot substitute for an individual conversation.",
+        "difficulty": "applied",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-009",
+        "type": "mcq",
+        "stem": "A hospital has a grievance process that patients cannot understand or access. What is the relevant improvement?",
+        "options": [
+          "Make conflict and grievance resolution understandable and appropriate for the population served",
+          "Keep the process available only in staff manuals",
+          "Require a written complaint in English",
+          "Remove the process to reduce complaints"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CLAS includes culturally and linguistically appropriate ways to identify and resolve conflicts and grievances.",
+        "difficulty": "applied",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-010",
+        "type": "mcq",
+        "stem": "Which training strategy best supports CLAS over time?",
+        "options": [
+          "Ongoing education for leadership, governance, and the workforce",
+          "A single optional session for new nurses only",
+          "Training interpreters while excluding other staff",
+          "Replacing training with a translated logo"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CLAS addresses the whole organization and calls for continuing education and training.",
+        "difficulty": "foundation",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-011",
+        "type": "mcq",
+        "stem": "A clinic reports how it improved language access to its community. Which CLAS principle does this support?",
+        "options": [
+          "Communicating progress in implementing and sustaining the standards",
+          "Proving that all inequities are permanently eliminated",
+          "Replacing evaluation with publicity",
+          "Avoiding future community engagement"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Sharing progress supports accountability and continued improvement, without establishing that every access problem is solved.",
+        "difficulty": "challenge",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "rn-equity-012",
+        "type": "mcq",
+        "stem": "Which plan treats language access as a system responsibility?",
+        "options": [
+          "Include language assistance in policy, staffing, workflow, and evaluation",
+          "Depend on whichever bilingual employee happens to be nearby",
+          "Ask each patient to solve the problem independently",
+          "Provide assistance only during annual reviews"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "CLAS combines language access with organizational structures and continuous improvement. Ad hoc availability is less reliable.",
+        "difficulty": "challenge",
+        "sources": [
+          "hhs-clas"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      }
+    ]
+  },
+  {
+    "slug": "bsn-epidemiology",
+    "topic": "BSN · Population health reasoning",
+    "questions": [
+      {
+        "id": "bsn-epidemiology-001",
+        "type": "mcq",
+        "stem": "A community survey counts everyone currently living with a condition on one date. What is being estimated?",
+        "options": [
+          "Point prevalence",
+          "Incidence rate",
+          "Relative risk",
+          "Case-fatality proportion"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Point prevalence describes existing cases at a specified point in time.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-002",
+        "type": "mcq",
+        "stem": "A cohort begins with 500 people free of a condition; 25 develop it during a year of complete follow-up. What is the one-year incidence proportion?",
+        "options": [
+          "5%",
+          "20%",
+          "25%",
+          "0.5%"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "The new cases are divided by the initially at-risk population: 25/500 = 0.05, or 5%.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-003",
+        "type": "mcq",
+        "stem": "People enter and leave a study at different times. Which denominator can incorporate the varying observation periods?",
+        "options": [
+          "Person-time at risk",
+          "The number of beds",
+          "The number of questionnaires printed",
+          "The number of diagnostic categories"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "An incidence rate uses person-time to account for differing durations of follow-up while individuals are at risk.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-004",
+        "type": "mcq",
+        "stem": "A disease becomes longer-lasting while its incidence stays stable. What may happen to prevalence?",
+        "options": [
+          "It may rise because people remain cases longer",
+          "It must become zero",
+          "It must equal the annual incidence",
+          "It can no longer be measured"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Prevalence reflects both new disease occurrence and duration. Longer survival or duration can increase existing cases.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-005",
+        "type": "mcq",
+        "stem": "Which measure is most useful for describing how quickly new cases accumulate?",
+        "options": [
+          "Incidence rate",
+          "Point prevalence alone",
+          "Median patient age alone",
+          "Total population size alone"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Incidence rate relates new cases to time at risk, describing the speed of occurrence.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-006",
+        "type": "mcq",
+        "stem": "A report uses all clinic visits as the denominator for the proportion of patients with a condition, although some patients visit repeatedly. What needs attention?",
+        "options": [
+          "The denominator counts visits rather than unique patients",
+          "The denominator is automatically equivalent to population prevalence",
+          "Repeated visits improve representativeness by definition",
+          "The numerator no longer matters"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Visits and people are different units. The denominator must match the intended patient-level measure.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-007",
+        "type": "mcq",
+        "stem": "A survey finds 120 existing cases among 2,000 residents. What is the prevalence proportion?",
+        "options": [
+          "6%",
+          "16.7%",
+          "60%",
+          "0.6%"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Existing cases divided by the population gives 120/2,000 = 0.06.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-008",
+        "type": "mcq",
+        "stem": "Who generally belongs in the denominator of an incidence proportion for first diagnosis during follow-up?",
+        "options": [
+          "People initially free of the condition and at risk of developing it",
+          "Only people diagnosed before follow-up began",
+          "Only people who become cases",
+          "All visits including repeated visits by each person"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "The population initially at risk is the basis for an incidence proportion of new cases.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-009",
+        "type": "mcq",
+        "stem": "A nurse compares disease occurrence over one week in one group and one year in another. What is essential before interpreting a difference?",
+        "options": [
+          "Align or account for the observation periods",
+          "Compare the raw case counts only",
+          "Ignore follow-up because both are groups of people",
+          "Convert both counts to percentages without considering time"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Disease-frequency comparisons require attention to time at risk and the meaning of each denominator.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-010",
+        "type": "mcq",
+        "stem": "A clinic’s point prevalence estimate comes only from people attending a specialty service. What limits applying it to the whole city?",
+        "options": [
+          "The service population may not represent city residents",
+          "Every clinic sample is a random city sample",
+          "A large percentage guarantees generalizability",
+          "A prevalence estimate is independent of its population"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Who was measured matters. Specialty-service attendance can select a population with different disease frequency.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-011",
+        "type": "mcq",
+        "stem": "An incidence rate is reported as 4 cases per 1,000 person-years. What does the denominator represent?",
+        "options": [
+          "The accumulated time participants were observed while at risk",
+          "Exactly 1,000 different people followed for one year each",
+          "The number of positive tests",
+          "The total years since the clinic opened"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Many combinations of people and follow-up duration can contribute 1,000 person-years.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-epidemiology-012",
+        "type": "mcq",
+        "stem": "Which distinction matters when summarizing a population’s burden and new disease occurrence?",
+        "options": [
+          "Prevalence describes existing cases; incidence describes new cases over time",
+          "Prevalence and incidence always have identical denominators",
+          "Incidence includes only cases diagnosed before the study",
+          "Prevalence measures treatment effectiveness directly"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Existing burden and new occurrence answer different questions and should be labeled accordingly.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-frequency"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      }
+    ]
+  },
+  {
+    "slug": "bsn-comparisons",
+    "topic": "BSN · Risk and evidence in numbers",
+    "questions": [
+      {
+        "id": "bsn-comparisons-001",
+        "type": "mcq",
+        "stem": "A study reports risk of 8% in an exposed group and 4% in an unexposed group. What is the risk ratio?",
+        "options": [
+          "2.0",
+          "0.04",
+          "4.0",
+          "12.0"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "The risk ratio is 0.08/0.04 = 2.0. It is distinct from the absolute difference of four percentage points.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-002",
+        "type": "mcq",
+        "stem": "An intervention group has 6 events per 100 people and a comparison group has 10 per 100. What is the absolute risk reduction?",
+        "options": [
+          "4 percentage points",
+          "40 percentage points",
+          "60 percentage points",
+          "16 percentage points"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "The absolute reduction is 10% minus 6% = 4 percentage points; the relative reduction is 40%.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-003",
+        "type": "mcq",
+        "stem": "An article reports a 50% relative reduction from a baseline risk of 2%. What is the new risk?",
+        "options": [
+          "1%",
+          "50%",
+          "0.02%",
+          "52%"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Halving a 2% baseline risk gives 1%, an absolute reduction of one percentage point.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-004",
+        "type": "mcq",
+        "stem": "What is the main reason to present both absolute and relative effects?",
+        "options": [
+          "They convey complementary information about the size and context of a difference",
+          "They prove causation without study design information",
+          "They remove sampling uncertainty",
+          "They always produce the same numeric value"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Relative measures describe proportional change, while absolute measures show the difference in event frequency.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-005",
+        "type": "mcq",
+        "stem": "A risk ratio is 1.0. What does that estimate mean?",
+        "options": [
+          "The two measured risks are equal",
+          "Neither group had any events",
+          "The study proves the exposure is harmless in every setting",
+          "The outcome was present in everyone"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A ratio of one indicates equal measured risks; uncertainty and study limitations still matter.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-006",
+        "type": "mcq",
+        "stem": "A case-control study selects participants based on disease status. Which association measure is commonly used?",
+        "options": [
+          "Odds ratio",
+          "Incidence proportion directly from the sampled cases and controls",
+          "A population risk ratio calculated only from the case-control sample fractions",
+          "Prevalence calculated by adding sampled cases and controls"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Case-control sampling commonly supports an odds ratio. The selected case/control numbers do not themselves estimate population disease risk.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-007",
+        "type": "mcq",
+        "stem": "A risk ratio of 0.75 compares intervention with control. Which interpretation fits?",
+        "options": [
+          "The measured intervention risk is 75% of the control risk",
+          "The intervention increases risk by 75 percentage points",
+          "Exactly 75 patients will benefit",
+          "The outcome is impossible in the intervention group"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A risk ratio below one indicates lower measured risk in the numerator group; 0.75 corresponds to a 25% relative reduction.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-008",
+        "type": "mcq",
+        "stem": "A community program reduces risk from 5% to 4%. What is the relative risk reduction?",
+        "options": [
+          "20%",
+          "1%",
+          "80%",
+          "100%"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "The absolute reduction is 1 percentage point. Dividing 1% by the baseline 5% gives a 20% relative reduction.",
+        "difficulty": "applied",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-009",
+        "type": "mcq",
+        "stem": "Two groups have identical risks but different sample sizes. What can be said about their raw event counts?",
+        "options": [
+          "The larger group may have more events despite equal risk",
+          "Their counts must be identical",
+          "The smaller group must have more events",
+          "Raw counts alone prove a risk difference"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Event counts depend on both population size and event frequency. Compare suitable rates or risks.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-010",
+        "type": "mcq",
+        "stem": "An observational study reports an exposure-outcome association. What cannot be concluded from the association alone?",
+        "options": [
+          "That the exposure caused the outcome",
+          "That the measured groups differed",
+          "That an association estimate was calculated",
+          "That further assessment may be useful"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Association can reflect causation, confounding, bias, or chance. Study methods and alternative explanations need evaluation.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-011",
+        "type": "mcq",
+        "stem": "The same absolute reduction of 2 percentage points occurs from baselines of 4% and 20%. Which statement is correct?",
+        "options": [
+          "The relative reductions differ: 50% and 10%",
+          "Both relative reductions are 2%",
+          "Both relative reductions are 50%",
+          "The higher baseline makes the absolute reduction 20 points"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Relative change depends on the baseline: 2/4 = 50%, while 2/20 = 10%.",
+        "difficulty": "challenge",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "bsn-comparisons-012",
+        "type": "mcq",
+        "stem": "Before interpreting a risk ratio, what labeling detail should be checked?",
+        "options": [
+          "Which group is in the numerator and which is the reference",
+          "Only the number of authors",
+          "Only the publication’s page count",
+          "Whether the ratio was printed in bold"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Reversing the comparison groups reciprocates the ratio and changes its direction of interpretation.",
+        "difficulty": "foundation",
+        "sources": [
+          "cdc-association"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      }
+    ]
+  },
+  {
+    "slug": "dnp-measurement",
+    "topic": "DNP · Measuring improvement",
+    "questions": [
+      {
+        "id": "dnp-measurement-001",
+        "type": "mcq",
+        "stem": "A project tracks whether eligible patients received a recommended assessment. What type of quality measure is this?",
+        "options": [
+          "Process",
+          "Structure",
+          "Outcome",
+          "Population size"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A process measure examines whether a care activity was performed.",
+        "difficulty": "foundation",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-002",
+        "type": "mcq",
+        "stem": "A unit tracks the proportion of patients experiencing a specified adverse outcome. What type of measure is this?",
+        "options": [
+          "Outcome",
+          "Structure",
+          "Staffing inventory",
+          "Supply availability"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Outcome measures describe results of care, such as adverse events or changes in health status.",
+        "difficulty": "foundation",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-003",
+        "type": "mcq",
+        "stem": "A service measures whether trained personnel and equipment are available. What type of quality measure is this?",
+        "options": [
+          "Structure",
+          "Outcome",
+          "Patient survival",
+          "Disease incidence"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Structural measures describe organizational resources and capacity to deliver care.",
+        "difficulty": "foundation",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-004",
+        "type": "mcq",
+        "stem": "A hospital adds equipment and concludes patient outcomes must have improved. What is missing?",
+        "options": [
+          "Evidence connecting the structural change to care processes and outcomes",
+          "Only a photograph of the equipment",
+          "A higher purchase price",
+          "A statement from the vendor"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Improved structure may support better care, but it does not by itself demonstrate better processes or patient outcomes.",
+        "difficulty": "challenge",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-005",
+        "type": "mcq",
+        "stem": "A nurse wants to know whether a new protocol is actually being followed. Which measure is most direct?",
+        "options": [
+          "The proportion of eligible encounters that follow the protocol",
+          "The number of copies of the protocol printed",
+          "The number of rooms in the building",
+          "The hospital’s age"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A process adherence measure directly examines implementation in eligible care encounters.",
+        "difficulty": "applied",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-006",
+        "type": "mcq",
+        "stem": "A program improves a process measure but the outcome measure does not change. What is a reasonable interpretation?",
+        "options": [
+          "Investigate timing, implementation, measurement, and other influences before concluding why",
+          "Assume the process data must be fabricated",
+          "Declare that outcomes can never change",
+          "Remove the outcome measure from future reports"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Care outcomes can be affected by multiple factors. Process improvement and outcome change are related but not interchangeable.",
+        "difficulty": "challenge",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-007",
+        "type": "mcq",
+        "stem": "A project calls the number of staff trained a patient outcome. What is the concern?",
+        "options": [
+          "Training completion describes implementation capacity or activity, not a patient health result",
+          "Every count is automatically a patient outcome",
+          "Training counts are always meaningless",
+          "The count must be converted to currency"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Classifying measures clearly prevents an implementation activity from being presented as demonstrated patient benefit.",
+        "difficulty": "applied",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-008",
+        "type": "mcq",
+        "stem": "Which set gives a broader picture of a new care service?",
+        "options": [
+          "Resources available, recommended care delivered, and patient results",
+          "Only the size of the building",
+          "Only the number of meetings held",
+          "Only the protocol’s publication date"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Structure, process, and outcome measures offer complementary perspectives on quality.",
+        "difficulty": "applied",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-009",
+        "type": "mcq",
+        "stem": "A comparison of hospital mortality omits differences in patient illness severity. What should be considered?",
+        "options": [
+          "Patient risk differences may affect outcome comparisons",
+          "Raw mortality alone isolates care quality perfectly",
+          "Severity is only relevant to structural measures",
+          "Risk adjustment guarantees causal proof"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Outcome measures can reflect patient characteristics as well as care. Fair interpretation requires appropriate attention to case mix.",
+        "difficulty": "challenge",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-010",
+        "type": "mcq",
+        "stem": "A quality report says 90% adherence but does not identify who was eligible. What is unclear?",
+        "options": [
+          "The denominator and the population to which the measure applies",
+          "The staff’s preferred font",
+          "Whether 90 is an even number",
+          "Whether the report has a cover page"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A process percentage needs a defined eligible population; otherwise its meaning and comparability are uncertain.",
+        "difficulty": "challenge",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-011",
+        "type": "mcq",
+        "stem": "A clinic counts completed follow-up calls after discharge. Which description is accurate?",
+        "options": [
+          "It measures a care process, not proof of reduced readmissions",
+          "It directly proves readmissions fell",
+          "It measures the number of clinic buildings",
+          "It is a mortality outcome"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Completing a recommended activity is a process measure. Its effect on outcomes requires separate measurement.",
+        "difficulty": "applied",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-measurement-012",
+        "type": "mcq",
+        "stem": "Which statement most accurately describes outcome measurement?",
+        "options": [
+          "It assesses results but still requires attention to influences beyond the care process",
+          "It always establishes the cause of a change",
+          "It makes process measurement unnecessary",
+          "It measures only equipment availability"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Outcome measures are valuable results indicators, but interpretation must consider patient and contextual factors.",
+        "difficulty": "challenge",
+        "sources": [
+          "ahrq-measures"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      }
+    ]
+  },
+  {
+    "slug": "dnp-appraisal",
+    "topic": "MSN/DNP · Appraising study credibility",
+    "questions": [
+      {
+        "id": "dnp-appraisal-001",
+        "type": "mcq",
+        "stem": "A study states its objective only after reporting several favorable findings. What appraisal question is important?",
+        "options": [
+          "Was the research question clearly specified before analysis?",
+          "Was the title short enough?",
+          "Did the authors use a colorful figure?",
+          "Was the discussion longer than the methods?"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A clear, specified question helps readers judge whether the study’s methods and results answer the intended question.",
+        "difficulty": "applied",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-002",
+        "type": "mcq",
+        "stem": "A study does not explain who could participate. What is difficult to assess?",
+        "options": [
+          "The study population and applicability of its findings",
+          "The printer used for the article",
+          "The journal’s logo",
+          "The number of words in the abstract"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Eligibility criteria and population descriptions are necessary for assessing selection and applicability.",
+        "difficulty": "applied",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-003",
+        "type": "mcq",
+        "stem": "An exposure was measured only after the outcome occurred. Which issue deserves attention?",
+        "options": [
+          "Whether the exposure preceded the outcome",
+          "Whether the article includes a table",
+          "Whether the sample size is an odd number",
+          "Whether every author works at one institution"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Temporal order matters when interpreting exposure-outcome relationships and potential causal explanations.",
+        "difficulty": "challenge",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-004",
+        "type": "mcq",
+        "stem": "Participants who leave a study differ systematically from those who remain. What is a concern?",
+        "options": [
+          "Attrition may bias the study findings",
+          "Loss to follow-up always improves validity",
+          "Only formatting is affected",
+          "Any missing participant makes all research impossible"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Differential loss to follow-up can distort the analyzed groups and outcomes. The extent and reasons for loss matter.",
+        "difficulty": "challenge",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-005",
+        "type": "mcq",
+        "stem": "A measurement tool gives inconsistent results under similar conditions. Which property is in question?",
+        "options": [
+          "Reliability",
+          "Publication speed",
+          "Page length",
+          "Journal frequency"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Reliable measures produce consistent measurements under appropriate repeated conditions.",
+        "difficulty": "foundation",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-006",
+        "type": "mcq",
+        "stem": "A study claims to measure one construct, but its instrument mainly measures another. Which property is most directly in question?",
+        "options": [
+          "Validity",
+          "Typesetting quality",
+          "Citation count",
+          "Word count"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Validity concerns whether an instrument measures what it is intended to measure.",
+        "difficulty": "applied",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-007",
+        "type": "mcq",
+        "stem": "Outcome assessors know which participants received the intervention. What should the reader evaluate?",
+        "options": [
+          "Potential influence of that knowledge on outcome assessment",
+          "Whether the intervention name is memorable",
+          "Whether the sample has an even size",
+          "Whether the abstract uses abbreviations"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Where feasible, blinded assessment can reduce measurement or detection bias. The importance depends on the outcome and context.",
+        "difficulty": "challenge",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-008",
+        "type": "mcq",
+        "stem": "An analysis of an observational association ignores a plausible common cause of the exposure and outcome. What remains a concern?",
+        "options": [
+          "Confounding",
+          "Perfect randomization",
+          "Guaranteed representativeness",
+          "Elimination of measurement error"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "A third factor associated with both exposure and outcome may distort an observational association if not adequately addressed.",
+        "difficulty": "challenge",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-009",
+        "type": "mcq",
+        "stem": "A study reports a nonsignificant effect but recruited far fewer participants than planned. What should be considered?",
+        "options": [
+          "Whether the study had adequate statistical power to detect a meaningful effect",
+          "That the intervention has been proven ineffective",
+          "That the sample size no longer matters",
+          "That all nonsignificant effects equal zero"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Limited sample size can reduce power. Failure to detect a difference is not automatically proof of no meaningful effect.",
+        "difficulty": "challenge",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-010",
+        "type": "mcq",
+        "stem": "The same intervention is delivered very differently across study sites. What should be examined?",
+        "options": [
+          "Consistency and fidelity of intervention delivery",
+          "Only the number of sites in the title",
+          "Only the study’s cover image",
+          "Whether each site used identical furniture"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Implementation differences may affect outcomes and what intervention the study actually evaluated.",
+        "difficulty": "applied",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-011",
+        "type": "mcq",
+        "stem": "An article reports only favorable outcomes, although its protocol specified several others. What concern should be explored?",
+        "options": [
+          "Selective outcome reporting",
+          "A necessarily larger treatment effect",
+          "Automatic proof of fraud",
+          "An improvement in blinding"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Missing prespecified outcomes raise reporting-bias questions. Review the protocol and explanations without assuming intent from absence alone.",
+        "difficulty": "challenge",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
+      },
+      {
+        "id": "dnp-appraisal-012",
+        "type": "mcq",
+        "stem": "A reviewer assigns a study’s quality based only on whether it was published in a famous journal. What is the better approach?",
+        "options": [
+          "Examine design-specific risks of bias and methods",
+          "Use the citation count as the sole criterion",
+          "Assume peer review eliminates all limitations",
+          "Ignore the methods if the conclusion is attractive"
+        ],
+        "answer": [
+          0
+        ],
+        "rationale": "Study quality depends on methods and risk of bias. Journal reputation cannot substitute for critical appraisal.",
+        "difficulty": "challenge",
+        "sources": [
+          "nhlbi-quality"
+        ],
+        "reviewStatus": "source-checked",
+        "reviewedAt": "2026-09-16",
+        "reviewMethod": "Original AI-assisted educational item; checked against linked primary source, not independently certified by a nursing educator"
       }
     ]
   }

@@ -5,6 +5,7 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nursing Learning Companion</title>
 <link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="community.css">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0f766e">
 <meta name="description" content="Nursing study practice with RN, BSN, NP, and DNP learning paths. Local progress, explanations, and offline study.">
@@ -21,12 +22,19 @@
       <p class="tagline">A study path from RN foundations through doctoral nursing practice</p>
     </header>
 
+    <div class="card daily-card">
+      <div class="daily-heading"><h2 id="daily-title">Question of the Day</h2><span class="difficulty" id="daily-difficulty">Daily practice</span></div>
+      <p id="daily-stem">Loading today’s question…</p><p class="hint" id="daily-credit">Free, with an explanation after you answer</p>
+      <button id="daily-start" class="big-btn" disabled>Try today’s question</button>
+      <div class="row-links"><a href="community.html">Upload your own question</a><a href="archive.html">Question archive</a></div>
+    </div>
     <div class="card">
       <h2>Your learning path</h2>
       <label for="learning-track">Choose your level</label>
       <select id="learning-track"></select>
       <p id="track-description" class="hint"></p>
-      <p class="review-note">Free study edition · 64 questions with explanations and source links. Educational practice only; not clinical advice, a complete curriculum or an exam-readiness assessment.</p>
+      <p class="review-note">Free study edition · 160 questions with explanations and source links.</p>
+      <details class="hint"><summary>About the study library</summary><p>Original AI-assisted educational practice, checked against linked sources. Not independently certified by a nursing educator, a complete curriculum, clinical advice, or an exam-readiness assessment.</p></details>
       <div id="track-sources" class="row-links"></div>
       <p id="learning-progress" aria-live="polite"></p>
     </div>
@@ -124,6 +132,7 @@
 <script src="library.js"></script>
 <script src="curriculum.js"></script>
 <script src="app.js"></script>
+<script src="daily.js"></script>
 <script src="register-sw.js"></script>
 </body>
 </html>
