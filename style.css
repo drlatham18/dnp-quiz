@@ -181,3 +181,9 @@ body {
 .missed-item .m-stem { font-weight: 600; margin-bottom: 4px; }
 .missed-item .m-ans { color: var(--good); font-size: .9rem; margin-bottom: 4px; }
 .missed-item .m-rat { color: var(--muted); font-size: .88rem; }
+
+select { display:block; width:100%; padding:12px; margin:8px 0; font:inherit; color:var(--text); background:var(--bg); border:1px solid var(--border); border-radius:10px; }
+.review-note { font-size:.85rem; color:var(--muted); margin:12px 0; }
+a { color:var(--accent); } .row-links { flex-wrap:wrap; gap:12px; }
+button, a, input, select { touch-action:manipulation; } button:focus-visible, a:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
+#app { padding-top:max(16px, env(safe-area-inset-top)); padding-bottom:max(64px, env(safe-area-inset-bottom)); }

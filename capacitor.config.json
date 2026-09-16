@@ -1,0 +1,8 @@
+{
+  "appId": "com.drlatham.nursinglearning",
+  "appName": "Nursing Learning Companion",
+  "webDir": "dist",
+  "android": {
+    "allowMixedContent": false
+  }
+}

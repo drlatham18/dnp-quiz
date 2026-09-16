@@ -1,9 +1,17 @@
-/* DNP Quiz Coach — plain JS, no dependencies. */
+/* Nursing Learning Companion — plain JS, no dependencies. */
 (function () {
   "use strict";
 
   var BANK = window.QUIZ_DATA || [];
   var CASES = window.CASE_DATA || [];
+  var CURRICULUM = window.NURSING_CURRICULUM;
+  var TRACKS = CURRICULUM.tracks;
+  var trackId = 'rn';
+  try { trackId = localStorage.getItem('nursing-track-v1') || 'rn'; } catch (e) {}
+  if (!TRACKS.some(function(t) { return t.id === trackId; })) trackId = 'rn';
+  function currentTrack() { return TRACKS.find(function(t) { return t.id === trackId; }); }
+  function activeTopics() { return BANK.filter(function(t) { return currentTrack().topics.indexOf(t.slug) !== -1; }); }
+  function activeCases() { return currentTrack().caseAccess ? CASES : []; }
   var LS_KEY = "dnpquiz-missed-v1";
 
   var $ = function (id) { return document.getElementById(id); };
@@ -18,7 +26,7 @@
   // ---------- helpers ----------
   function allQuestions() {
     var out = [];
-    BANK.forEach(function (t) {
+    activeTopics().forEach(function (t) {
       t.questions.forEach(function (q) {
         out.push({ q: q, topic: t.topic, slug: t.slug });
       });
@@ -63,13 +71,14 @@
   function renderTopics() {
     var list = $("topic-list");
     list.innerHTML = "";
-    BANK.forEach(function (t) {
+    activeTopics().forEach(function (t) {
       var n = searchTerm
         ? t.questions.filter(function (q) {
             return matchesSearch({ q: q, topic: t.topic }, searchTerm);
           }).length
         : t.questions.length;
       var btn = document.createElement("button");
+      btn.setAttribute("aria-pressed", String(!!selectedTopics[t.slug]));
       btn.className = "chip" + (selectedTopics[t.slug] ? " on" : "");
       btn.innerHTML = t.topic + ' <span class="count">· ' + n + "</span>";
       if (searchTerm && n === 0) btn.style.opacity = ".35";
@@ -101,13 +110,13 @@
 
   function updateBankStats() {
     var total = allQuestions().length;
-    $("bank-stats").textContent = total + " questions · " + BANK.length + " topics · " + CASES.length + " case studies";
+    $("bank-stats").textContent = total + " questions · " + activeTopics().length + " topics · " + activeCases().length + " case studies";
   }
 
   function updateMissedBtn() {
     var missed = getMissed();
     var ids = allQuestions().map(function (e) { return e.q.id; });
-    CASES.forEach(function (cs) {
+    activeCases().forEach(function (cs) {
       cs.steps.forEach(function (_, i) { ids.push(cs.id + "-step" + (i + 1)); });
     });
     ids = ids.filter(function (id) { return missed[id]; });
@@ -133,6 +142,7 @@
         options: order.map(function (i) { return e.q.options[i]; }),
         answer: e.q.answer.map(function (a) { return order.indexOf(a); }),
         rationale: e.q.rationale,
+        sources: e.q.sources || [],
         picked: [],
         submitted: false,
         correct: null
@@ -150,8 +160,8 @@
   }
 
   function startCases() {
-    if (!CASES.length) return;
-    startCase(shuffle(CASES)[0]);
+    if (!activeCases().length) return;
+    startCase(shuffle(activeCases())[0]);
   }
 
   function startCase(cs) {
@@ -254,6 +264,11 @@
       v.textContent = it.correct ? "✅ Correct" : "❌ Not quite";
       v.className = "verdict " + (it.correct ? "good" : "bad");
       $("feedback-rationale").textContent = it.rationale;
+      $("feedback-sources").innerHTML = "";
+      (it.sources || []).forEach(function(id) {
+        var source = CURRICULUM.sources[id]; if (!source) return;
+        var link = document.createElement('a'); link.href = source.url; link.textContent = source.title; link.target = '_blank'; link.rel = 'noopener noreferrer'; $('feedback-sources').appendChild(link);
+      });
       $("next-btn").hidden = false;
       $("next-btn").textContent = quiz.idx + 1 < quiz.items.length ? "Next →" : "See results";
     } else {
@@ -273,6 +288,7 @@
   // ---------- results ----------
   function showResults() {
     var items = quiz.items;
+    if (!quiz.recorded) { recordProgress(items); quiz.recorded = true; }
     var right = items.filter(function (i) { return i.correct; }).length;
     var pct = Math.round(right / items.length * 100);
     $("result-emoji").textContent = pct >= 90 ? "🏆" : pct >= 75 ? "🎉" : pct >= 60 ? "💪" : "📚";
@@ -352,7 +368,7 @@
     renderTopics();
   };
   $("select-all").onclick = function () {
-    BANK.forEach(function (t) { selectedTopics[t.slug] = true; });
+    activeTopics().forEach(function (t) { selectedTopics[t.slug] = true; });
     renderTopics();
   };
   $("select-none").onclick = function () {
@@ -385,7 +401,7 @@
     if (qs.length) choice("Review " + qs.length + " standalone questions", function () {
       startQuiz(qs, { limit: 0, mode: "practice" });
     });
-    CASES.forEach(function (cs) {
+    activeCases().forEach(function (cs) {
       if (cs.steps.some(function (_, i) { return missed[cs.id + "-step" + (i + 1)]; })) {
         choice("Review case: " + cs.title, function () { startCase(cs); });
       }
@@ -407,6 +423,50 @@
   $("quit-btn").onclick = function () { show("screen-home"); updateMissedBtn(); };
   $("home-btn").onclick = function () { show("screen-home"); updateMissedBtn(); };
 
+  function progress() {
+    try { var p = JSON.parse(localStorage.getItem('nursing-progress-v1') || '{}'); return p && typeof p === 'object' && !Array.isArray(p) ? p : {}; } catch (e) { return {}; }
+  }
+  function recordProgress(items) {
+    var p = progress(); var row = p[trackId] || {sessions:0, answered:0, correct:0};
+    row.sessions++; row.answered += items.length; row.correct += items.filter(function(i) { return i.correct; }).length;
+    row.lastStudied = new Date().toISOString(); p[trackId] = row;
+    try { localStorage.setItem('nursing-progress-v1', JSON.stringify(p)); } catch (e) {}
+    renderProgress();
+  }
+  function renderProgress() {
+    var p = progress()[trackId];
+    $('learning-progress').textContent = p ? p.sessions + ' sessions · ' + p.answered + ' questions practiced · ' + Math.round(p.correct / p.answered * 100) + '% practice accuracy' : 'Your study progress stays on this device.';
+  }
+  function renderTrack() {
+    $('track-description').textContent = currentTrack().description;
+    $('start-case-btn').hidden = !currentTrack().caseAccess;
+    $('track-sources').innerHTML = '';
+    currentTrack().sources.forEach(function(id) {
+      var source = CURRICULUM.sources[id]; var link = document.createElement('a');
+      link.textContent = source.title; link.href = source.url; link.target = '_blank'; link.rel = 'noopener noreferrer';
+      $('track-sources').appendChild(link);
+    });
+    var old = $('missed-choices'); if (old) old.remove();
+    renderTopics(); updateBankStats(); updateMissedBtn(); renderProgress();
+  }
+  TRACKS.forEach(function(t) { var o = document.createElement('option'); o.value = t.id; o.textContent = t.name; $('learning-track').appendChild(o); });
+  $('learning-track').value = trackId;
+  $('learning-track').onchange = function(e) {
+    trackId = e.target.value; selectedTopics = {}; activeTopics().forEach(function(t) { selectedTopics[t.slug] = true; });
+    searchTerm = ''; $('topic-search').value = '';
+    try { localStorage.setItem('nursing-track-v1', trackId); } catch (e) {}
+    renderTrack();
+  };
+  $('export-progress').onclick = function() {
+    var blob = new Blob([JSON.stringify({version:1, exportedAt:new Date().toISOString(), progress:progress(), missed:getMissed()}, null, 2)], {type:'application/json'});
+    var url = URL.createObjectURL(blob); var a = document.createElement('a'); a.href = url; a.download = 'nursing-study-progress.json'; a.click(); setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
+  };
+  $('clear-progress').onclick = function() {
+    if (!confirm('Clear your saved practice results and missed questions on this device?')) return;
+    try { localStorage.removeItem('nursing-progress-v1'); localStorage.removeItem(LS_KEY); } catch (e) {}
+    renderProgress(); updateMissedBtn();
+  };
+  renderTrack();
   // ---------- boot ----------
   updateBankStats();
   renderTopics();

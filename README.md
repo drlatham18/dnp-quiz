@@ -1,22 +1,23 @@
-# DNP Quiz Coach 🩺
+# Nursing Learning Companion
 
-A doctoral-level nurse practitioner study app. Static site, no accounts, no backend — works on any phone or computer.
+Free, offline-capable nursing study practice with RN, BSN, MSN/NP and DNP paths.
 
-**Live:** https://drlatham18.github.io/dnp-quiz/
+Use the app: https://drlatham18.github.io/dnp-quiz/
 
-## Features
+64 source-linked practice questions cover hand hygiene, patient teaching,
+communication, statistics, evidence appraisal and quality improvement. Quiz
+options shuffle, practice and exam modes explain answers, and missed questions
+can be retried. Progress stays on the device and can be exported or cleared.
+After the first online load, the app supports offline study. Add it to the home
+screen from your browser to launch it like an app.
 
-- **15 topics, 300+ board-style questions** — pharmacology, pathophysiology, health assessment, clinical management, diagnostic reasoning, procedures (suturing, I&D, pneumothorax/chest tubes), transfusions & GI emergencies, NP role & standards (AANP 2022), EBP/research, biostats/epi, policy, informatics, leadership/QI, ethics, population health
-- **Search anything** — type "heart failure" or "ANOVA" and the quiz pulls only matching questions
-- **Practice mode** (instant rationale after each answer) or **Exam mode** (graded at the end)
-- **Unfolding case studies** — experiential, multi-step patient scenarios that evolve as you answer
-- **Missed-question tracking** — the app remembers what you got wrong (on your device) and offers a review deck
-- Select-all-that-apply and single-answer formats, shuffled every time
+This is a focused study library, not a complete nursing curriculum, independent
+educator certification, CE credit or clinical decision support. No account,
+payment or patient information is required. See release/READINESS.md for content
+scope, review method and limits. The larger clinical bank in data/ is draft source
+and is not loaded by the public app or packaged in mobile builds.
 
-## Adding topics
-
-Ask Claude to add a topic — each topic is one file in `data/` following the format in any existing file, plus one `<script>` line in `index.html`. Push to `main` and Pages redeploys automatically.
-
-## Accuracy note
-
-Questions were AI-generated against major current guidelines (ACC/AHA, ADA, GOLD, USPSTF, etc.) and are for study practice only. Always verify against your course materials and current guidelines — flag any question that looks off and it can be fixed in minutes.
+Development: npm ci; npm test; npm run build; npm run check:release.
+The build generates dist/ and the checked-in sw.js used by GitHub Pages. Native
+source projects are in android/ and ios/; npm run sync:mobile updates their assets.
+Native project generation does not mean store approval or device QA is complete.

@@ -3,8 +3,12 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>DNP Quiz Coach</title>
+<title>Nursing Learning Companion</title>
 <link rel="stylesheet" href="style.css">
+<link rel="manifest" href="manifest.webmanifest">
+<meta name="theme-color" content="#0f766e">
+<meta name="description" content="Nursing study practice with RN, BSN, NP, and DNP learning paths. Local progress, explanations, and offline study.">
+<link rel="apple-touch-icon" href="icons/icon-192.png">
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
 </head>
 <body>
@@ -13,13 +17,23 @@
   <!-- ============ HOME / SETUP ============ -->
   <section id="screen-home" class="screen">
     <header class="hero">
-      <h1>🩺 DNP Quiz Coach</h1>
-      <p class="tagline">Doctoral-level practice questions for nurse practitioner studies</p>
+      <h1>🩺 Nursing Learning Companion</h1>
+      <p class="tagline">A study path from RN foundations through doctoral nursing practice</p>
     </header>
 
     <div class="card">
+      <h2>Your learning path</h2>
+      <label for="learning-track">Choose your level</label>
+      <select id="learning-track"></select>
+      <p id="track-description" class="hint"></p>
+      <p class="review-note">Free study edition · 64 questions with explanations and source links. Educational practice only; not clinical advice, a complete curriculum or an exam-readiness assessment.</p>
+      <div id="track-sources" class="row-links"></div>
+      <p id="learning-progress" aria-live="polite"></p>
+    </div>
+    <div class="card">
       <h2>1 · Pick your topics</h2>
-      <input type="search" id="topic-search" placeholder="Search anything — e.g. heart failure, ANOVA, beta blockers…" autocomplete="off">
+      <label for="topic-search">Find a topic or concept</label>
+      <input type="search" id="topic-search" placeholder="Search a concept — e.g. hand hygiene, ANOVA, PDSA…" autocomplete="off">
       <p class="hint" id="search-hint"></p>
       <div id="topic-list" class="chip-grid"></div>
       <div class="row-links">
@@ -53,6 +67,7 @@
     <button id="review-missed-btn" class="big-btn ghost" hidden></button>
 
     <footer class="foot">
+      <div class="row-links"><button id="export-progress" class="link-btn">Export progress</button><button id="clear-progress" class="link-btn">Clear my progress</button><a href="privacy.html">Privacy</a><a href="support.html">Help</a></div>
       <span id="bank-stats"></span> · For study use — verify against current guidelines.
     </footer>
   </section>
@@ -79,6 +94,7 @@
       <div id="feedback" class="feedback" hidden>
         <p id="feedback-verdict" class="verdict"></p>
         <p id="feedback-rationale"></p>
+        <div id="feedback-sources" class="row-links"></div>
       </div>
       <button id="next-btn" class="big-btn" hidden>Next →</button>
     </div>
@@ -105,23 +121,9 @@
 
 </div>
 
-<script src="data/pharmacology.js"></script>
-<script src="data/pathophysiology.js"></script>
-<script src="data/assessment.js"></script>
-<script src="data/clinical-management.js"></script>
-<script src="data/ebp.js"></script>
-<script src="data/biostats-epi.js"></script>
-<script src="data/policy.js"></script>
-<script src="data/informatics.js"></script>
-<script src="data/leadership-qi.js"></script>
-<script src="data/ethics.js"></script>
-<script src="data/population-health.js"></script>
-<script src="data/diagnostic-reasoning.js"></script>
-<script src="data/procedures.js"></script>
-<script src="data/acute-gi-transfusion.js"></script>
-<script src="data/np-role.js"></script>
-<script src="data/cases.js"></script>
-<script src="data/cases2.js"></script>
+<script src="library.js"></script>
+<script src="curriculum.js"></script>
 <script src="app.js"></script>
+<script src="register-sw.js"></script>
 </body>
 </html>

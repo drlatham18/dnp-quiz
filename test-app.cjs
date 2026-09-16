@@ -4,7 +4,7 @@ const assert = require('node:assert/strict');
 const nodes = new Map();
 function node() {
   return {children:[], style:{}, dataset:{}, classList:{add(){},remove(){},toggle(){}},
-    appendChild(n){this.children.push(n);}, remove(){},
+    setAttribute(){}, appendChild(n){this.children.push(n);}, remove(){},
     insertAdjacentElement(_,n){nodes.set(n.id,n);}};
 }
 const document = {getElementById(id){if(!nodes.has(id)) nodes.set(id,node()); return nodes.get(id);}, createElement:node};
@@ -13,7 +13,16 @@ const context = {document, window:{scrollTo(){}}, console,
   localStorage:{getItem(){return saved;},setItem(_,v){saved=v;}},alert(s){alerts.push(s);}};
 vm.createContext(context);
 for(const f of fs.readdirSync('data').filter(f=>f.endsWith('.js'))) vm.runInContext(fs.readFileSync('data/'+f,'utf8'),context);
+vm.runInContext(fs.readFileSync('curriculum.js','utf8'),context);
 vm.runInContext(fs.readFileSync('app.js','utf8'),context);
+assert.equal(nodes.get('learning-track').value,'rn');
+assert.equal(nodes.get('start-case-btn').hidden,true);
+nodes.get('learning-track').onchange({target:{value:'np'}});
+assert.equal(nodes.get('start-case-btn').hidden,true);
+// Preserve regression coverage for the retained draft case engine.
+context.window.NURSING_CURRICULUM.tracks.find(t=>t.id==='np').caseAccess=true;
+nodes.get('learning-track').onchange({target:{value:'np'}});
+assert.equal(nodes.get('start-case-btn').hidden,false);
 nodes.get('select-none').onclick();
 nodes.get('start-btn').onclick();
 assert.equal(alerts.length,1);
