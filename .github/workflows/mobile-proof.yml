@@ -18,7 +18,7 @@ jobs:
       - run: npm ci && npm test && npm run build && npx cap sync android
       - name: Build release package and lint
         working-directory: android
-        run: ./gradlew --no-daemon assembleRelease bundleRelease lintRelease
+        run: bash ./gradlew --no-daemon assembleRelease bundleRelease lintRelease
       - name: Enable KVM for isolated emulator
         run: sudo chmod 666 /dev/kvm
       - name: Install and exercise app on Android
@@ -28,7 +28,7 @@ jobs:
           arch: x86_64
           profile: pixel_6
           disable-animations: true
-          script: cd android && ./gradlew --no-daemon connectedDebugAndroidTest
+          script: cd android && bash ./gradlew --no-daemon :app:connectedDebugAndroidTest -Pandroid.testInstrumentationRunnerArguments.class=com.drlatham.nursinglearning.ReleaseSmokeTest
       - name: Package signing tool and capture
         if: always()
         run: |
@@ -51,6 +51,11 @@ jobs:
       - uses: actions/setup-node@v4
         with: {node-version: '22', cache: npm}
       - run: npm ci && npm test && npm run build && npx cap sync ios
+      - name: Select current Xcode
+        run: |
+          XCODE_APP=$(ls -d /Applications/Xcode_[0-9]*.app | sort -V | tail -1)
+          echo "DEVELOPER_DIR=$XCODE_APP/Contents/Developer" >> "$GITHUB_ENV"
+          DEVELOPER_DIR="$XCODE_APP/Contents/Developer" xcodebuild -version
       - name: Add isolated UI smoke target
         run: |
           gem install xcodeproj -v 1.27.0 --no-document --user-install
