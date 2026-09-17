@@ -4,6 +4,10 @@
 
   var BANK = window.QUIZ_DATA || [];
   var CASES = window.CASE_DATA || [];
+  var STORIES = window.NURSING_STORIES || [];
+  var storyStyle = 'routine';
+  try { storyStyle = localStorage.getItem('nursing-story-style-v1') || 'routine'; } catch (e) {}
+  if (['routine','silly','outrageous'].indexOf(storyStyle) === -1) storyStyle = 'routine';
   var CURRICULUM = window.NURSING_CURRICULUM;
   var TRACKS = CURRICULUM.tracks;
   var trackId = 'rn';
@@ -42,6 +46,9 @@
     }
     return a;
   }
+
+  function storyEntries() { return STORIES.map(function(q) { return {q:q,topic:q.topic,slug:'story-rounds'}; }); }
+  function reviewQuestions() { return allQuestions().concat(storyEntries()); }
 
   function sameSet(a, b) {
     if (a.length !== b.length) return false;
@@ -115,7 +122,7 @@
 
   function updateMissedBtn() {
     var missed = getMissed();
-    var ids = allQuestions().map(function (e) { return e.q.id; });
+    var ids = reviewQuestions().map(function (e) { return e.q.id; });
     activeCases().forEach(function (cs) {
       cs.steps.forEach(function (_, i) { ids.push(cs.id + "-step" + (i + 1)); });
     });
@@ -134,11 +141,15 @@
     // shuffle option order per question, remap answers
     return entries.map(function (e) {
       var order = shuffle(e.q.options.map(function (_, i) { return i; }));
+      var story = e.q.stories && e.q.stories[storyStyle];
       return {
         id: e.q.id,
         topic: e.topic,
         type: e.q.type,
-        stem: e.q.stem,
+        stem: story ? story.title + '\n\n' + story.text : e.q.stem,
+        storyStyle: story ? storyStyle : null,
+        objective: e.q.objective || '',
+        takeaway: e.q.takeaway || '',
         options: order.map(function (i) { return e.q.options[i]; }),
         answer: e.q.answer.map(function (a) { return order.indexOf(a); }),
         rationale: e.q.rationale,
@@ -154,7 +165,7 @@
   function startQuiz(entries, opts) {
     var items = buildItems(shuffle(entries));
     if (opts.limit && items.length > opts.limit) items = items.slice(0, opts.limit);
-    quiz = { items: items, idx: 0, mode: opts.mode, isCase: false };
+    quiz = { items: items, entries: entries, idx: 0, mode: opts.mode, isCase: false };
     show("screen-quiz");
     $("case-intro-card").hidden = true;
     renderQuestion();
@@ -200,7 +211,9 @@
     $("progress-bar").style.width = ((quiz.idx) / n * 100) + "%";
     $("progress-text").textContent = (quiz.idx + 1) + " / " + n;
     var difficulty = {foundation:"Foundation",core:"Applied",applied:"Applied",advanced:"Challenge",challenge:"Challenge"}[it.difficulty];
-    $("q-meta").textContent = it.topic + (difficulty ? " · " + difficulty : "") + (it.type === "sata" ? "  ·  SELECT ALL THAT APPLY" : "");
+    $("q-meta").textContent = it.topic + (difficulty ? " · " + difficulty : "") + (it.storyStyle ? ' · ' + it.storyStyle + ' story' : '') + (it.type === "sata" ? "  ·  SELECT ALL THAT APPLY" : "");
+    $('q-objective').hidden = !it.objective;
+    $('q-objective').textContent = it.objective || '';
     var upd = $("q-update");
     if (it.update) { upd.hidden = false; upd.textContent = it.update; }
     else { upd.hidden = true; }
@@ -270,6 +283,8 @@
       v.textContent = it.correct ? "✅ Correct" : "❌ Not quite";
       v.className = "verdict " + (it.correct ? "good" : "bad");
       $("feedback-rationale").textContent = it.rationale;
+      $('feedback-takeaway').hidden = !it.takeaway;
+      $('feedback-takeaway').textContent = it.takeaway || '';
       $("feedback-sources").innerHTML = "";
       (it.sources || []).forEach(function(id) {
         var source = typeof id === 'object' ? id : CURRICULUM.sources[id]; if (!source || typeof source.url !== 'string' || !/^https:\/\//.test(source.url)) return;
@@ -391,9 +406,27 @@
 
   $("start-case-btn").onclick = startCases;
 
+  function renderStories() {
+    var list = $('story-rounds'); list.innerHTML = '';
+    STORIES.forEach(function(q) {
+      var b = document.createElement('button'); b.className = 'big-btn secondary';
+      b.textContent = q.stories[storyStyle].title;
+      b.onclick = function() { startQuiz([{q:q,topic:q.topic,slug:'story-rounds'}],{mode:'practice',limit:1}); };
+      list.appendChild(b);
+    });
+  }
+  $('story-style').value = storyStyle;
+  $('story-style').onchange = function(e) {
+    if (['routine','silly','outrageous'].indexOf(e.target.value) === -1) return;
+    storyStyle = e.target.value;
+    try { localStorage.setItem('nursing-story-style-v1',storyStyle); } catch (e) {}
+    renderStories();
+  };
+  renderStories();
+
   $("review-missed-btn").onclick = function () {
     var missed = getMissed();
-    var qs = allQuestions().filter(function (e) { return missed[e.q.id]; });
+    var qs = reviewQuestions().filter(function (e) { return missed[e.q.id]; });
     var old = $("missed-choices");
     if (old) old.remove();
     var choices = document.createElement("div");
@@ -420,7 +453,8 @@
     if (quiz.isCase) { startCase(quiz.caseObj); return; }
     var badIds = {};
     quiz.items.forEach(function (i) { if (!i.correct) badIds[i.id] = true; });
-    var qs = allQuestions().filter(function (e) { return badIds[e.q.id]; });
+    var qs = (quiz.entries || reviewQuestions()).filter(function (e) { return badIds[e.q.id]; });
+    if (!qs.length) { show('screen-home'); updateMissedBtn(); return; }
     startQuiz(qs, { limit: 0, mode: quiz.mode });
   };
 

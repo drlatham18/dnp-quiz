@@ -1,0 +1,51 @@
+/* Original fictional story rounds. Narrative style never changes the answer. */
+window.NURSING_STORIES = [
+  {
+    id: 'story-patient-identification', topic: 'Patient identification', type: 'mcq', difficulty: 'applied',
+    objective: 'Resolve an identity mismatch before giving a treatment.',
+    stem: 'An order and the patient disagree on the first name. What is the safest next action?',
+    stories: {
+      routine: {title: 'Speak up or stay quiet?', text: 'At 2 a.m., Maria prepares a scheduled pain medication for Manuel Alvarez. His wristband and stated name agree, but the medication order says Roberto Alvarez. The room and bed match. She has cared for Manuel for two nights, and the dose looks familiar. The prescriber has left and the charge nurse is responding to another emergency. Maria is already behind. What should she do next?'},
+      silly: {title: 'The chart has a stage name', text: 'Manuel Alvarez has named his hospital bed “The Presidential Suite” and appointed the bedside fan his chief of staff. His wristband still says Manuel. The medication order says Roberto Alvarez, but the room number matches. A coworker suggests that Roberto might be his “hospital stage name.” Maria has a medication cup, a full assignment and no evidence of an approved alias. What should she do next?'},
+      outrageous: {title: 'The grand duke of room 412', text: 'It is hospital costume week. A visitor in a cape announces Manuel Alvarez as “the Grand Duke of Room 412, rightful heir to the remote control.” Manuel and his wristband say Manuel; his medication order says Roberto. The cape-wearing visitor produces a glitter-covered certificate of dukedom and assures Maria that all royal names are interchangeable. The medication still needs a real patient match. What should she do next?'}
+    },
+    options: ['Pause the medication, verify two approved patient identifiers and promptly clarify the mismatched order through the available care team.', 'Give it after confirming the room and bed, then ask the next shift to reconcile the first name.', 'Ask a second nurse to witness the dose; familiarity with the patient resolves the discrepancy.', 'Hold all care until the original prescriber returns, without seeking another clinician.'],
+    answer: [0],
+    rationale: 'Match the treatment to the correct person using two approved identifiers. Room and bed are not patient identifiers, and familiarity or a plausible dose does not resolve the mismatch. Pause this medication and promptly use the covering prescriber, pharmacist and escalation pathway as appropriate; continue assessment and other safe care. Document the clarification according to policy. A glitter certificate is still not a patient identifier.',
+    takeaway: 'Same room is not the same person. Verify, then give.',
+    sources: [{title: 'Joint Commission: two patient identifiers',url: 'https://www.jointcommission.org/en/knowledge-library/support-center/standards-interpretation/standards-faqs/000001463?p=1'}, {title: 'AHRQ: speaking up with SBAR',url:'https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html'}],
+    reviewStatus: 'source-checked; independent nursing educator review pending'
+  },
+  {
+    id: 'story-order-verification', topic: 'Order verification', type: 'mcq', difficulty: 'applied',
+    objective: 'Clarify a conflicting or suspicious order without assuming intent.',
+    stem: 'A new diet order conflicts with the existing plan and its authenticity is uncertain. What comes first?',
+    stories: {
+      routine: {title: 'An order is not its own explanation', text: 'Kevin finds a new diet restriction in a stable patient’s chart. It conflicts with the documented regular-diet plan, has no clear clinical explanation, and is entered under an unfamiliar covering clinician. The patient asks for a snack. Nothing is urgent, but both instructions appear active. Kevin cannot establish which plan is intended. What should he do next?'},
+      silly: {title: 'The suspiciously specific snack order', text: 'Mr. Higgins has campaigned for bedtime butterscotch all week. At 2 a.m., Kevin finds a new order: “NPO except ice chips and exactly three butterscotch candies, personally delivered by Nurse Kevin.” It conflicts with the regular-diet plan and bears a clinician’s name Kevin cannot verify as the author. Mr. Higgins is smiling like someone who has won a very small election. The smile proves nothing. What should Kevin do next?'},
+      outrageous: {title: 'The butterscotch executive order', text: 'A printer beside Kevin erupts with a document headed “EMERGENCY DECREE OF THE BUTTERSCOTCH COUNCIL.” It requests three candies, a silver tray and a ceremonial announcement. The actual chart also contains a new, conflicting NPO-with-candy instruction under an unverified clinician’s name. Mr. Higgins has made a crown out of the lunch menu. Kevin has found a mystery, not proof of who entered the order. What should he do next?'}
+    },
+    options: ['Pause the disputed snack, clarify the intended diet and order with an authorized clinician, and use the local reporting pathway if unauthorized access is suspected.', 'Give the candy because an active electronic order is sufficient proof that it was authorized.', 'Follow the older regular-diet plan and ignore the new order without checking why it changed.', 'Accuse the patient of altering the chart and remove the order personally.'],
+    answer: [0],
+    rationale: 'An active chart entry does not resolve conflicting instructions or uncertainty about its source. Verify the intended plan through an authorized clinician and the facility’s order-verification process. Do not independently choose a diet or rewrite the order. NPO means nothing by mouth; candy is not automatically harmless when the reason for a restriction is unknown. Report a suspected access problem through the appropriate pathway without guessing who caused it. Assess the patient and escalate urgent needs promptly.',
+    takeaway: '“It is in the chart” starts the check; it does not finish it.',
+    sources: [{title:'AHRQ: structured communication and clarification',url:'https://www.ahrq.gov/teamstepps-program/curriculum/communication/tools/sbar.html'}, {title:'CMS: hospital conditions and interpretive guidance',url:'https://www.cms.gov/medicare/health-safety-standards/certification-compliance/hospitals'}],
+    reviewStatus: 'source-checked; independent nursing educator review pending'
+  },
+  {
+    id: 'story-safe-spiritual-care', topic: 'Patient rights and safe care', type: 'mcq', difficulty: 'challenge',
+    objective: 'Support spiritual care while protecting consent, monitoring and immediate safety.',
+    stem: 'A family request includes smoke and interruption of essential monitoring. What should the nurse do?',
+    stories: {
+      routine: {title: 'Support the visit, keep the care', text: 'Denise is caring for a patient recovering from a brain injury. While he sleeps, his daughter and a religious visitor request twenty minutes alone with burning incense, including a pause in required neurological checks. A power-of-attorney document is on file, but its scope and current applicability have not been checked. The patient’s preferences for this visit are not known. What is Denise’s best response?'},
+      silly: {title: 'The smoke detector was not invited', text: 'A family arrives for a bedside spiritual visit with a printed agenda: “Welcome, incense, twenty minutes of privacy, refreshments.” The smoke detector has declined to RSVP. The patient is recovering from a brain injury and is asleep; required neurological checks are due. His daughter points to a power-of-attorney document whose scope has not been verified. The visitor is happy to discuss alternatives. What should Denise do?'},
+      outrageous: {title: 'The exorcism consult', text: 'At 3 a.m., a daughter brings a polite priest, burning incense and a laminated “Exorcism: Run of Show” to her father’s neuro room. Item four says “clinical staff exit dramatically.” Her father is asleep after a brain injury, and his wishes for this ritual are unknown. The daughter cites power of attorney; Denise has not verified its scope. Neuro checks cannot simply disappear from the schedule because the agenda has excellent typography. What should Denise do?'}
+    },
+    options: ['Address the smoke hazard and preserve required monitoring; clarify the patient’s wishes and applicable representative authority, and arrange a safe spiritual visit with the care team.', 'Allow the requested interruption because a power-of-attorney document automatically authorizes any family request.', 'Ban the visit because religious practices do not belong in a clinical setting.', 'Leave the room and wait for a smoke alarm or patient objection before intervening.'],
+    answer: [0],
+    rationale: 'Respond to the safety and care conflict respectfully. Ask for the burning incense to be extinguished, address any immediate hazard through local procedures, and maintain necessary assessment. Seek the patient’s wishes when feasible; sleep alone is not consent or proof of incapacity. Representative authority depends on the document, applicable law and circumstances. Involve the covering clinician, charge nurse and chaplaincy as appropriate, offering a smoke-free visit. New or worsening neurological symptoms require assessment and escalation, not an assumption that they are harmless. The goal is safe accommodation, not judging a belief.',
+    takeaway: 'Respect the belief. Clarify consent. Keep the patient safe.',
+    sources: [{title:'CMS: patient representatives and advance directives',url:'https://www.cms.gov/medicare/provider-enrollment-and-certification/surveycertificationgeninfo/policy-and-memos-to-states-and-regions-items/cms1251864'}, {title:'HHS: religious nondiscrimination and visitation',url:'https://www.hhs.gov/conscience/your-protections-against-discrimination-based-on-conscience-and-religion/index.html'}, {title:'NFPA: open-flame safety',url:'https://content.nfpa.org/-/media/project/storefront/catalog/files/safety-tip-sheets/candlesafetytips.pdf?rev=2aa815a63b38458296ed60caab0f8842'}],
+    reviewStatus: 'source-checked; independent nursing educator review pending'
+  }
+];
