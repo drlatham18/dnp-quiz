@@ -17,6 +17,8 @@ payment or patient information is required. See release/READINESS.md for content
 scope, review method and limits. The larger clinical bank in data/ is draft source
 and is not loaded by the public app or packaged in mobile builds.
 
+Story rounds: three fictional safety concepts each have Routine, Silly and Outrageous narratives. The answer, rationale and concept ID stay the same across styles. These are narrative preferences, not a validated learning-style assessment. Independent educator review is pending; see release/STORY-ROUNDS.md.
+
 Community contributions: CSV/JSON import, editable preview, private review queue,
 receipt-based status and withdrawal, and a free daily question. The archive requires
 a server-side subscription; checkout is disabled until payment integration is verified.

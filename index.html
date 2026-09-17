@@ -19,7 +19,7 @@
   <section id="screen-home" class="screen">
     <header class="hero">
       <h1>🩺 Nursing Learning Companion</h1>
-      <p class="tagline">A study path from RN foundations through doctoral nursing practice</p>
+      <p class="tagline">Nursing quizzes. Real reasoning. A little night-shift chaos.</p>
     </header>
 
     <div class="card daily-card">
@@ -27,6 +27,15 @@
       <p id="daily-stem">Loading today’s question…</p><p class="hint" id="daily-credit">Free, with an explanation after you answer</p>
       <button id="daily-start" class="big-btn" disabled>Try today’s question</button>
       <div class="row-links"><a href="community.html">Upload your own question</a><a href="archive.html">Question archive</a></div>
+    </div>
+    <div class="card story-card" aria-labelledby="story-heading">
+      <p class="q-meta">New · Story rounds</p>
+      <h2 id="story-heading">How strange is your shift?</h2>
+      <p>Same nursing decision. Three ways to tell the story.</p>
+      <label for="story-style">Choose a narrative style</label>
+      <select id="story-style"><option value="routine">Routine · realistic shift</option><option value="silly">Silly · suspicious snack orders</option><option value="outrageous">Outrageous · maximum night-shift chaos</option></select>
+      <div id="story-rounds" class="story-rounds"></div>
+      <p class="hint">3 concepts · 9 fictional narratives. Style changes the story, not its difficulty or correct answer. Independent educator review is pending.</p>
     </div>
     <div class="card">
       <h2>Your learning path</h2>
@@ -95,6 +104,7 @@
 
     <div class="card">
       <p class="q-meta" id="q-meta"></p>
+      <p id="q-objective" class="hint" hidden></p>
       <p class="q-update" id="q-update" hidden></p>
       <h2 class="q-stem" id="q-stem"></h2>
       <div id="q-options" class="options"></div>
@@ -102,6 +112,7 @@
       <div id="feedback" class="feedback" hidden>
         <p id="feedback-verdict" class="verdict"></p>
         <p id="feedback-rationale"></p>
+        <p id="feedback-takeaway" class="story-takeaway" hidden></p>
         <div id="feedback-sources" class="row-links"></div>
       </div>
       <button id="next-btn" class="big-btn" hidden>Next →</button>
@@ -131,6 +142,7 @@
 
 <script src="library.js"></script>
 <script src="curriculum.js"></script>
+<script src="stories.js"></script>
 <script src="app.js"></script>
 <script src="daily.js"></script>
 <script src="register-sw.js"></script>

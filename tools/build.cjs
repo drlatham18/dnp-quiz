@@ -1,7 +1,7 @@
 const fs=require('node:fs'), path=require('node:path'), crypto=require('node:crypto');
 const root=path.resolve(__dirname,'..'), out=path.join(root,'dist');
 fs.rmSync(out,{recursive:true,force:true}); fs.mkdirSync(out,{recursive:true});
-for(const name of ['index.html','app.js','style.css','curriculum.js','register-sw.js','library.js','manifest.webmanifest','privacy.html','support.html','icons','daily.js','community.html','community.js','community-import.js','community.css','community-terms.html','archive.html','question-template.csv']) fs.cpSync(path.join(root,name),path.join(out,name),{recursive:true});
+for(const name of ['index.html','stories.js','app.js','style.css','curriculum.js','register-sw.js','library.js','manifest.webmanifest','privacy.html','support.html','icons','daily.js','community.html','community.js','community-import.js','community.css','community-terms.html','archive.html','question-template.csv']) fs.cpSync(path.join(root,name),path.join(out,name),{recursive:true});
 const files=[];
 function walk(dir){for(const e of fs.readdirSync(dir,{withFileTypes:true})){const f=path.join(dir,e.name);if(e.isDirectory())walk(f);else files.push('./'+path.relative(out,f).split(path.sep).join('/'));}}
 walk(out);files.sort(); const hash=crypto.createHash('sha256');for(const f of files) hash.update(fs.readFileSync(path.join(out,f)));

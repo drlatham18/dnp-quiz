@@ -3,7 +3,7 @@
   "version": "0.2.0",
   "private": true,
   "scripts": {
-    "test": "node validate.js && node test-app.cjs && node test-curriculum.cjs && node test-community.cjs",
+    "test": "node validate.js && node test-app.cjs && node test-curriculum.cjs && node test-community.cjs && node test-stories.cjs",
     "build": "node tools/build.cjs",
     "sync:mobile": "npm run build && cap sync",
     "check:release": "node tools/check-release.cjs"
