@@ -1,0 +1,1771 @@
+{
+  "version": 1,
+  "status": "testing-preview",
+  "reviewedByNurses": 0,
+  "lessons": [
+    {
+      "id": "heart-s3",
+      "group": "Heart sounds",
+      "title": "An extra early-diastolic sound",
+      "normal": "hls-F_N_LLSB",
+      "abnormal": "hls-F_S3_LLSB",
+      "notice": "Locate S1 and S2 first, then listen for a third sound early in diastole. S3 can be physiologic in some younger people; age and presentation matter.",
+      "difference": "An added sound after S2.",
+      "context": "Matched manikin recordings at left lower sternal border. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+      "nursingAction": "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Cardiovascular nursing assessment",
+          "url": "https://openstax.org/books/clinical-nursing-skills/pages/24-3-nursing-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "An added sound after S2.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Locate S1 and S2 first, then listen for a third sound early in diastole. S3 can be physiologic in some younger people; age and presentation matter."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at left lower sternal border. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at left lower sternal border. They are amplified teaching examples, not a recording of the learner\u2019s patient."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "heart-s4",
+      "group": "Heart sounds",
+      "title": "An extra late-diastolic sound",
+      "normal": "hls-F_N_RC",
+      "abnormal": "hls-F_S4_RC",
+      "notice": "Compare the interval before S1. The dataset labels this simulated extra sound S4; interpretation requires context.",
+      "difference": "An added sound before S1.",
+      "context": "Matched manikin recordings at right costal margin. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+      "nursingAction": "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Cardiovascular nursing assessment",
+          "url": "https://openstax.org/books/clinical-nursing-skills/pages/24-3-nursing-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "An added sound before S1.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Compare the interval before S1. The dataset labels this simulated extra sound S4; interpretation requires context."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at right costal margin. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at right costal margin. They are amplified teaching examples, not a recording of the learner\u2019s patient."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "heart-early-systolic",
+      "group": "Heart sounds",
+      "title": "Early systolic murmur",
+      "normal": "hls-F_N_RUSB",
+      "abnormal": "hls-F_ESM_RUSB",
+      "notice": "Use S1 and S2 as timing landmarks. Learn the timing pattern before trying to assign an underlying cause.",
+      "difference": "Additional sound in early systole.",
+      "context": "Matched manikin recordings at right upper sternal border. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+      "nursingAction": "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Cardiovascular nursing assessment",
+          "url": "https://openstax.org/books/clinical-nursing-skills/pages/24-3-nursing-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Additional sound in early systole.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Use S1 and S2 as timing landmarks. Learn the timing pattern before trying to assign an underlying cause."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at right upper sternal border. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at right upper sternal border. They are amplified teaching examples, not a recording of the learner\u2019s patient."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "heart-mid-systolic",
+      "group": "Heart sounds",
+      "title": "Mid systolic murmur",
+      "normal": "hls-F_N_A",
+      "abnormal": "hls-F_MSM_A",
+      "notice": "Listen for a sustained sound between the primary heart sounds. Loudness alone does not establish severity.",
+      "difference": "Additional sound during the middle of systole.",
+      "context": "Matched manikin recordings at apex. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+      "nursingAction": "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Cardiovascular nursing assessment",
+          "url": "https://openstax.org/books/clinical-nursing-skills/pages/24-3-nursing-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Additional sound during the middle of systole.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Listen for a sustained sound between the primary heart sounds. Loudness alone does not establish severity."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at apex. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at apex. They are amplified teaching examples, not a recording of the learner\u2019s patient."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "heart-late-systolic",
+      "group": "Heart sounds",
+      "title": "Late systolic murmur",
+      "normal": "hls-F_N_LUSB",
+      "abnormal": "hls-F_LSM_LUSB",
+      "notice": "Compare when the additional sound appears within the cardiac cycle. Do not equate this sample with a specific valve diagnosis.",
+      "difference": "Additional sound later in systole.",
+      "context": "Matched manikin recordings at left upper sternal border. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+      "nursingAction": "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Cardiovascular nursing assessment",
+          "url": "https://openstax.org/books/clinical-nursing-skills/pages/24-3-nursing-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Additional sound later in systole.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Compare when the additional sound appears within the cardiac cycle. Do not equate this sample with a specific valve diagnosis."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at left upper sternal border. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at left upper sternal border. They are amplified teaching examples, not a recording of the learner\u2019s patient."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "heart-diastolic",
+      "group": "Heart sounds",
+      "title": "Late diastolic murmur",
+      "normal": "hls-M_N_LC",
+      "abnormal": "hls-M_LDM_LC",
+      "notice": "Compare the interval approaching the next S1. A new murmur warrants clinical assessment rather than diagnosis from audio alone.",
+      "difference": "Additional sound late in diastole.",
+      "context": "Matched manikin recordings at left costal margin. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+      "nursingAction": "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Cardiovascular nursing assessment",
+          "url": "https://openstax.org/books/clinical-nursing-skills/pages/24-3-nursing-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Additional sound late in diastole.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Compare the interval approaching the next S1. A new murmur warrants clinical assessment rather than diagnosis from audio alone."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at left costal margin. They are amplified teaching examples, not a recording of the learner\u2019s patient.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at left costal margin. They are amplified teaching examples, not a recording of the learner\u2019s patient."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess symptoms, vital signs and perfusion; document the sound and location and communicate new or concerning findings through the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "lung-wheeze",
+      "group": "Lung sounds",
+      "title": "Wheeze",
+      "normal": "hls-M_N_LUA",
+      "abnormal": "hls-M_W_LUA",
+      "notice": "Listen across a full breathing cycle. Wheeze is a sound description and does not by itself establish asthma.",
+      "difference": "A continuous musical added sound.",
+      "context": "Matched manikin recordings at left upper anterior. A normal comparator does not rule out respiratory illness.",
+      "nursingAction": "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Respiratory assessment",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/11-2-upper-and-lower-respiratory-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "A continuous musical added sound.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Listen across a full breathing cycle. Wheeze is a sound description and does not by itself establish asthma."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at left upper anterior. A normal comparator does not rule out respiratory illness.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at left upper anterior. A normal comparator does not rule out respiratory illness."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "lung-fine-crackles",
+      "group": "Lung sounds",
+      "title": "Fine crackles",
+      "normal": "hls-M_N_LUA",
+      "abnormal": "hls-M_FC_LUA",
+      "notice": "Compare the discrete interruptions with the smooth reference recording. Disease attribution requires the full assessment.",
+      "difference": "Brief discontinuous added sounds.",
+      "context": "Matched manikin recordings at left upper anterior. A normal comparator does not rule out respiratory illness.",
+      "nursingAction": "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Respiratory assessment",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/11-2-upper-and-lower-respiratory-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Brief discontinuous added sounds.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Compare the discrete interruptions with the smooth reference recording. Disease attribution requires the full assessment."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at left upper anterior. A normal comparator does not rule out respiratory illness.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at left upper anterior. A normal comparator does not rule out respiratory illness."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "lung-coarse-crackles",
+      "group": "Lung sounds",
+      "title": "Coarse crackles",
+      "normal": "hls-M_N_LLA",
+      "abnormal": "hls-M_CC_LLA",
+      "notice": "The curated dataset labels this example coarse crackles. Sound terminology and perceived quality need independent review.",
+      "difference": "Coarser discontinuous added sounds.",
+      "context": "Matched manikin recordings at left lower anterior. A normal comparator does not rule out respiratory illness.",
+      "nursingAction": "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Respiratory assessment",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/11-2-upper-and-lower-respiratory-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Coarser discontinuous added sounds.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "The curated dataset labels this example coarse crackles. Sound terminology and perceived quality need independent review."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at left lower anterior. A normal comparator does not rule out respiratory illness.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at left lower anterior. A normal comparator does not rule out respiratory illness."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "lung-rhonchi",
+      "group": "Lung sounds",
+      "title": "Rhonchi",
+      "normal": "hls-F_N_LUA",
+      "abnormal": "hls-F_R_LUA",
+      "notice": "Describe the sound, site and phase. Reassessment after coughing may provide information but is not a diagnosis.",
+      "difference": "A lower-pitched continuous added sound.",
+      "context": "Matched manikin recordings at left upper anterior. A normal comparator does not rule out respiratory illness.",
+      "nursingAction": "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Respiratory assessment",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/11-2-upper-and-lower-respiratory-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "A lower-pitched continuous added sound.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Describe the sound, site and phase. Reassessment after coughing may provide information but is not a diagnosis."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at left upper anterior. A normal comparator does not rule out respiratory illness.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at left upper anterior. A normal comparator does not rule out respiratory illness."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "lung-rub",
+      "group": "Lung sounds",
+      "title": "Pleural friction rub",
+      "normal": "hls-M_N_RMA",
+      "abnormal": "hls-M_PR_RMA",
+      "notice": "Listen for the coarse rubbing quality alongside the breath cycle. Similar-sounding artifacts must be considered.",
+      "difference": "A grating added sound.",
+      "context": "Matched manikin recordings at right mid anterior. A normal comparator does not rule out respiratory illness.",
+      "nursingAction": "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Respiratory assessment",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/11-2-upper-and-lower-respiratory-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "A grating added sound.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Listen for the coarse rubbing quality alongside the breath cycle. Similar-sounding artifacts must be considered."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at right mid anterior. A normal comparator does not rule out respiratory illness.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at right mid anterior. A normal comparator does not rule out respiratory illness."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "lung-wheeze-lower",
+      "group": "Lung sounds",
+      "title": "Wheeze at a lower anterior site",
+      "normal": "hls-M_N_RLA",
+      "abnormal": "hls-M_W_RLA",
+      "notice": "Practice recognizing the finding in another recording and location; this is another example of wheeze, not a new disease.",
+      "difference": "A wheeze in a second auscultation location.",
+      "context": "Matched manikin recordings at right lower anterior. A normal comparator does not rule out respiratory illness.",
+      "nursingAction": "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+      "sources": [
+        {
+          "title": "OpenStax \u00b7 Respiratory assessment",
+          "url": "https://openstax.org/books/medical-surgical-nursing/pages/11-2-upper-and-lower-respiratory-assessment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "A wheeze in a second auscultation location.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Practice recognizing the finding in another recording and location; this is another example of wheeze, not a new disease."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Matched manikin recordings at right lower anterior. A normal comparator does not rule out respiratory illness.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Matched manikin recordings at right lower anterior. A normal comparator does not rule out respiratory illness."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess respiratory effort, rate, symptoms and oxygenation; compare sites and escalate respiratory distress according to the local pathway.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "skin-1",
+      "group": "Skin and wounds",
+      "title": "Stage 1 pressure injury",
+      "normal": "skin-normal-medium",
+      "abnormal": "skin-1-medium",
+      "notice": "Evaluate color change relative to baseline and nearby skin, plus temperature, firmness and sensation. Redness can be less visible in darker skin.",
+      "difference": "Intact skin with persistent nonblanchable change.",
+      "context": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+      "nursingAction": "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+      "sources": [
+        {
+          "title": "NPIAP \u00b7 Pressure injury stages",
+          "url": "https://npiap.com/page/PressureInjuryStages"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Intact skin with persistent nonblanchable change.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Evaluate color change relative to baseline and nearby skin, plus temperature, firmness and sensation. Redness can be less visible in darker skin."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ],
+      "tones": {
+        "light": {
+          "normal": "skin-normal-light",
+          "abnormal": "skin-1-light"
+        },
+        "medium": {
+          "normal": "skin-normal-medium",
+          "abnormal": "skin-1-medium"
+        },
+        "deep": {
+          "normal": "skin-normal-deep",
+          "abnormal": "skin-1-deep"
+        }
+      }
+    },
+    {
+      "id": "skin-2",
+      "group": "Skin and wounds",
+      "title": "Stage 2 pressure injury",
+      "normal": "skin-normal-medium",
+      "abnormal": "skin-2-medium",
+      "notice": "Do not use this stage for moisture damage, adhesive injury, burns or skin tears. Confirm pressure/shear context.",
+      "difference": "Partial-thickness skin loss with exposed dermis.",
+      "context": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+      "nursingAction": "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+      "sources": [
+        {
+          "title": "NPIAP \u00b7 Pressure injury stages",
+          "url": "https://npiap.com/page/PressureInjuryStages"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Partial-thickness skin loss with exposed dermis.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Do not use this stage for moisture damage, adhesive injury, burns or skin tears. Confirm pressure/shear context."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ],
+      "tones": {
+        "light": {
+          "normal": "skin-normal-light",
+          "abnormal": "skin-2-light"
+        },
+        "medium": {
+          "normal": "skin-normal-medium",
+          "abnormal": "skin-2-medium"
+        },
+        "deep": {
+          "normal": "skin-normal-deep",
+          "abnormal": "skin-2-deep"
+        }
+      }
+    },
+    {
+      "id": "skin-3",
+      "group": "Skin and wounds",
+      "title": "Stage 3 pressure injury",
+      "normal": "skin-normal-medium",
+      "abnormal": "skin-3-medium",
+      "notice": "Visible depth varies by anatomical site. Exposed fascia, muscle, tendon or bone would not fit stage 3.",
+      "difference": "Full-thickness skin loss extending into fat.",
+      "context": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+      "nursingAction": "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+      "sources": [
+        {
+          "title": "NPIAP \u00b7 Pressure injury stages",
+          "url": "https://npiap.com/page/PressureInjuryStages"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Full-thickness skin loss extending into fat.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Visible depth varies by anatomical site. Exposed fascia, muscle, tendon or bone would not fit stage 3."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ],
+      "tones": {
+        "light": {
+          "normal": "skin-normal-light",
+          "abnormal": "skin-3-light"
+        },
+        "medium": {
+          "normal": "skin-normal-medium",
+          "abnormal": "skin-3-medium"
+        },
+        "deep": {
+          "normal": "skin-normal-deep",
+          "abnormal": "skin-3-deep"
+        }
+      }
+    },
+    {
+      "id": "skin-4",
+      "group": "Skin and wounds",
+      "title": "Stage 4 pressure injury",
+      "normal": "skin-normal-medium",
+      "abnormal": "skin-4-medium",
+      "notice": "A diagram cannot establish the deepest tissue involved. Assessment and wound-care review are required.",
+      "difference": "Full-thickness tissue loss with exposed or palpable deeper structures.",
+      "context": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+      "nursingAction": "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+      "sources": [
+        {
+          "title": "NPIAP \u00b7 Pressure injury stages",
+          "url": "https://npiap.com/page/PressureInjuryStages"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Full-thickness tissue loss with exposed or palpable deeper structures.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "A diagram cannot establish the deepest tissue involved. Assessment and wound-care review are required."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ],
+      "tones": {
+        "light": {
+          "normal": "skin-normal-light",
+          "abnormal": "skin-4-light"
+        },
+        "medium": {
+          "normal": "skin-normal-medium",
+          "abnormal": "skin-4-medium"
+        },
+        "deep": {
+          "normal": "skin-normal-deep",
+          "abnormal": "skin-4-deep"
+        }
+      }
+    },
+    {
+      "id": "skin-5",
+      "group": "Skin and wounds",
+      "title": "Unstageable pressure injury",
+      "normal": "skin-normal-medium",
+      "abnormal": "skin-5-medium",
+      "notice": "Do not guess stage 3 or 4 through obscuring slough or eschar. Follow local wound assessment and escalation guidance.",
+      "difference": "Obscured full-thickness injury whose depth cannot be determined.",
+      "context": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+      "nursingAction": "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+      "sources": [
+        {
+          "title": "NPIAP \u00b7 Pressure injury stages",
+          "url": "https://npiap.com/page/PressureInjuryStages"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Obscured full-thickness injury whose depth cannot be determined.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Do not guess stage 3 or 4 through obscuring slough or eschar. Follow local wound assessment and escalation guidance."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ],
+      "tones": {
+        "light": {
+          "normal": "skin-normal-light",
+          "abnormal": "skin-5-light"
+        },
+        "medium": {
+          "normal": "skin-normal-medium",
+          "abnormal": "skin-5-medium"
+        },
+        "deep": {
+          "normal": "skin-normal-deep",
+          "abnormal": "skin-5-deep"
+        }
+      }
+    },
+    {
+      "id": "skin-6",
+      "group": "Skin and wounds",
+      "title": "Deep tissue pressure injury",
+      "normal": "skin-normal-medium",
+      "abnormal": "skin-6-medium",
+      "notice": "Intact or nonintact skin may be present. Temperature or sensation changes can precede a visible color change; appearance varies with skin tone.",
+      "difference": "Persistent deep red, maroon or purple discoloration with underlying tissue concern.",
+      "context": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+      "nursingAction": "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+      "sources": [
+        {
+          "title": "NPIAP \u00b7 Pressure injury stages",
+          "url": "https://npiap.com/page/PressureInjuryStages"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Persistent deep red, maroon or purple discoloration with underlying tissue concern.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Intact or nonintact skin may be present. Temperature or sensation changes can precede a visible color change; appearance varies with skin tone."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Original schematic, not a patient photograph. Staging requires history, examination and assessment of the tissue involved."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess skin and pressure/shear exposure, document findings and seek qualified wound assessment; follow the individualized pressure-relief plan.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ],
+      "tones": {
+        "light": {
+          "normal": "skin-normal-light",
+          "abnormal": "skin-6-light"
+        },
+        "medium": {
+          "normal": "skin-normal-medium",
+          "abnormal": "skin-6-medium"
+        },
+        "deep": {
+          "normal": "skin-normal-deep",
+          "abnormal": "skin-6-deep"
+        }
+      }
+    },
+    {
+      "id": "xray-pneumothorax",
+      "group": "Imaging",
+      "title": "Chest X-ray: pneumothorax",
+      "normal": "chest-normal",
+      "abnormal": "chest-pneumothorax",
+      "notice": "The source image includes an arrow indicating the edge of the collapsed lung.",
+      "difference": "A pleural line with reduced peripheral lung markings.",
+      "context": "Different patients and acquisition conditions; the abnormal source is an expiratory film. Projection and inspiration affect appearance.",
+      "nursingAction": "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+      "sources": [
+        {
+          "title": "RadiologyInfo \u00b7 Imaging examinations",
+          "url": "https://www.radiologyinfo.org/en/test-treatment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "A pleural line with reduced peripheral lung markings.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "The source image includes an arrow indicating the edge of the collapsed lung."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Different patients and acquisition conditions; the abnormal source is an expiratory film. Projection and inspiration affect appearance.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Different patients and acquisition conditions; the abnormal source is an expiratory film. Projection and inspiration affect appearance."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "xray-effusion",
+      "group": "Imaging",
+      "title": "Chest X-ray: pleural effusion",
+      "normal": "chest-normal",
+      "abnormal": "chest-effusion",
+      "notice": "Use the source annotations to locate the effusion; correlate with the radiology report.",
+      "difference": "Fluid-related opacity and change in the costophrenic region.",
+      "context": "These are different patients and are not a before-and-after pair. A single image is not a full examination.",
+      "nursingAction": "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+      "sources": [
+        {
+          "title": "RadiologyInfo \u00b7 Imaging examinations",
+          "url": "https://www.radiologyinfo.org/en/test-treatment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Fluid-related opacity and change in the costophrenic region.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Use the source annotations to locate the effusion; correlate with the radiology report."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "These are different patients and are not a before-and-after pair. A single image is not a full examination.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "These are different patients and are not a before-and-after pair. A single image is not a full examination."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "ct-subdural",
+      "group": "Imaging",
+      "title": "Head CT: subdural collection",
+      "normal": "ct-normal",
+      "abnormal": "ct-subdural",
+      "notice": "Identify the modality and orientation before examining the area of concern.",
+      "difference": "An extra-axial collection in the source-labeled subdural example.",
+      "context": "Different individuals and slice levels. The reference is a noncontrast axial head CT; scan settings and displayed windowing can differ. A single slice cannot exclude injury or establish a diagnosis.",
+      "nursingAction": "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+      "sources": [
+        {
+          "title": "RadiologyInfo \u00b7 Imaging examinations",
+          "url": "https://www.radiologyinfo.org/en/test-treatment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "An extra-axial collection in the source-labeled subdural example.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Identify the modality and orientation before examining the area of concern."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Different individuals and slice levels. The reference is a noncontrast axial head CT; scan settings and displayed windowing can differ. A single slice cannot exclude injury or establish a diagnosis.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Different individuals and slice levels. The reference is a noncontrast axial head CT; scan settings and displayed windowing can differ. A single slice cannot exclude injury or establish a diagnosis."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "mri-lesion",
+      "group": "Imaging",
+      "title": "Brain MRI: T2 abnormal signal",
+      "normal": "mri-normal",
+      "abnormal": "mri-t2-lesion",
+      "notice": "Both examples are axial T2-weighted images. Compare symmetry, tissue signal and the ventricular region, then read the formal report. This image alone cannot determine the tumor type.",
+      "difference": "Abnormal T2 signal and tissue distortion in a source-labeled brain-tumor example.",
+      "context": "Different patients and slice levels. Both are T2-weighted, but acquisition settings and image resolution differ. An isolated slice cannot establish or exclude a diagnosis.",
+      "nursingAction": "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+      "sources": [
+        {
+          "title": "RadiologyInfo \u00b7 Imaging examinations",
+          "url": "https://www.radiologyinfo.org/en/test-treatment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Abnormal T2 signal and tissue distortion in a source-labeled brain-tumor example.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Both examples are axial T2-weighted images. Compare symmetry, tissue signal and the ventricular region, then read the formal report. This image alone cannot determine the tumor type."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Different patients and slice levels. Both are T2-weighted, but acquisition settings and image resolution differ. An isolated slice cannot establish or exclude a diagnosis.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Different patients and slice levels. Both are T2-weighted, but acquisition settings and image resolution differ. An isolated slice cannot establish or exclude a diagnosis."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "us-gallstones",
+      "group": "Imaging",
+      "title": "Ultrasound: gallbladder findings",
+      "normal": "us-gallbladder-normal",
+      "abnormal": "us-gallstones",
+      "notice": "The abnormal source describes an impacted stone and wall thickening. Review the report alongside the image.",
+      "difference": "Echogenic material and posterior shadowing in a source-labeled stone example.",
+      "context": "Different patients and scan planes. The reference shows a source-labeled normal gallbladder and common bile duct. A static image cannot replace a complete ultrasound examination.",
+      "nursingAction": "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+      "sources": [
+        {
+          "title": "RadiologyInfo \u00b7 Imaging examinations",
+          "url": "https://www.radiologyinfo.org/en/test-treatment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Echogenic material and posterior shadowing in a source-labeled stone example.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "The abnormal source describes an impacted stone and wall thickening. Review the report alongside the image."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Different patients and scan planes. The reference shows a source-labeled normal gallbladder and common bile duct. A static image cannot replace a complete ultrasound examination.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Different patients and scan planes. The reference shows a source-labeled normal gallbladder and common bile duct. A static image cannot replace a complete ultrasound examination."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "us-hydronephrosis",
+      "group": "Imaging",
+      "title": "Ultrasound: collecting-system dilation",
+      "normal": "us-kidney-normal",
+      "abnormal": "us-hydronephrosis",
+      "notice": "Locate the renal outline and collecting system. Document report findings without inferring the cause from one image.",
+      "difference": "Dilation of the collecting system in the abnormal example.",
+      "context": "The abnormal source is pediatric; the normal reference age is not specified. These are anatomical comparisons, not matched demographic controls.",
+      "nursingAction": "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+      "sources": [
+        {
+          "title": "RadiologyInfo \u00b7 Imaging examinations",
+          "url": "https://www.radiologyinfo.org/en/test-treatment"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Dilation of the collecting system in the abnormal example.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Locate the renal outline and collecting system. Document report findings without inferring the cause from one image."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "The abnormal source is pediatric; the normal reference age is not specified. These are anatomical comparisons, not matched demographic controls.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "The abnormal source is pediatric; the normal reference age is not specified. These are anatomical comparisons, not matched demographic controls."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Review the formal report, assess symptoms and relevant observations, and communicate urgent findings through the local pathway. Do not clear a device or make a diagnosis from this lesson.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "cbc-anemia",
+      "group": "Reports and trends",
+      "title": "CBC: low hemoglobin",
+      "normal": "cbc-anemia-normal",
+      "abnormal": "cbc-anemia-abnormal",
+      "notice": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values.",
+      "difference": "Hemoglobin below the displayed reference interval.",
+      "context": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+      "nursingAction": "Assess symptoms and bleeding history, compare previous results, and communicate the change; do not infer the cause or a transfusion threshold from this number.",
+      "sources": [
+        {
+          "title": "MedlinePlus \u00b7 Complete blood count",
+          "url": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Hemoglobin below the displayed reference interval.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess symptoms and bleeding history, compare previous results, and communicate the change; do not infer the cause or a transfusion threshold from this number.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "potassium-high",
+      "group": "Reports and trends",
+      "title": "Potassium: elevated result",
+      "normal": "potassium-high-normal",
+      "abnormal": "potassium-high-abnormal",
+      "notice": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values.",
+      "difference": "Potassium above the displayed reference interval.",
+      "context": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+      "nursingAction": "Promptly assess the patient and follow the critical-result pathway. Check specimen quality and the reported result without dismissing it as artifact.",
+      "sources": [
+        {
+          "title": "MedlinePlus \u00b7 Potassium test",
+          "url": "https://medlineplus.gov/ency/article/003484.htm"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Potassium above the displayed reference interval.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Promptly assess the patient and follow the critical-result pathway. Check specimen quality and the reported result without dismissing it as artifact.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "platelets-low",
+      "group": "Reports and trends",
+      "title": "CBC: low platelets",
+      "normal": "platelets-low-normal",
+      "abnormal": "platelets-low-abnormal",
+      "notice": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values.",
+      "difference": "Platelets below the displayed reference interval.",
+      "context": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+      "nursingAction": "Assess for bleeding and trends and communicate findings using the local pathway. A count alone does not identify the cause.",
+      "sources": [
+        {
+          "title": "MedlinePlus \u00b7 Complete blood count",
+          "url": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Platelets below the displayed reference interval.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess for bleeding and trends and communicate findings using the local pathway. A count alone does not identify the cause.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "creatinine-trend",
+      "group": "Reports and trends",
+      "title": "Kidney report: rising creatinine",
+      "normal": "creatinine-trend-normal",
+      "abnormal": "creatinine-trend-abnormal",
+      "notice": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values.",
+      "difference": "A rise from baseline in the stated time window.",
+      "context": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+      "nursingAction": "Compare the 48-hour trend, urine output and clinical context, and communicate the change for assessment.",
+      "sources": [
+        {
+          "title": "MedlinePlus \u00b7 Creatinine test",
+          "url": "https://medlineplus.gov/lab-tests/creatinine-test/"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "A rise from baseline in the stated time window.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Compare the 48-hour trend, urine output and clinical context, and communicate the change for assessment.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "glucose-low",
+      "group": "Reports and trends",
+      "title": "Glucose: low result",
+      "normal": "glucose-low-normal",
+      "abnormal": "glucose-low-abnormal",
+      "notice": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values.",
+      "difference": "Glucose below the displayed reference interval.",
+      "context": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+      "nursingAction": "Assess symptoms promptly and follow the local hypoglycemia protocol; the patient\u2019s condition determines the immediate response.",
+      "sources": [
+        {
+          "title": "MedlinePlus \u00b7 Blood glucose test",
+          "url": "https://medlineplus.gov/lab-tests/blood-glucose-test/"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Glucose below the displayed reference interval.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess symptoms promptly and follow the local hypoglycemia protocol; the patient\u2019s condition determines the immediate response.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    },
+    {
+      "id": "abg-respiratory",
+      "group": "Reports and trends",
+      "title": "Blood gas: respiratory acidosis pattern",
+      "normal": "abg-respiratory-normal",
+      "abnormal": "abg-respiratory-abnormal",
+      "notice": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values.",
+      "difference": "Acidemia with increased PaCO\u2082 in this constructed example.",
+      "context": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+      "nursingAction": "Assess ventilation, oxygenation and consciousness and escalate deterioration. A complete interpretation needs oxygen delivery, history and possible mixed disturbances.",
+      "sources": [
+        {
+          "title": "MedlinePlus \u00b7 Blood gases",
+          "url": "https://medlineplus.gov/ency/article/003855.htm"
+        }
+      ],
+      "objectives": [
+        "Compare the expected and changed finding.",
+        "Describe the finding without overclaiming its cause.",
+        "Connect the finding to a focused nursing assessment."
+      ],
+      "status": "awaiting-three-nurse-review",
+      "revision": 1,
+      "questions": [
+        {
+          "stem": "Which feature is the focus of this comparison?",
+          "options": [
+            "Acidemia with increased PaCO\u2082 in this constructed example.",
+            "The file format alone establishes the diagnosis.",
+            "All differences between two examples are disease."
+          ],
+          "answer": 0,
+          "rationale": "Read the units and reference interval before comparing the result. Check the clinical context and any previous values."
+        },
+        {
+          "stem": "What limits the interpretation of this example?",
+          "options": [
+            "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy.",
+            "A single sample rules out every other condition.",
+            "The teaching label replaces a patient assessment."
+          ],
+          "answer": 0,
+          "rationale": "Synthetic adult example. Reference intervals and action thresholds vary by laboratory, patient and local policy."
+        },
+        {
+          "stem": "Which nursing approach fits this lesson?",
+          "options": [
+            "Assess ventilation, oxygenation and consciousness and escalate deterioration. A complete interpretation needs oxygen delivery, history and possible mixed disturbances.",
+            "Record a definitive diagnosis from this sample alone.",
+            "Ignore the patient\u2019s symptoms if the sample looks familiar."
+          ],
+          "answer": 0,
+          "rationale": "Describe the observation, assess the patient, and use the appropriate local clinical pathway. This draft lesson does not establish a treatment protocol."
+        }
+      ]
+    }
+  ]
+}

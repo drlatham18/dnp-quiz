@@ -11,6 +11,10 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v4
+      - uses: actions/setup-node@v4
+        with: {node-version: "22"}
+      - name: Require owner-verified clinical review
+        run: node tools/release-gate.cjs
       - name: Verify signed artifact identity
         working-directory: downloads
         run: sha256sum -c SHA256SUMS.txt

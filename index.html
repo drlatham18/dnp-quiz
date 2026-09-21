@@ -2,9 +2,10 @@
 <html lang="en">
 <head>
 <meta charset="UTF-8">
+<meta name="robots" content="noindex">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
 <title>Nursing Learning Companion</title>
-<link rel="stylesheet" href="style.css">
+<link rel="stylesheet" href="style.css?v=study-hub-1">
 <link rel="stylesheet" href="community.css">
 <link rel="manifest" href="manifest.webmanifest">
 <meta name="theme-color" content="#0f766e">
@@ -13,6 +14,7 @@
 <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
 </head>
 <body>
+<div class="preview-banner" role="note">Testing preview · New lessons and assessment media await three-nurse review. Not for patient-care decisions. <a href="review.html">Review status</a></div>
 <div id="app">
 
   <!-- ============ HOME / SETUP ============ -->
@@ -22,33 +24,34 @@
       <p class="tagline">Nursing quizzes. Real reasoning. A little night-shift chaos.</p>
     </header>
 
-    <div class="card daily-card">
-      <div class="daily-heading"><h2 id="daily-title">Question of the Day</h2><span class="difficulty" id="daily-difficulty">Daily practice</span></div>
-      <p id="daily-stem">Loading today’s question…</p><p class="hint" id="daily-credit">Free, with an explanation after you answer</p>
-      <button id="daily-start" class="big-btn" disabled>Try today’s question</button>
-      <div class="row-links"><a href="community.html">Upload your own question</a><a href="archive.html">Question archive</a></div>
-    </div>
-    <div class="card story-card" aria-labelledby="story-heading">
-      <p class="q-meta">New · Story rounds</p>
-      <h2 id="story-heading">How strange is your shift?</h2>
-      <p>Same nursing decision. Three ways to tell the story.</p>
-      <label for="story-style">Choose a narrative style</label>
-      <select id="story-style"><option value="routine">Routine · realistic shift</option><option value="silly">Silly · suspicious snack orders</option><option value="outrageous">Outrageous · maximum night-shift chaos</option></select>
-      <div id="story-rounds" class="story-rounds"></div>
-      <p class="hint">3 concepts · 9 fictional narratives. Style changes the story, not its difficulty or correct answer. Independent educator review is pending.</p>
+    <div class="card study-start">
+      <p class="q-meta">Your next study session</p>
+      <h2>Learn a topic. Put it into practice.</h2>
+      <p>Start a full session, work through a topic pack, or revisit what needs another look.</p>
+      <button id="quick-start" class="big-btn">Start a 10-question session</button>
+      <button id="resume-study" class="big-btn secondary" hidden>Resume your session</button>
+      <button id="due-study" class="big-btn secondary" hidden>Review due questions</button>
+      <p id="study-status" class="hint" aria-live="polite"></p>
+      <div class="row-links"><a href="#pack-library">Explore topic packs</a><a href="assessment.html">Open Assessment Lab →</a></div>
     </div>
     <div class="card">
       <h2>Your learning path</h2>
       <label for="learning-track">Choose your level</label>
       <select id="learning-track"></select>
       <p id="track-description" class="hint"></p>
-      <p class="review-note">Free study edition · 160 questions with explanations and source links.</p>
+      <p class="review-note">Testing library · 160 existing questions + 80 new draft questions. New packs await three-nurse review.</p>
       <details class="hint"><summary>About the study library</summary><p>Original AI-assisted educational practice, checked against linked sources. Not independently certified by a nursing educator, a complete curriculum, clinical advice, or an exam-readiness assessment.</p></details>
       <div id="track-sources" class="row-links"></div>
       <p id="learning-progress" aria-live="polite"></p>
     </div>
+    <section class="card" id="pack-library" aria-labelledby="packs-heading">
+      <p class="q-meta">Read · Practice · Revisit</p><h2 id="packs-heading">Your topic library</h2>
+      <label for="pack-search">Find a topic pack</label><input id="pack-search" type="search" placeholder="Search topics, objectives, or concepts">
+      <p id="pack-count" class="hint" aria-live="polite"></p><div id="pack-list" class="pack-grid"></div>
+    </section>
+    <section class="card" id="pack-detail" hidden tabindex="-1" aria-labelledby="pack-title"></section>
     <div class="card">
-      <h2>1 · Pick your topics</h2>
+      <h2>Build a custom session</h2>
       <label for="topic-search">Find a topic or concept</label>
       <input type="search" id="topic-search" placeholder="Search a concept — e.g. hand hygiene, ANOVA, PDSA…" autocomplete="off">
       <p class="hint" id="search-hint"></p>
@@ -83,6 +86,21 @@
     <button id="start-case-btn" class="big-btn secondary">🧪 Unfolding case studies</button>
     <button id="review-missed-btn" class="big-btn ghost" hidden></button>
 
+    <div class="card daily-card">
+      <div class="daily-heading"><h2 id="daily-title">Question of the Day</h2><span class="difficulty" id="daily-difficulty">Daily practice</span></div>
+      <p id="daily-stem">Loading today’s question…</p><p class="hint" id="daily-credit">Free, with an explanation after you answer</p>
+      <button id="daily-start" class="big-btn" disabled>Try today’s question</button>
+      <div class="row-links"><a href="community.html">Upload your own question</a><a href="archive.html">Question archive</a></div>
+    </div>
+    <div class="card story-card" aria-labelledby="story-heading">
+      <p class="q-meta">New · Story rounds</p>
+      <h2 id="story-heading">How strange is your shift?</h2>
+      <p>Same nursing decision. Three ways to tell the story.</p>
+      <label for="story-style">Choose a narrative style</label>
+      <select id="story-style"><option value="routine">Routine · realistic shift</option><option value="silly">Silly · suspicious snack orders</option><option value="outrageous">Outrageous · maximum night-shift chaos</option></select>
+      <div id="story-rounds" class="story-rounds"></div>
+      <p class="hint">3 concepts · 9 fictional narratives. Style changes the story, not its difficulty or correct answer. Independent educator review is pending.</p>
+    </div>
     <footer class="foot">
       <div class="row-links"><button id="export-progress" class="link-btn">Export progress</button><button id="clear-progress" class="link-btn">Clear my progress</button><a href="privacy.html">Privacy</a><a href="support.html">Help</a></div>
       <span id="bank-stats"></span> · For study use — verify against current guidelines.
@@ -135,16 +153,22 @@
       <div id="missed-list"></div>
     </div>
     <button id="retry-missed-btn" class="big-btn" hidden>Retry missed questions</button>
+    <button id="continue-study" class="big-btn">Continue practicing</button>
     <button id="home-btn" class="big-btn secondary">Back to home</button>
   </section>
 
 </div>
 
+<script src="preview-config.js"></script>
 <script src="library.js"></script>
 <script src="curriculum.js"></script>
 <script src="stories.js"></script>
-<script src="app.js"></script>
+<script src="study-state.js"></script>
+<script src="study-packs.js"></script>
+<script src="expansion.js"></script>
+<script src="app.js?v=study-hub-1"></script>
+<script src="study-hub.js"></script>
 <script src="daily.js"></script>
-<script src="register-sw.js"></script>
+<script src="register-sw.js?v=study-hub-1"></script>
 </body>
 </html>

@@ -1,0 +1,123 @@
+License and Rights Statement
+============================
+
+Dataset title:
+HLS-CMDS Heart and Lung Sounds Dataset: UNIWA ICU-LAB Curated and Normalized Version
+
+Version:
+v1.0.0
+
+DOI:
+https://doi.org/10.5281/zenodo.20027993
+
+Creators of this adapted version:
+  - Konstantinos Evgenikos
+  - Dimitrios Papageorgiou
+
+Institutional affiliation:
+UNIWA ICU-LAB, Department of Nursing, University of West Attica
+
+License applied to this adapted version
+---------------------------------------
+
+This adapted dataset version is distributed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0), unless otherwise stated.
+
+License text:
+https://creativecommons.org/licenses/by/4.0/
+
+Under CC BY 4.0, users may share and adapt the material, including for
+research, educational, and commercial purposes, provided that appropriate
+attribution is given, a link to the license is provided, and changes are
+indicated.
+
+Original data license
+---------------------
+
+The original HLS-CMDS dataset is licensed under the Creative Commons
+Attribution 4.0 International License (CC BY 4.0).
+
+Original dataset:
+HLS-CMDS: Heart and Lung Sounds Dataset Recorded from a Clinical Manikin using
+Digital Stethoscope
+
+Original authors:
+  - Yasaman Torabi
+  - Shahram Shirani
+  - James P. Reilly
+
+Original dataset DOI:
+https://doi.org/10.17632/8972jxbpmp.3
+
+Related publication DOI:
+https://doi.org/10.1109/IEEEDATA.2025.3566012
+
+Rights and attribution
+----------------------
+
+The original HLS-CMDS recordings and metadata remain attributed to the original
+authors and remain licensed under CC BY 4.0 by the original licensors.
+
+The UNIWA ICU-LAB curated and normalized version includes additional work
+performed by Konstantinos Evgenikos and Dimitrios Papageorgiou, including
+manual quality control, review, subset organization, processing documentation,
+metadata organization, and audio normalization.
+
+UNIWA ICU-LAB claims rights only in its own original contributions, including
+curation, selection/organization, processing documentation, metadata
+enhancements, subset structuring, and normalized derivative files, to the
+extent legally protectable.
+
+Modification notice
+-------------------
+
+This version is an adapted/derivative version of the original HLS-CMDS dataset.
+
+The modifications include:
+  - selection and organization of the Heart Set (HS) and Lung Set (LS);
+  - manual review and quality control of the recordings;
+  - basic integrity and consistency checking;
+  - metadata organization;
+  - audio normalization using Audacity 3.7.5;
+  - documentation of processing parameters and dataset structure.
+
+No endorsement
+--------------
+
+The use, curation, adaptation, or redistribution of this dataset by UNIWA
+ICU-LAB does not imply endorsement by the original authors, McMaster University,
+Mohawk McMaster Institute for Applied Health Sciences, UCI Machine Learning
+Repository, Mendeley Data, IEEE, or any affiliated institution.
+
+Citation requirement
+--------------------
+
+Users of this adapted version should cite both:
+  1. the original HLS-CMDS dataset and related publication; and
+  2. the UNIWA ICU-LAB curated and normalized version.
+
+Suggested citation for this adapted version:
+
+Evgenikos, K., & Papageorgiou, D. (2026). HLS-CMDS Heart and Lung Sounds
+Dataset: UNIWA ICU-LAB Curated and Normalized Version (v1.0.0) [Data set].
+Zenodo. https://doi.org/10.5281/zenodo.20027993
+
+Suggested citation for the original dataset:
+
+Torabi, Y., Shirani, S., & Reilly, J. P. (2025). HLS-CMDS: Heart and Lung Sounds
+Dataset Recorded from a Clinical Manikin using Digital Stethoscope. Mendeley
+Data, V3. https://doi.org/10.17632/8972jxbpmp.3
+
+Suggested citation for the related publication:
+
+Torabi, Y., Shirani, S., & Reilly, J. P. (2025). Descriptor: Heart and Lung
+Sounds Dataset Recorded From a Clinical Manikin Using Digital Stethoscope
+(HLS-CMDS). IEEE Data Descriptions.
+https://doi.org/10.1109/IEEEDATA.2025.3566012
+
+Important note
+--------------
+
+This license statement does not constitute legal advice. For commercial
+licensing, sublicensing, or institutional exploitation of the dataset, legal
+review is recommended.

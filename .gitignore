@@ -18,3 +18,8 @@ android/local.properties
 ios/App/App/public/
 ios/App/App/capacitor.config.json
 ios/App/build/
+
+# Local QA and private reviewer attestations never belong on GitHub Pages.
+work/
+outputs/
+review-private/

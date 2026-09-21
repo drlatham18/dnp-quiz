@@ -193,3 +193,16 @@ select { display:block; width:100%; padding:12px; margin:8px 0; font:inherit; co
 a { color:var(--accent); } .row-links { flex-wrap:wrap; gap:12px; }
 button, a, input, select { touch-action:manipulation; } button:focus-visible, a:focus-visible { outline:3px solid var(--accent); outline-offset:3px; }
 #app { padding-top:max(16px, env(safe-area-inset-top)); padding-bottom:max(64px, env(safe-area-inset-bottom)); }
+
+/* Study hub: reuse the existing palette and quiz engine. */
+.preview-banner { padding:10px 16px; background:#fff4d6; color:#553b00; font-size:.84rem; text-align:center; border-bottom:1px solid #e5cc8e; }
+.preview-banner a { color:#553b00; font-weight:700; }
+.study-start { border-top:4px solid var(--accent); }
+.study-start .big-btn, #pack-detail .big-btn { margin-top:12px; }
+#pack-search { width:100%; font:inherit; padding:12px; border:1px solid var(--border); border-radius:10px; background:var(--bg); color:var(--text); margin:8px 0 12px; }
+.pack-grid { display:grid; grid-template-columns:repeat(2,minmax(0,1fr)); gap:12px; }
+.pack-card { padding:16px; border:1px solid var(--border); border-radius:12px; background:var(--bg); display:flex; flex-direction:column; gap:8px; }
+.pack-card h3 { font-size:1rem; }.pack-card .link-btn { text-align:left; margin-top:auto; }
+progress { width:100%; accent-color:var(--accent); height:8px; }
+#pack-detail { scroll-margin-top:16px; }#pack-detail h3 { font-size:1rem; margin:18px 0 6px; }#pack-detail ul { padding-left:22px; margin:12px 0; }
+@media(max-width:500px) { .pack-grid { grid-template-columns:1fr; } }

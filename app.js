@@ -153,6 +153,7 @@
         options: order.map(function (i) { return e.q.options[i]; }),
         answer: e.q.answer.map(function (a) { return order.indexOf(a); }),
         rationale: e.q.rationale,
+        distractorExplanations: e.q.distractorExplanations || [],
         sources: e.q.sources || [],
         difficulty: e.q.difficulty || null,
         picked: [],
@@ -163,9 +164,15 @@
   }
 
   function startQuiz(entries, opts) {
-    var items = buildItems(shuffle(entries));
+    var ordered = shuffle(entries);
+    if (window.NursingStudyState && opts.fresh) {
+      var history = window.NursingStudyState.read(localStorage).items;
+      ordered.sort(function(a,b) { return ((history[a.q.id] || {}).lastSeen || 0) - ((history[b.q.id] || {}).lastSeen || 0); });
+    }
+    var items = buildItems(ordered);
     if (opts.limit && items.length > opts.limit) items = items.slice(0, opts.limit);
     quiz = { items: items, entries: entries, idx: 0, mode: opts.mode, isCase: false };
+    saveSession();
     show("screen-quiz");
     $("case-intro-card").hidden = true;
     renderQuestion();
@@ -268,6 +275,10 @@
     if (it.correct) delete missed[it.id];
     else missed[it.id] = true;
     saveMissed(missed);
+    if (window.NursingStudyState) {
+      try { var history=window.NursingStudyState.read(localStorage); window.NursingStudyState.record(history,it.id,it.correct,Date.now()); localStorage.setItem(window.NursingStudyState.key,JSON.stringify(history)); } catch(e) {}
+    }
+    saveSession();
 
     if (quiz.mode === "practice") {
       var opts = $("q-options").children;
@@ -282,7 +293,7 @@
       var v = $("feedback-verdict");
       v.textContent = it.correct ? "✅ Correct" : "❌ Not quite";
       v.className = "verdict " + (it.correct ? "good" : "bad");
-      $("feedback-rationale").textContent = it.rationale;
+      $("feedback-rationale").textContent = it.rationale + ((it.distractorExplanations || []).length ? " Why the alternatives do not fit: " + it.distractorExplanations.join(" ") : "");
       $('feedback-takeaway').hidden = !it.takeaway;
       $('feedback-takeaway').textContent = it.takeaway || '';
       $("feedback-sources").innerHTML = "";
@@ -300,6 +311,7 @@
   function next() {
     if (quiz.idx + 1 < quiz.items.length) {
       quiz.idx++;
+      saveSession();
       renderQuestion();
     } else {
       showResults();
@@ -309,6 +321,7 @@
   // ---------- results ----------
   function showResults() {
     var items = quiz.items;
+    try { localStorage.removeItem('nursing-session-v1'); } catch(e) {}
     if (!quiz.recorded) { recordProgress(items); quiz.recorded = true; }
     var right = items.filter(function (i) { return i.correct; }).length;
     var pct = Math.round(right / items.length * 100);
@@ -358,6 +371,18 @@
     $("retry-missed-btn").hidden = missedItems.length === 0;
     $("retry-missed-btn").textContent = quiz.isCase ? "Retry this case in order" : "Retry missed questions";
 
+    var continueBtn = $('continue-study');
+    if (continueBtn) {
+      continueBtn.onclick = function() {
+        var entries = quiz.entries || allQuestions();
+        if (entries.length <= 1) {
+          var match = { 'story-patient-identification':'rn-teamwork', 'story-order-verification':'rn-teamwork', 'story-safe-spiritual-care':'rn-equity' }[items[0].id];
+          entries = allQuestions().filter(function(e) { return match ? e.slug === match : e.topic === items[0].topic; });
+          if (!entries.length) entries = allQuestions();
+        }
+        startQuiz(entries, {limit:10, mode:'practice',fresh:true});
+      };
+    }
     show("screen-results");
     updateMissedBtn();
   }
@@ -368,6 +393,7 @@
       $(s).hidden = s !== id;
     });
     window.scrollTo(0, 0);
+    if (id === 'screen-home' && window.renderNursingHub) window.renderNursingHub();
   }
 
   // ---------- wire up ----------
@@ -478,7 +504,7 @@
     $('learning-progress').textContent = p ? p.sessions + ' sessions · ' + p.answered + ' questions practiced · ' + Math.round(p.correct / p.answered * 100) + '% practice accuracy' : 'Your study progress stays on this device.';
   }
   function renderTrack() {
-    $('track-description').textContent = currentTrack().description;
+    $('track-description').textContent = currentTrack().name + ' · ' + allQuestions().length + ' questions available in this testing preview.';
     $('start-case-btn').hidden = !currentTrack().caseAccess;
     $('track-sources').innerHTML = '';
     currentTrack().sources.forEach(function(id) {
@@ -488,6 +514,7 @@
     });
     var old = $('missed-choices'); if (old) old.remove();
     renderTopics(); updateBankStats(); updateMissedBtn(); renderProgress();
+    if (window.renderNursingHub) window.renderNursingHub();
   }
   TRACKS.forEach(function(t) { var o = document.createElement('option'); o.value = t.id; o.textContent = t.name; $('learning-track').appendChild(o); });
   $('learning-track').value = trackId;
@@ -498,13 +525,36 @@
     renderTrack();
   };
   $('export-progress').onclick = function() {
-    var blob = new Blob([JSON.stringify({version:1, exportedAt:new Date().toISOString(), progress:progress(), missed:getMissed()}, null, 2)], {type:'application/json'});
+    var blob = new Blob([JSON.stringify({version:1, exportedAt:new Date().toISOString(), progress:progress(), missed:getMissed(), study:window.NursingStudyState ? window.NursingStudyState.read(localStorage) : null}, null, 2)], {type:'application/json'});
     var url = URL.createObjectURL(blob); var a = document.createElement('a'); a.href = url; a.download = 'nursing-study-progress.json'; a.click(); setTimeout(function() { URL.revokeObjectURL(url); }, 1000);
   };
   $('clear-progress').onclick = function() {
     if (!confirm('Clear your saved practice results and missed questions on this device?')) return;
-    try { localStorage.removeItem('nursing-progress-v1'); localStorage.removeItem(LS_KEY); } catch (e) {}
+    try { localStorage.removeItem('nursing-progress-v1'); localStorage.removeItem(LS_KEY); localStorage.removeItem('nursing-study-v2'); localStorage.removeItem('nursing-session-v1'); } catch (e) {}
     renderProgress(); updateMissedBtn();
+    if (window.renderNursingHub) window.renderNursingHub();
+  };
+  function saveSession() {
+    if (!window.NursingStudyState || !quiz || quiz.isCase) return;
+    try { localStorage.setItem('nursing-session-v1',JSON.stringify({version:1,contentHash:window.NURSING_BUILD ? window.NURSING_BUILD.contentHash : 'legacy',track:trackId,quiz:quiz})); } catch(e) {}
+  }
+  function session() {
+    try {
+      var s=JSON.parse(localStorage.getItem('nursing-session-v1') || 'null');
+      var ids=allQuestions().concat(storyEntries()).map(function(e){return e.q.id;});
+      if (!s || s.version!==1 || s.contentHash!==(window.NURSING_BUILD ? window.NURSING_BUILD.contentHash : 'legacy') || s.track!==trackId || !s.quiz || !Array.isArray(s.quiz.items) || !s.quiz.items.length || !Number.isInteger(s.quiz.idx) || s.quiz.idx<0 || s.quiz.idx>=s.quiz.items.length || !['practice','exam'].includes(s.quiz.mode)) return null;
+      if (!s.quiz.items.every(function(i){return ids.includes(i.id) && typeof i.stem==='string' && Array.isArray(i.options) && i.options.every(function(o){return typeof o==='string';}) && Array.isArray(i.answer) && i.answer.every(function(n){return Number.isInteger(n) && n>=0 && n<i.options.length;}) && Array.isArray(i.picked);})) return null;
+      // Rebuild the continuation pool from current source, not saved user input.
+      s.quiz.entries=allQuestions().filter(function(e){return (s.quiz.entries||[]).some(function(old){return old.q && old.q.id===e.q.id;});});
+      return s;
+    } catch(e) { return null; }
+  }
+  window.NursingStudy = {
+    entries:allQuestions,
+    track:function(){return trackId;},
+    start:function(entries,opts){if(entries.length)startQuiz(entries,Object.assign({limit:10,mode:'practice',fresh:true},opts));},
+    saved:session,
+    resume:function(){var s=session();if(!s)return;quiz=s.quiz;show('screen-quiz');$('case-intro-card').hidden=true;if(quiz.items[quiz.idx].submitted)next();else renderQuestion();}
   };
   renderTrack();
   // ---------- boot ----------

@@ -1,0 +1,186 @@
+Processing Log
+==============
+
+Dataset title:
+HLS-CMDS Heart and Lung Sounds Dataset: UNIWA ICU-LAB Curated and Normalized Version
+
+Version:
+v1.0.0
+
+DOI:
+https://doi.org/10.5281/zenodo.20027993
+
+Processing date:
+2026
+
+Prepared by:
+  - Konstantinos Evgenikos
+  - Dimitrios Papageorgiou
+
+Institutional affiliation:
+UNIWA ICU-LAB, Department of Nursing, University of West Attica
+
+Source dataset
+--------------
+
+Original dataset:
+HLS-CMDS: Heart and Lung Sounds Dataset Recorded from a Clinical Manikin using
+Digital Stethoscope
+
+Original authors:
+  - Yasaman Torabi
+  - Shahram Shirani
+  - James P. Reilly
+
+Original dataset DOI:
+https://doi.org/10.17632/8972jxbpmp.3
+
+Related publication DOI:
+https://doi.org/10.1109/IEEEDATA.2025.3566012
+
+Original license:
+Creative Commons Attribution 4.0 International (CC BY 4.0)
+
+Processing objective
+--------------------
+
+The objective of the processing workflow was to create a curated and normalized
+Heart Set (HS) and Lung Set (LS) suitable for research, educational use, health
+simulation, and development of auscultation training resources.
+
+The processing aimed to improve consistency and comparability across audio
+recordings while preserving the original acoustic characteristics of the source
+material.
+
+Dataset content after processing
+--------------------------------
+
+Heart Set (HS):
+  Total recordings: 50
+
+Lung Set (LS):
+  Total recordings: 50
+
+Heart Set pathology counts:
+  normal: 9
+  mid_systolic_murmur: 7
+  late_diastolic_murmur: 6
+  early_systolic_murmur: 6
+  late_systolic_murmur: 5
+  s3: 5
+  atrial_fibrillation: 4
+  tachycardia: 3
+  atrioventricular_block: 3
+  s4: 2
+
+Heart Set recording locations:
+  left_upper_sternal_border: 13
+  left_lower_sternal_border: 10
+  apex: 10
+  right_upper_sternal_border: 7
+  left_costal_margin: 6
+  right_costal_margin: 4
+
+Lung Set pathology counts:
+  normal: 12
+  pleural_rub: 9
+  coarse_crackles: 9
+  rhonchi: 8
+  wheeze: 7
+  fine_crackles: 5
+
+Lung Set recording locations:
+  left_upper_anterior: 11
+  right_lower_anterior: 10
+  left_mid_anterior: 9
+  left_lower_anterior: 8
+  right_upper_anterior: 7
+  right_mid_anterior: 5
+
+Processing workflow
+-------------------
+
+1. Source dataset review
+   The original HLS-CMDS dataset and metadata were reviewed to identify the
+   Heart Set (HS), Lung Set (LS), and relevant metadata fields.
+
+2. Selection and organization
+   The Heart Set (HS) and Lung Set (LS) subsets were selected and organized
+   according to sound/pathology category and auscultation/recording location.
+
+3. Integrity and consistency check
+   Each selected audio file was checked for basic integrity, readability,
+   expected file format, and consistency with the corresponding metadata.
+
+4. Manual quality control
+   Recordings were individually reviewed by UNIWA ICU-LAB members to identify
+   basic inconsistencies or file-level issues before standardization.
+
+5. Audio normalization
+   Each audio file was manually processed using Audacity 3.7.5. Normalization
+   was applied to improve comparability across recordings.
+
+   Normalization parameters:
+
+   Normalize:
+     ApplyVolume="1"
+     PeakLevel="-1"
+     RemoveDcOffset="1"
+     StereoIndependent="0"
+
+6. Metadata organization
+   Dataset counts, labels, and recording locations were organized and documented
+   in the README file and accompanying subset summaries.
+
+7. Documentation
+   The processing workflow, license statement, citation information, and dataset
+   structure were documented in:
+     - README.txt
+     - LICENSE.txt
+     - CITATION.cff
+     - PROCESSING_LOG.txt
+     - heart_set/HEART_SET_SUMMARY.txt
+     - heart_set/metadata_cardiac_updated.json
+     - lung_set/LUNG_SET_SUMMARY.txt
+     - lung_set/metadata_respiratory_updated.json
+     - MANIFEST_SHA256.txt
+
+Software used
+-------------
+
+Audacity 3.7.5
+
+Processing parameters
+---------------------
+
+Normalize:
+  ApplyVolume="1"
+  PeakLevel="-1"
+  RemoveDcOffset="1"
+  StereoIndependent="0"
+
+Known limitations
+-----------------
+
+This adapted dataset version is based on the original HLS-CMDS dataset, which
+was recorded from a clinical manikin using a digital stethoscope. Therefore,
+the recordings should not be interpreted as direct recordings from human
+patients.
+
+This dataset is intended for research, education, simulation, and development
+purposes. It is not intended for clinical diagnosis, clinical decision-making,
+or patient care.
+
+Rights and licensing note
+-------------------------
+
+This version is an adapted/derivative version of the original HLS-CMDS dataset.
+The original recordings and metadata remain attributed to the original authors
+and licensed under CC BY 4.0.
+
+UNIWA ICU-LAB claims rights only in its own original contributions, including
+curation, organization, subset structuring, processing documentation, metadata
+enhancements, and normalized derivative files, to the extent legally
+protectable.
+
+No endorsement by the original authors or affiliated institutions is implied.

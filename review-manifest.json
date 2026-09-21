@@ -1,0 +1,328 @@
+{
+  "schemaVersion": 1,
+  "contentHash": "eb37645d0d653bde4281a146bb18b86d76cf679e75655d4b1f4f314121f68c16",
+  "requiredTrainedNurses": 3,
+  "ownerVerificationRequired": true,
+  "files": [
+    {
+      "file": "app.js",
+      "sha256": "cf98235bf679dba00e311c570b87b18efa3b5e2d32a200b0ea0db1b28b68229b"
+    },
+    {
+      "file": "assessment.css",
+      "sha256": "9c544ddad0952242f8611f6c1d0324c4639abd314fd2a7d8ab1f06a5ba3cac9d"
+    },
+    {
+      "file": "assessment.html",
+      "sha256": "c1feab7ccfbf32ef820507adc803a0123d9fc42c1fac200e6c3a315cd86a2663"
+    },
+    {
+      "file": "assessment.js",
+      "sha256": "8b2906c2948b8151062a48aea584ebae99e0fbec4a7d98c7a52849b031d04eab"
+    },
+    {
+      "file": "assessment/catalog.json",
+      "sha256": "00af2055d5f54173c38e6b8acca4742c1a8a1980e2d30b40a2f1327e0cce108d"
+    },
+    {
+      "file": "assessment/media-sources.json",
+      "sha256": "6c66c95a881f085f61273b2d94521efc7d6592854d30a0963f06c99d375c8f0d"
+    },
+    {
+      "file": "assessment/media/HLS-LICENSE.txt",
+      "sha256": "4bd6a37597167507e2cb838094abe16ed6f23ec9e9916c2e8a5ad66060021178"
+    },
+    {
+      "file": "assessment/media/HLS-PROCESSING.txt",
+      "sha256": "9c399de6522f01358e469f2c8aa4f52987b1216015bf750005d4d235bd95e916"
+    },
+    {
+      "file": "assessment/media/chest-effusion.jpg",
+      "sha256": "41ff643f606fad3952efd32b6d6df8a2adc6a81eb7b414aeb98f3dfec0d10e76"
+    },
+    {
+      "file": "assessment/media/chest-normal.jpg",
+      "sha256": "9899b6ab506824af5872f589ef4a8eecb2217a5fd17f09813484d4167fff5be2"
+    },
+    {
+      "file": "assessment/media/chest-pneumothorax.jpg",
+      "sha256": "db3d8d000bc8320b3f8f2d5c3110dd830da587bc22731714a31343ba070d60fa"
+    },
+    {
+      "file": "assessment/media/ct-normal.png",
+      "sha256": "499adbdad84cd4c25735b83e23781ddd0287e50252187f252d6ec6952b537e29"
+    },
+    {
+      "file": "assessment/media/ct-subdural.jpg",
+      "sha256": "8c33f808302dcefdb176b139988c3d46ba070475246210ebc63b495571d7a11e"
+    },
+    {
+      "file": "assessment/media/hls-F_ESM_RUSB.wav",
+      "sha256": "16baa0934ac4cd63ebe483cbf075a84dad3426bbdb6e3159492efb7439474c3d"
+    },
+    {
+      "file": "assessment/media/hls-F_LSM_LUSB.wav",
+      "sha256": "14fab8b29b6c31669776b792ef1cd52738bf8445e5beb8692a4cf84656cf0f62"
+    },
+    {
+      "file": "assessment/media/hls-F_MSM_A.wav",
+      "sha256": "a57b19b27d286722c576ede5b7661462b28e81042c4df9dc244525021a29b6fc"
+    },
+    {
+      "file": "assessment/media/hls-F_N_A.wav",
+      "sha256": "998af5f138295d7fc6ee5993e2e9ba0e1a92d51662625005c763afc4c533906b"
+    },
+    {
+      "file": "assessment/media/hls-F_N_LLSB.wav",
+      "sha256": "ea949081e42df3e42e6ca2c195b41c0a86a8934f7a28903d038e64d449e73ce6"
+    },
+    {
+      "file": "assessment/media/hls-F_N_LUA.wav",
+      "sha256": "b7a0f00da98e4c8bc52e98a5ae38a0276109d63edd2c9d9c630120f4c15964f8"
+    },
+    {
+      "file": "assessment/media/hls-F_N_LUSB.wav",
+      "sha256": "7411d09d8f7557d4472580603414965d2e31369489e1773c29bbf29b500ac480"
+    },
+    {
+      "file": "assessment/media/hls-F_N_RC.wav",
+      "sha256": "ffcdbdca2decd3cd27e2c41555e8deccd577d01e3b08271464086291dfb073b8"
+    },
+    {
+      "file": "assessment/media/hls-F_N_RUSB.wav",
+      "sha256": "464ca2de9d66c7936232a5956ecd2bc2e1675693b0be290978da10e7bd9dc600"
+    },
+    {
+      "file": "assessment/media/hls-F_R_LUA.wav",
+      "sha256": "863744896fef4375bef810ec3b2f7aee0e7a2546949c2ce2ac0905878a2a9108"
+    },
+    {
+      "file": "assessment/media/hls-F_S3_LLSB.wav",
+      "sha256": "3f402c3b83d5e41b9f42d805a88ea8a5740552aaaa36eeec80de33d5a917be39"
+    },
+    {
+      "file": "assessment/media/hls-F_S4_RC.wav",
+      "sha256": "202480a65ef3b3d5306353627556d5e6eb782936a7648bd2cbac2644cc24dece"
+    },
+    {
+      "file": "assessment/media/hls-M_CC_LLA.wav",
+      "sha256": "454956dc3bd4b5606182bba7ffe4980f8830aa774ecc9ef29f3fde8b7b943711"
+    },
+    {
+      "file": "assessment/media/hls-M_FC_LUA.wav",
+      "sha256": "a73afdb8605a788d61eee56b4ac94314369a34ebb97b9280d8fa2c5ecaab20da"
+    },
+    {
+      "file": "assessment/media/hls-M_LDM_LC.wav",
+      "sha256": "0f79a0d4515635b3a8c6c2badb5d77c165052a2e4276f51d3ebd418f865b69e0"
+    },
+    {
+      "file": "assessment/media/hls-M_N_LC.wav",
+      "sha256": "cf9205f3070436b01455774f9a2a299ca077aba51a4e95cb485fa87d21c7d772"
+    },
+    {
+      "file": "assessment/media/hls-M_N_LLA.wav",
+      "sha256": "02cbe9d92a3acb5d85a2610fa44f1d923a834d3467c09e273d66660a064f18f0"
+    },
+    {
+      "file": "assessment/media/hls-M_N_LUA.wav",
+      "sha256": "1277c10ebd54dc441f0bcc1ce2454bb5c5d4608a575bbed6908fa774e7525d4a"
+    },
+    {
+      "file": "assessment/media/hls-M_N_RLA.wav",
+      "sha256": "8af4586e797f9f70e55b112eebeb63af7b7d87ceb95b597e5358766f8b7a2dfa"
+    },
+    {
+      "file": "assessment/media/hls-M_N_RMA.wav",
+      "sha256": "6131d80395a2cc701fc63cfdd81160453bab3c6134877ee33ee168cb22ad5587"
+    },
+    {
+      "file": "assessment/media/hls-M_PR_RMA.wav",
+      "sha256": "04d5d6522f45a13eef52344cd52fc4c3c55ba389c8f435574516ed297336a5f2"
+    },
+    {
+      "file": "assessment/media/hls-M_W_LUA.wav",
+      "sha256": "acf9bba1c2e6d951a855a8df672b96bd1ba87b1d01126da8ec08ba017931ddd6"
+    },
+    {
+      "file": "assessment/media/hls-M_W_RLA.wav",
+      "sha256": "2383e36e51313e77f6ee6826dfe306f3d32bfd190fc6fcb39c6200c1b4ef9954"
+    },
+    {
+      "file": "assessment/media/mri-normal.jpg",
+      "sha256": "3ceab6190d93957c6ace30db10bece675890215a08249cceaf72a3eddda4cc23"
+    },
+    {
+      "file": "assessment/media/mri-t2-lesion.jpg",
+      "sha256": "795b044d1ed5ae7fa74895536c3dea819668ba728f01e8c299f32121e229e529"
+    },
+    {
+      "file": "assessment/media/skin-1-deep.svg",
+      "sha256": "4a73f33e2cd5dddfa59037ab8707c5c42e32c04a1bda988887bacd7400c8bc1b"
+    },
+    {
+      "file": "assessment/media/skin-1-light.svg",
+      "sha256": "75f3b1b1ff5be2b674c8c9f402a1c4806dd454c01073662aabffc38b92fad1b4"
+    },
+    {
+      "file": "assessment/media/skin-1-medium.svg",
+      "sha256": "3b4a5ca84f3a4db5020a70847290c36ff5491d752f59f7cc586fa2375ae10732"
+    },
+    {
+      "file": "assessment/media/skin-2-deep.svg",
+      "sha256": "4b72949c5035aaf7b8ab81c5c21925a300c84c1f3e213dc0425c7856fbae2e23"
+    },
+    {
+      "file": "assessment/media/skin-2-light.svg",
+      "sha256": "6bedb848aff2644660f4c0f102d4b29fdc06a80586a639bc51b6ff7f0157f594"
+    },
+    {
+      "file": "assessment/media/skin-2-medium.svg",
+      "sha256": "3e0b7d3f58f8b1bce91af695a7e5ff83cf3cae2d06535a76c6a34d3bbede1b5f"
+    },
+    {
+      "file": "assessment/media/skin-3-deep.svg",
+      "sha256": "2d7f5fb2968f9daf6ae14733a84d39bd357c2b3babf089f6badfe5b379555b26"
+    },
+    {
+      "file": "assessment/media/skin-3-light.svg",
+      "sha256": "ddecc17e590dcdd0095df00714563a2eef92d5a3e5f24982a7244f6b9c2b4fde"
+    },
+    {
+      "file": "assessment/media/skin-3-medium.svg",
+      "sha256": "3dece5cae62ecf57526bc4c79891048b4102def79f221d62500c7982823073b6"
+    },
+    {
+      "file": "assessment/media/skin-4-deep.svg",
+      "sha256": "246d57021bd72cca405fbde6f89f36d45409bbd0fa66816d04ede381c1ac1daf"
+    },
+    {
+      "file": "assessment/media/skin-4-light.svg",
+      "sha256": "c8d1033596cc1caaf5ebaed0ded097ac8a3a35962eb71e54ff7592faccd9a803"
+    },
+    {
+      "file": "assessment/media/skin-4-medium.svg",
+      "sha256": "b347ed7fa7eb93349e3c780992a45dd2bc56c3f4c28743a6075415b48cf06eb7"
+    },
+    {
+      "file": "assessment/media/skin-5-deep.svg",
+      "sha256": "13e5fa34c4f7a0830018ca3e02e3c01327cd1f94f7f2c8243177f2a8cd9b9a7b"
+    },
+    {
+      "file": "assessment/media/skin-5-light.svg",
+      "sha256": "4b1bfc8853760b84c91ac645b3c2c4e247864b16e86de6b5abb5c1c941075794"
+    },
+    {
+      "file": "assessment/media/skin-5-medium.svg",
+      "sha256": "fc2826247ee10ade941a5a83b4e530e95a3ac5f28445ba8a4c1fac70939f25cb"
+    },
+    {
+      "file": "assessment/media/skin-6-deep.svg",
+      "sha256": "c4ae0c7ca5f0f21c6cb4a5674e1496ed1184ed17e9421277f3f19b8e39bcc35d"
+    },
+    {
+      "file": "assessment/media/skin-6-light.svg",
+      "sha256": "c3b0aafa74fdfc22367d3e5896fd1f0d2f3b9285ecb03f5aec1446caa29eb13c"
+    },
+    {
+      "file": "assessment/media/skin-6-medium.svg",
+      "sha256": "f09a71593a318d86f7f5632318473b819738c9a74919867d2508f551351543ca"
+    },
+    {
+      "file": "assessment/media/skin-normal-deep.svg",
+      "sha256": "737a398fe0b2138c4cf70028063dc8525a7fbf5492ec016dbcd72b4d47740b13"
+    },
+    {
+      "file": "assessment/media/skin-normal-light.svg",
+      "sha256": "4738f7d09aeba8f28f8a29a6f039ebf3ae11f42a4c728f723a0350bd1368312b"
+    },
+    {
+      "file": "assessment/media/skin-normal-medium.svg",
+      "sha256": "76d3e693b537394f0e3f27c02aeb792c76effc89b99d9e54793634f09fb95360"
+    },
+    {
+      "file": "assessment/media/us-gallbladder-normal.jpg",
+      "sha256": "e14e66a31f887cc430e4b036dd37243ef712ab01b2a5356a828fcb402b02ed8e"
+    },
+    {
+      "file": "assessment/media/us-gallstones.png",
+      "sha256": "df7adeef52b4cfb867bfbb9ca2330a69f0026532289cb880dd3d1953eb6d1b9a"
+    },
+    {
+      "file": "assessment/media/us-hydronephrosis.jpg",
+      "sha256": "ca05c494c744c1f9e1797f8082ec75cb718b94fddfbd1274a596d54d8159e569"
+    },
+    {
+      "file": "assessment/media/us-kidney-normal.jpg",
+      "sha256": "f4244d9985e88eab2afc30afb02c38d64ac52a2a1064ab9f364be37cb28eb926"
+    },
+    {
+      "file": "curriculum.js",
+      "sha256": "4ab9f6290239d571d35c3da621472998345e0aa790eec94637142730c052cbf6"
+    },
+    {
+      "file": "expansion.js",
+      "sha256": "aba032b6ac9cd38bd9482811a44b72bf85d02b36307e2fe24088ff358e9c347f"
+    },
+    {
+      "file": "expansion.json",
+      "sha256": "4d1cfe207143706c7d235081f56292c71309a2004ea24c7bebb3f645ec15fe11"
+    },
+    {
+      "file": "index.html",
+      "sha256": "54db92dca8c6e0b702bfdf7e2fc416027c17f591c57c9a1ae2bc6d4625bd3553"
+    },
+    {
+      "file": "library.js",
+      "sha256": "375bbaa0282ce65dab953459f45e633ecb23ae7485359f61b372d565edf71c49"
+    },
+    {
+      "file": "register-sw.js",
+      "sha256": "4862f7565f16e41fd7867d8ed95e344ead0f3622045970263ad63345cf32e2b1"
+    },
+    {
+      "file": "review-policy.json",
+      "sha256": "9be422ef103b82796a9315f71ddfcc824c79dc0c390aa1e80268d2352559a6e6"
+    },
+    {
+      "file": "review.html",
+      "sha256": "118e9f831bec60cc1f2e0267a5141f471b564108830e3dbb69ab352c5722f72e"
+    },
+    {
+      "file": "review.js",
+      "sha256": "83ffa40e22784f9f55058247290f7ea307a8b0864638930d39b96bb2e9e1b681"
+    },
+    {
+      "file": "stories.js",
+      "sha256": "ccc9d58eabd7e3404644e776f88574adc1a2053297d1022bc83c70df952d93a7"
+    },
+    {
+      "file": "study-hub.js",
+      "sha256": "d13b45b02c1e1f85bd311430398358ed1ae43c2c55254934716fde910417ee1e"
+    },
+    {
+      "file": "study-packs.js",
+      "sha256": "b503b19a8b8dc6f86b906be9a43fc8fbde373e803af4a03ef9182d34fad6924f"
+    },
+    {
+      "file": "study-state.js",
+      "sha256": "cae414b960d8159c2aa647919b2e31ab363bf410b573022b1e1bb03cc1c1848c"
+    },
+    {
+      "file": "style.css",
+      "sha256": "d4bdb2aa964a7bf29feec0d14eaf0647c7aa4e54a7cb409a4b88b2ba56a906d6"
+    },
+    {
+      "file": "tools/build.cjs",
+      "sha256": "937f081849bbbccc73ad82b8d9f9a456f836e4ed9943e3097e66a7ec7858b8a2"
+    },
+    {
+      "file": "tools/prepare-preview.cjs",
+      "sha256": "b874db1418723f6376aa6610aadd8ce7651e0e2a60598cc956406f281bd61814"
+    },
+    {
+      "file": "tools/release-gate.cjs",
+      "sha256": "ed539082c8c80a16c1a51fa6e9bd1afbc2bf80772b154b8208bc15805be144db"
+    }
+  ]
+}

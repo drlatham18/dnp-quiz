@@ -1,0 +1,13 @@
+{
+  "schemaVersion": 1,
+  "testingDestination": "https://drlatham18.github.io/dnp-quiz/",
+  "externalReleaseRequires": {
+    "distinctTrainedNurses": 3,
+    "ownerVerification": true,
+    "exactContentVersion": true,
+    "unresolvedChanges": 0
+  },
+  "previewIsClinicalApproval": false,
+  "reviewerIdentitiesMustRemainPrivate": true,
+  "materialChangesInvalidateApprovals": true
+}

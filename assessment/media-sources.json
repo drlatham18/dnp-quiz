@@ -1,0 +1,1171 @@
+{
+  "chest-normal": {
+    "id": "chest-normal",
+    "path": "assessment/media/chest-normal.jpg",
+    "kind": "image",
+    "origin": "clinical original",
+    "source": "https://commons.wikimedia.org/wiki/File:Chest_x-ray_plain_film_normal.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Ptrump16",
+    "description": "Plain film chest x-ray, normal. Acquired digitally.",
+    "transformations": "None; original file.",
+    "sha256": "9899b6ab506824af5872f589ef4a8eecb2217a5fd17f09813484d4167fff5be2",
+    "reviewStatus": "pending"
+  },
+  "chest-pneumothorax": {
+    "id": "chest-pneumothorax",
+    "path": "assessment/media/chest-pneumothorax.jpg",
+    "kind": "image",
+    "origin": "clinical original",
+    "source": "https://commons.wikimedia.org/wiki/File:Expiration-left-side-pneumo.jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "creator": "Mynameisderek",
+    "description": "Chest x-ray of left sided spontaneous pneumothorax. Arrow indicating the edge of the collapsed lung.",
+    "transformations": "None; original file.",
+    "sha256": "db3d8d000bc8320b3f8f2d5c3110dd830da587bc22731714a31343ba070d60fa",
+    "reviewStatus": "pending"
+  },
+  "chest-effusion": {
+    "id": "chest-effusion",
+    "path": "assessment/media/chest-effusion.jpg",
+    "kind": "image",
+    "origin": "clinical original",
+    "source": "https://commons.wikimedia.org/wiki/File:Pleural_effusion.jpg",
+    "license": "Public domain",
+    "licenseUrl": "",
+    "creator": "User InvictaHOG on en.wikipedia\n\nEdited by InvictaHOG, all edits released into public domain\nCommons upload by Magnus Manske 13:26, 28 April 2006 (UTC)",
+    "description": "Pleural effusion Chest x-ray of a pleural effusion. The arrow A shows fluid layering in the right pleural cavity. The B arrow shows the normal width of the lung in the cavity",
+    "transformations": "None; original file.",
+    "sha256": "41ff643f606fad3952efd32b6d6df8a2adc6a81eb7b414aeb98f3dfec0d10e76",
+    "reviewStatus": "pending"
+  },
+  "ct-subdural": {
+    "id": "ct-subdural",
+    "path": "assessment/media/ct-subdural.jpg",
+    "kind": "image",
+    "origin": "clinical original",
+    "source": "https://commons.wikimedia.org/wiki/File:Ct-scan_of_the_brain_with_an_subdural_hematoma.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "creator": "Lucien Monfils",
+    "description": "Ct-scan of the brain with an subdural hematoma",
+    "transformations": "None; original file.",
+    "sha256": "8c33f808302dcefdb176b139988c3d46ba070475246210ebc63b495571d7a11e",
+    "reviewStatus": "pending"
+  },
+  "us-gallstones": {
+    "id": "us-gallstones",
+    "path": "assessment/media/us-gallstones.png",
+    "kind": "image",
+    "origin": "clinical original",
+    "source": "https://commons.wikimedia.org/wiki/File:Gallstones.PNG",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "creator": "James Heilman, MD",
+    "description": "A 1.9 cm gallstone impacted in the neck of the gallbladder and leading to cholecystitis. Note the 4 mm gall bladder wall thickening.",
+    "transformations": "None; original file.",
+    "sha256": "df7adeef52b4cfb867bfbb9ca2330a69f0026532289cb880dd3d1953eb6d1b9a",
+    "reviewStatus": "pending"
+  },
+  "hls-F_N_LLSB": {
+    "id": "hls-F_N_LLSB",
+    "path": "assessment/media/hls-F_N_LLSB.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 left lower sternal border (HS HEART LLSB). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "ea949081e42df3e42e6ca2c195b41c0a86a8934f7a28903d038e64d449e73ce6",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_S3_LLSB": {
+    "id": "hls-F_S3_LLSB",
+    "path": "assessment/media/hls-F_S3_LLSB.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "S3 \u00b7 left lower sternal border (HS HEART LLSB). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "3f402c3b83d5e41b9f42d805a88ea8a5740552aaaa36eeec80de33d5a917be39",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_N_RC": {
+    "id": "hls-F_N_RC",
+    "path": "assessment/media/hls-F_N_RC.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 right costal margin (HS HEART RC). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "ffcdbdca2decd3cd27e2c41555e8deccd577d01e3b08271464086291dfb073b8",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_S4_RC": {
+    "id": "hls-F_S4_RC",
+    "path": "assessment/media/hls-F_S4_RC.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "S4 \u00b7 right costal margin (HS HEART RC). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "202480a65ef3b3d5306353627556d5e6eb782936a7648bd2cbac2644cc24dece",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_N_RUSB": {
+    "id": "hls-F_N_RUSB",
+    "path": "assessment/media/hls-F_N_RUSB.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 right upper sternal border (HS HEART RUSB). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "464ca2de9d66c7936232a5956ecd2bc2e1675693b0be290978da10e7bd9dc600",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_ESM_RUSB": {
+    "id": "hls-F_ESM_RUSB",
+    "path": "assessment/media/hls-F_ESM_RUSB.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Early Systolic Murmur \u00b7 right upper sternal border (HS HEART RUSB). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "16baa0934ac4cd63ebe483cbf075a84dad3426bbdb6e3159492efb7439474c3d",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_N_A": {
+    "id": "hls-F_N_A",
+    "path": "assessment/media/hls-F_N_A.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 apex (HS HEART APEX). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "998af5f138295d7fc6ee5993e2e9ba0e1a92d51662625005c763afc4c533906b",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_MSM_A": {
+    "id": "hls-F_MSM_A",
+    "path": "assessment/media/hls-F_MSM_A.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Mid Systolic Murmur \u00b7 apex (HS HEART APEX). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "a57b19b27d286722c576ede5b7661462b28e81042c4df9dc244525021a29b6fc",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_N_LUSB": {
+    "id": "hls-F_N_LUSB",
+    "path": "assessment/media/hls-F_N_LUSB.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 left upper sternal border (HS HEART LUSB). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "7411d09d8f7557d4472580603414965d2e31369489e1773c29bbf29b500ac480",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_LSM_LUSB": {
+    "id": "hls-F_LSM_LUSB",
+    "path": "assessment/media/hls-F_LSM_LUSB.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Late Systolic Murmur \u00b7 left upper sternal border (HS HEART LUSB). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "14fab8b29b6c31669776b792ef1cd52738bf8445e5beb8692a4cf84656cf0f62",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_N_LC": {
+    "id": "hls-M_N_LC",
+    "path": "assessment/media/hls-M_N_LC.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 left costal margin (HS HEART LC). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "cf9205f3070436b01455774f9a2a299ca077aba51a4e95cb485fa87d21c7d772",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_LDM_LC": {
+    "id": "hls-M_LDM_LC",
+    "path": "assessment/media/hls-M_LDM_LC.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Late Diastolic Murmur \u00b7 left costal margin (HS HEART LC). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "0f79a0d4515635b3a8c6c2badb5d77c165052a2e4276f51d3ebd418f865b69e0",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_N_LUA": {
+    "id": "hls-M_N_LUA",
+    "path": "assessment/media/hls-M_N_LUA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 left upper anterior (HS LUNG LUA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "1277c10ebd54dc441f0bcc1ce2454bb5c5d4608a575bbed6908fa774e7525d4a",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_W_LUA": {
+    "id": "hls-M_W_LUA",
+    "path": "assessment/media/hls-M_W_LUA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Wheezing \u00b7 left upper anterior (HS LUNG LUA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "acf9bba1c2e6d951a855a8df672b96bd1ba87b1d01126da8ec08ba017931ddd6",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_FC_LUA": {
+    "id": "hls-M_FC_LUA",
+    "path": "assessment/media/hls-M_FC_LUA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Fine Crackles \u00b7 left upper anterior (HS LUNG LUA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "a73afdb8605a788d61eee56b4ac94314369a34ebb97b9280d8fa2c5ecaab20da",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_N_LLA": {
+    "id": "hls-M_N_LLA",
+    "path": "assessment/media/hls-M_N_LLA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 left lower anterior (HS LUNG LLA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "02cbe9d92a3acb5d85a2610fa44f1d923a834d3467c09e273d66660a064f18f0",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_CC_LLA": {
+    "id": "hls-M_CC_LLA",
+    "path": "assessment/media/hls-M_CC_LLA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Coarse Crackles \u00b7 left lower anterior (HS LUNG LLA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "454956dc3bd4b5606182bba7ffe4980f8830aa774ecc9ef29f3fde8b7b943711",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_N_LUA": {
+    "id": "hls-F_N_LUA",
+    "path": "assessment/media/hls-F_N_LUA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 left upper anterior (HS LUNG LUA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "b7a0f00da98e4c8bc52e98a5ae38a0276109d63edd2c9d9c630120f4c15964f8",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-F_R_LUA": {
+    "id": "hls-F_R_LUA",
+    "path": "assessment/media/hls-F_R_LUA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Rhonchi \u00b7 left upper anterior (HS LUNG LUA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "863744896fef4375bef810ec3b2f7aee0e7a2546949c2ce2ac0905878a2a9108",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_N_RMA": {
+    "id": "hls-M_N_RMA",
+    "path": "assessment/media/hls-M_N_RMA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 right mid anterior (HS LUNG RMA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "6131d80395a2cc701fc63cfdd81160453bab3c6134877ee33ee168cb22ad5587",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_PR_RMA": {
+    "id": "hls-M_PR_RMA",
+    "path": "assessment/media/hls-M_PR_RMA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Pleural Rub \u00b7 right mid anterior (HS LUNG RMA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "04d5d6522f45a13eef52344cd52fc4c3c55ba389c8f435574516ed297336a5f2",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_N_RLA": {
+    "id": "hls-M_N_RLA",
+    "path": "assessment/media/hls-M_N_RLA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Normal \u00b7 right lower anterior (HS LUNG RLA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "8af4586e797f9f70e55b112eebeb63af7b7d87ceb95b597e5358766f8b7a2dfa",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "hls-M_W_RLA": {
+    "id": "hls-M_W_RLA",
+    "path": "assessment/media/hls-M_W_RLA.wav",
+    "kind": "audio",
+    "origin": "clinical-manikin simulation",
+    "source": "https://zenodo.org/records/20027993",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+    "creator": "Torabi, Shirani and Reilly; curation/normalization: Evgenikos and Papageorgiou (UNIWA ICU-LAB)",
+    "description": "Wheezing \u00b7 right lower anterior (HS LUNG RLA). Recorded from a manikin, not a patient. Dataset signal quality: unrated.",
+    "transformations": "Upstream: DC removal and normalization to -1 dB in Audacity. No additional audio processing by this app.",
+    "sha256": "2383e36e51313e77f6ee6826dfe306f3d32bfd190fc6fcb39c6200c1b4ef9954",
+    "reviewStatus": "pending",
+    "duration": 15
+  },
+  "skin-normal-medium": {
+    "id": "skin-normal-medium",
+    "path": "assessment/media/skin-normal-medium.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; medium tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "76d3e693b537394f0e3f27c02aeb792c76effc89b99d9e54793634f09fb95360",
+    "reviewStatus": "pending"
+  },
+  "skin-1-medium": {
+    "id": "skin-1-medium",
+    "path": "assessment/media/skin-1-medium.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; medium tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "3b4a5ca84f3a4db5020a70847290c36ff5491d752f59f7cc586fa2375ae10732",
+    "reviewStatus": "pending"
+  },
+  "skin-normal-light": {
+    "id": "skin-normal-light",
+    "path": "assessment/media/skin-normal-light.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; light tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "4738f7d09aeba8f28f8a29a6f039ebf3ae11f42a4c728f723a0350bd1368312b",
+    "reviewStatus": "pending"
+  },
+  "skin-1-light": {
+    "id": "skin-1-light",
+    "path": "assessment/media/skin-1-light.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; light tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "75f3b1b1ff5be2b674c8c9f402a1c4806dd454c01073662aabffc38b92fad1b4",
+    "reviewStatus": "pending"
+  },
+  "skin-normal-deep": {
+    "id": "skin-normal-deep",
+    "path": "assessment/media/skin-normal-deep.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; deep tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "737a398fe0b2138c4cf70028063dc8525a7fbf5492ec016dbcd72b4d47740b13",
+    "reviewStatus": "pending"
+  },
+  "skin-1-deep": {
+    "id": "skin-1-deep",
+    "path": "assessment/media/skin-1-deep.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; deep tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "4a73f33e2cd5dddfa59037ab8707c5c42e32c04a1bda988887bacd7400c8bc1b",
+    "reviewStatus": "pending"
+  },
+  "skin-2-medium": {
+    "id": "skin-2-medium",
+    "path": "assessment/media/skin-2-medium.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; medium tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "3e0b7d3f58f8b1bce91af695a7e5ff83cf3cae2d06535a76c6a34d3bbede1b5f",
+    "reviewStatus": "pending"
+  },
+  "skin-2-light": {
+    "id": "skin-2-light",
+    "path": "assessment/media/skin-2-light.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; light tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "6bedb848aff2644660f4c0f102d4b29fdc06a80586a639bc51b6ff7f0157f594",
+    "reviewStatus": "pending"
+  },
+  "skin-2-deep": {
+    "id": "skin-2-deep",
+    "path": "assessment/media/skin-2-deep.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; deep tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "4b72949c5035aaf7b8ab81c5c21925a300c84c1f3e213dc0425c7856fbae2e23",
+    "reviewStatus": "pending"
+  },
+  "skin-3-medium": {
+    "id": "skin-3-medium",
+    "path": "assessment/media/skin-3-medium.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; medium tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "3dece5cae62ecf57526bc4c79891048b4102def79f221d62500c7982823073b6",
+    "reviewStatus": "pending"
+  },
+  "skin-3-light": {
+    "id": "skin-3-light",
+    "path": "assessment/media/skin-3-light.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; light tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "ddecc17e590dcdd0095df00714563a2eef92d5a3e5f24982a7244f6b9c2b4fde",
+    "reviewStatus": "pending"
+  },
+  "skin-3-deep": {
+    "id": "skin-3-deep",
+    "path": "assessment/media/skin-3-deep.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; deep tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "2d7f5fb2968f9daf6ae14733a84d39bd357c2b3babf089f6badfe5b379555b26",
+    "reviewStatus": "pending"
+  },
+  "skin-4-medium": {
+    "id": "skin-4-medium",
+    "path": "assessment/media/skin-4-medium.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; medium tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "b347ed7fa7eb93349e3c780992a45dd2bc56c3f4c28743a6075415b48cf06eb7",
+    "reviewStatus": "pending"
+  },
+  "skin-4-light": {
+    "id": "skin-4-light",
+    "path": "assessment/media/skin-4-light.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; light tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "c8d1033596cc1caaf5ebaed0ded097ac8a3a35962eb71e54ff7592faccd9a803",
+    "reviewStatus": "pending"
+  },
+  "skin-4-deep": {
+    "id": "skin-4-deep",
+    "path": "assessment/media/skin-4-deep.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; deep tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "246d57021bd72cca405fbde6f89f36d45409bbd0fa66816d04ede381c1ac1daf",
+    "reviewStatus": "pending"
+  },
+  "skin-5-medium": {
+    "id": "skin-5-medium",
+    "path": "assessment/media/skin-5-medium.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; medium tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "fc2826247ee10ade941a5a83b4e530e95a3ac5f28445ba8a4c1fac70939f25cb",
+    "reviewStatus": "pending"
+  },
+  "skin-5-light": {
+    "id": "skin-5-light",
+    "path": "assessment/media/skin-5-light.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; light tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "4b1bfc8853760b84c91ac645b3c2c4e247864b16e86de6b5abb5c1c941075794",
+    "reviewStatus": "pending"
+  },
+  "skin-5-deep": {
+    "id": "skin-5-deep",
+    "path": "assessment/media/skin-5-deep.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; deep tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "13e5fa34c4f7a0830018ca3e02e3c01327cd1f94f7f2c8243177f2a8cd9b9a7b",
+    "reviewStatus": "pending"
+  },
+  "skin-6-medium": {
+    "id": "skin-6-medium",
+    "path": "assessment/media/skin-6-medium.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; medium tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "f09a71593a318d86f7f5632318473b819738c9a74919867d2508f551351543ca",
+    "reviewStatus": "pending"
+  },
+  "skin-6-light": {
+    "id": "skin-6-light",
+    "path": "assessment/media/skin-6-light.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; light tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "c3b0aafa74fdfc22367d3e5896fd1f0d2f3b9285ecb03f5aec1446caa29eb13c",
+    "reviewStatus": "pending"
+  },
+  "skin-6-deep": {
+    "id": "skin-6-deep",
+    "path": "assessment/media/skin-6-deep.svg",
+    "kind": "image",
+    "origin": "teaching schematic",
+    "source": "https://npiap.com/page/PressureInjuryStages",
+    "license": "Original project illustration",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Conceptual skin cross-section; deep tone. Geometry is simplified; color is illustrative and not calibrated for diagnosis.",
+    "transformations": "Original vector illustration; no patient image or NPIAP illustration reproduced.",
+    "sha256": "c4ae0c7ca5f0f21c6cb4a5674e1496ed1184ed17e9421277f3f19b8e39bcc35d",
+    "reviewStatus": "pending"
+  },
+  "cbc-anemia-normal": {
+    "id": "cbc-anemia-normal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Hemoglobin"
+      ],
+      [
+        "Result",
+        "13.4 g/dL"
+      ],
+      [
+        "Illustrative reference",
+        "12.0\u201316.0"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ]
+    ],
+    "source": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "cbc-anemia-abnormal": {
+    "id": "cbc-anemia-abnormal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Hemoglobin"
+      ],
+      [
+        "Result",
+        "8.1 g/dL"
+      ],
+      [
+        "Illustrative reference",
+        "12.0\u201316.0"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ]
+    ],
+    "source": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "potassium-high-normal": {
+    "id": "potassium-high-normal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Potassium"
+      ],
+      [
+        "Result",
+        "4.2 mmol/L"
+      ],
+      [
+        "Illustrative reference",
+        "3.5\u20135.0"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ]
+    ],
+    "source": "https://medlineplus.gov/ency/article/003484.htm",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "potassium-high-abnormal": {
+    "id": "potassium-high-abnormal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Potassium"
+      ],
+      [
+        "Result",
+        "6.2 mmol/L"
+      ],
+      [
+        "Illustrative reference",
+        "3.5\u20135.0"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ]
+    ],
+    "source": "https://medlineplus.gov/ency/article/003484.htm",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "platelets-low-normal": {
+    "id": "platelets-low-normal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Platelets"
+      ],
+      [
+        "Result",
+        "245 \u00d710\u2079/L"
+      ],
+      [
+        "Illustrative reference",
+        "150\u2013400"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ]
+    ],
+    "source": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "platelets-low-abnormal": {
+    "id": "platelets-low-abnormal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Platelets"
+      ],
+      [
+        "Result",
+        "48 \u00d710\u2079/L"
+      ],
+      [
+        "Illustrative reference",
+        "150\u2013400"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ]
+    ],
+    "source": "https://medlineplus.gov/lab-tests/complete-blood-count-cbc/",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "creatinine-trend-normal": {
+    "id": "creatinine-trend-normal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Creatinine"
+      ],
+      [
+        "Result",
+        "0.9 mg/dL"
+      ],
+      [
+        "Illustrative reference",
+        "0.6\u20131.2"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ],
+      [
+        "Previous result (48h earlier)",
+        "0.9 mg/dL"
+      ]
+    ],
+    "source": "https://medlineplus.gov/lab-tests/creatinine-test/",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "creatinine-trend-abnormal": {
+    "id": "creatinine-trend-abnormal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Creatinine"
+      ],
+      [
+        "Result",
+        "1.8 mg/dL"
+      ],
+      [
+        "Illustrative reference",
+        "0.6\u20131.2"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ],
+      [
+        "Previous result (48h earlier)",
+        "0.9 mg/dL"
+      ]
+    ],
+    "source": "https://medlineplus.gov/lab-tests/creatinine-test/",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "glucose-low-normal": {
+    "id": "glucose-low-normal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Glucose"
+      ],
+      [
+        "Result",
+        "88 mg/dL"
+      ],
+      [
+        "Illustrative reference",
+        "70\u201399 (fasting reference)"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ]
+    ],
+    "source": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "glucose-low-abnormal": {
+    "id": "glucose-low-abnormal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "Glucose"
+      ],
+      [
+        "Result",
+        "52 mg/dL"
+      ],
+      [
+        "Illustrative reference",
+        "70\u201399 (fasting reference)"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ]
+    ],
+    "source": "https://medlineplus.gov/lab-tests/blood-glucose-test/",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "abg-respiratory-normal": {
+    "id": "abg-respiratory-normal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "ABG"
+      ],
+      [
+        "Result",
+        "7.40 / 40 / 24 "
+      ],
+      [
+        "Illustrative reference",
+        "pH 7.35\u20137.45; PaCO\u2082 35\u201345 mmHg; HCO\u2083\u207b 22\u201326 mmol/L"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ],
+      [
+        "Order of values",
+        "pH / PaCO\u2082 / HCO\u2083\u207b; arterial sample"
+      ]
+    ],
+    "source": "https://medlineplus.gov/ency/article/003855.htm",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "abg-respiratory-abnormal": {
+    "id": "abg-respiratory-abnormal",
+    "kind": "report",
+    "origin": "synthetic teaching report",
+    "rows": [
+      [
+        "Test",
+        "ABG"
+      ],
+      [
+        "Result",
+        "7.25 / 60 / 26 "
+      ],
+      [
+        "Illustrative reference",
+        "pH 7.35\u20137.45; PaCO\u2082 35\u201345 mmHg; HCO\u2083\u207b 22\u201326 mmol/L"
+      ],
+      [
+        "Context",
+        "Synthetic adult teaching case; no patient data."
+      ],
+      [
+        "Order of values",
+        "pH / PaCO\u2082 / HCO\u2083\u207b; arterial sample"
+      ]
+    ],
+    "source": "https://medlineplus.gov/ency/article/003855.htm",
+    "license": "Original project example",
+    "licenseUrl": "",
+    "creator": "Nursing Learning Companion",
+    "description": "Constructed values for comparison, not a patient report. Reference intervals vary by laboratory and population.",
+    "transformations": "Synthetic data authored for this lesson.",
+    "reviewStatus": "pending"
+  },
+  "ct-normal": {
+    "id": "ct-normal",
+    "path": "assessment/media/ct-normal.png",
+    "kind": "image",
+    "origin": "clinical image",
+    "source": "https://commons.wikimedia.org/wiki/File:CT_of_a_normal_brain,_axial_19.png",
+    "license": "CC0",
+    "licenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+    "creator": "Mikael H\u00e4ggstr\u00f6m, M.D. Author info - Reusing images- Conflicts of interest:\u00a0 None\nMikael H\u00e4ggstr\u00f6m, M.D.Consent note: Written informed consent was obtained from the individual, including online publication.",
+    "description": "Reference axial head CT without intravenous contrast, with 4 mm slice thickness. The source describes normal anatomy. The side panel indicates the slice plane.",
+    "transformations": "Wikimedia-provided 500px thumbnail; aspect ratio preserved. No diagnostic alterations.",
+    "sha256": "499adbdad84cd4c25735b83e23781ddd0287e50252187f252d6ec6952b537e29",
+    "reviewStatus": "pending"
+  },
+  "mri-normal": {
+    "id": "mri-normal",
+    "path": "assessment/media/mri-normal.jpg",
+    "kind": "image",
+    "origin": "clinical original",
+    "source": "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Novaksean",
+    "description": "This axial T2-weighted MR image shows a normal brain at the level of the lateral ventricles.",
+    "transformations": "None; original file.",
+    "sha256": "3ceab6190d93957c6ace30db10bece675890215a08249cceaf72a3eddda4cc23",
+    "reviewStatus": "pending"
+  },
+  "us-kidney-normal": {
+    "id": "us-kidney-normal",
+    "path": "assessment/media/us-kidney-normal.jpg",
+    "kind": "image",
+    "origin": "clinical image",
+    "source": "https://commons.wikimedia.org/wiki/File:Right_kidney_seen_on_abdominal_ultrasound.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Ptrump16",
+    "description": "Right kidney seen on abdominal ultrasound demonstrating normal anatomy. \nDevice: GE Logiq E9",
+    "transformations": "Wikimedia-provided thumbnail, maximum width 960px; aspect ratio preserved. No diagnostic alterations.",
+    "sha256": "f4244d9985e88eab2afc30afb02c38d64ac52a2a1064ab9f364be37cb28eb926",
+    "reviewStatus": "pending"
+  },
+  "us-gallbladder-normal": {
+    "id": "us-gallbladder-normal",
+    "path": "assessment/media/us-gallbladder-normal.jpg",
+    "kind": "image",
+    "origin": "clinical image",
+    "source": "https://commons.wikimedia.org/wiki/File:Gallbladder_and_common_bile_duct_ultrasound.jpg",
+    "license": "CC BY-SA 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+    "creator": "Ptrump16",
+    "description": "Normal gallbladder and common bile duct as seen on abdominal ultrasound.\n Device: Toshiba Aplio XG",
+    "transformations": "Wikimedia-provided thumbnail, maximum width 330px; aspect ratio preserved. No diagnostic alterations.",
+    "sha256": "e14e66a31f887cc430e4b036dd37243ef712ab01b2a5356a828fcb402b02ed8e",
+    "reviewStatus": "pending"
+  },
+  "mri-t2-lesion": {
+    "id": "mri-t2-lesion",
+    "path": "assessment/media/mri-t2-lesion.jpg",
+    "kind": "image",
+    "origin": "clinical image",
+    "source": "https://commons.wikimedia.org/wiki/File:Glioblastoma_multiforme_-_MRT_T2_ax.jpg",
+    "license": "CC BY-SA 3.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+    "creator": "Hellerhoff",
+    "description": "Axial T2-weighted brain MRI. The source labels this as a biopsy-confirmed glioblastoma. The diagnosis is not established by this single image.",
+    "transformations": "Wikimedia-provided thumbnail, maximum width 330px; aspect ratio preserved. No diagnostic alterations.",
+    "sha256": "795b044d1ed5ae7fa74895536c3dea819668ba728f01e8c299f32121e229e529",
+    "reviewStatus": "pending"
+  },
+  "us-hydronephrosis": {
+    "id": "us-hydronephrosis",
+    "path": "assessment/media/us-hydronephrosis.jpg",
+    "kind": "image",
+    "origin": "clinical image",
+    "source": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_hydronephrosis_due_to_ureteropelvic_junction_obstruction.jpg",
+    "license": "CC BY 4.0",
+    "licenseUrl": "https://creativecommons.org/licenses/by/4.0",
+    "creator": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen and Caroline Ewertsen",
+    "description": "Hydronephrosis due to ureteropelvic junction obstruction in a pediatric patient.\nFor context, see en:Renal ultrasonography",
+    "transformations": "Wikimedia-provided thumbnail, maximum width 330px; aspect ratio preserved. No diagnostic alterations.",
+    "sha256": "ca05c494c744c1f9e1797f8082ec75cb718b94fddfbd1274a596d54d8159e569",
+    "reviewStatus": "pending"
+  }
+}
