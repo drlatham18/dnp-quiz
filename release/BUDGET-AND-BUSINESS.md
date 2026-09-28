@@ -1,0 +1,51 @@
+# Budget options and business setup
+
+Prepared September 28, 2026 from the official sources linked below. Prices are USD planning figures, not checkout quotes. No purchases, account registrations, filings, provider changes or contacts have been made. No new spending is authorized yet.
+
+## Three operating-platform options
+
+These compare the web-hosting/business layer; they do **not** decide the outstanding web-versus-native acquisition/retention question. Native delivery can change cost, payment and review requirements.
+
+| Option | Initial platform cost | Built in | What still needs work | Recommendation |
+| --- | --- | --- | --- | --- |
+| **1. Existing app on Cloudflare Pages** | **$0/month for static hosting** within platform limits. A custom domain and mailbox are separate. If server-side features are later needed, Workers has a free plan; its paid plan starts at **$5/month**, plus applicable usage. | Static hosting/CDN, HTTPS and deployment infrastructure. | Consumer accounts, paid entitlements, progress sync and billing integration are not supplied as a turnkey membership product. None is required for the agreed initial free, account-free release. | Lowest incremental infrastructure cost and preserves our existing app. Preferred web-lane candidate, subject to platform research and approval. |
+| **2. Firebase Hosting + Authentication + Firestore** | **$0/month within Spark quotas**. Hosting lists 10 GB storage and **360 MB/day transfer**. Paid Blaze is usage-based, not a flat unlimited plan. | Hosting/HTTPS, authentication services and database infrastructure in one ecosystem. | We must implement secure progress sync, user-data access rules, deletion/export and subscription entitlements. Authentication is not the same as paid membership. Later billing/server-side features can require a billing-enabled project. | Best shortlist candidate if the future paid account/sync tier drives architecture. It is a developer platform, not a no-code business website. |
+| **3. Wix** | Official U.S. guidance lists **Light at $17/month equivalent ($204/year)** and **Core at $29/month equivalent ($348/year)**, with annual payment upfront. Light fits a simple branded site; Core adds payment capability for later. Verify the actual U.S. quote, taxes, renewal price and any plan/processing/service fees before purchase. | Website builder, hosting, site-member tools and business administration; qualifying plans support paid plans/payments. | Existing quiz/offline functionality and cross-device learning progress would need custom integration or rebuilding. A members area does not automatically synchronize quiz data. Domain renewal, business email and payment-related fees may be extra. Wix's free site includes Wix advertising, so it does not match the agreed ad-free launch. | Most bundled website/business experience, but higher cash cost and likely more migration work. A useful comparator, not a reason to discard the app we already built. |
+
+Sources: [Cloudflare static requests](https://developers.cloudflare.com/pages/functions/pricing/), [Workers pricing](https://developers.cloudflare.com/workers/platform/pricing/), [Pages limits](https://developers.cloudflare.com/pages/platform/limits/); [Firebase pricing](https://firebase.google.com/pricing), [Hosting](https://firebase.google.com/docs/hosting), [budget controls](https://firebase.google.com/docs/projects/billing/avoid-surprise-bills); [Wix U.S. cost guide](https://www.wix.com/blog/how-much-is-a-wix-website), [members area](https://support.wix.com/en/article/site-members-about-the-members-area), [paid-plan setup](https://support.wix.com/en/article/pricing-plans-setting-up-payments).
+
+**Cost judgment:** built-in features save integration work, but paying for accounts and payments before using them does not help this initial release. Keep the GitHub testing preview in place while researching the production platform. Do not migrate solely to obtain a page builder. None of these platforms supplies nurse approval, business registration, insurance or legal clearance.
+
+The current preview's complete `dist` folder measures about **4.21 MiB uncompressed** (September 28 local build). Media streaming, cache updates and repeated downloads affect transfer use; this is not a per-user billing estimate. The production subset should be measured again after filtering. Firebase's free transfer quota is meaningful for a media app. Usage alerts on a billing-enabled project are not a guaranteed hard spending cap. Avoid metered AI, live audio analysis, SMS and other paid integrations in the initial release.
+
+### Budget to bring back before spending
+
+- Platform subscription and any annual upfront commitment: selected option, exact quote, renewal and tax.
+- Domain and mailbox: quotes after name clearance, including year-two renewals. No domain availability or trademark clearance is claimed.
+- Business name filing: Tennessee lists **$20** for application SS-4402, if an assumed-name filing is appropriate. Other applicable fees are not included.
+- Legal/insurance/accounting: use no-cost business advising first, then request scoped quotes; no invented flat estimate or subscription authorization.
+- Future paid tier: payment-processing/service fees, tax tooling, account/data infrastructure and support. Deferred, not assumed free.
+
+## Business setup sequence
+
+Daniel identified **Latham Counseling Services, LLC, Tennessee**, as the proposed operator. “Mahtal Applied Services” is a possible brand, not a confirmed registered assumed name. Do not form another LLC or file a DBA automatically.
+
+1. **Use free business advising first.** [Tennessee Small Business Development Center](https://tsbdc.org/consulting/) offers no-cost consulting and can help organize business-model, bookkeeping and startup questions. This does not replace legal advice or bind an insurer. Daniel can select his county and request an appointment; nothing has been submitted for him.
+2. **Confirm the entity and risk arrangement.** Privately check the existing LLC's charter/status, purpose, operating agreement and whether it is subject to any professional-entity restrictions. Ask counsel whether the educational product belongs under that entity or should be separated from the counseling practice. Do not assume the counseling policy covers software or that a brand name changes the legal entity. [SBA structure overview](https://www.sba.gov/blog/2018/2018-07/choosing-right-business-structure-three-factors-consider/).
+3. **Choose and clear the name.** Confirm the legal seller/operator, proposed brand and product name. Check state name records, trademarks and domain availability before buying. If needed, Tennessee's [forms and fees](https://sos.tn.gov/businesses/forms-and-fees) list the assumed-name application at $20. Confirm the appropriate filing and renewal requirements before submission.
+4. **Obtain an insurance answer in writing.** Describe an adult nursing study product with reviewed educational media, no patient inputs, no CE claims and no clinical decision support. Ask the broker about relevant technology/professional liability, media/IP and cyber/privacy coverage and exclusions. A specific policy recommendation needs the actual contract and risk assessment; this research does not establish coverage. [SBA insurance overview](https://www.sba.gov/counseling/launch-your-business/).
+5. **Set up ordinary business operations.** Confirm authorized use of the LLC's bank/bookkeeping arrangements; track this product's expenses separately from counseling activity. Establish a business-owned domain/email and role addresses for support and privacy after the name is settled. Do not publish a home address or personal contact details by default. Store contracts, licenses and reviewer evidence privately with access controls and backups.
+6. **Prepare truthful policies for the actual launch.** Update operator identity, contact details, local storage/export/deletion, hosting data flows, educational limits, media rights and support response processes. Remove promises about community submissions from the production profile when that feature is deferred. Keep paid subscriptions and advertising out of initial production copy. Counsel should review applicability in the agreed U.S. market; a policy generator or website plan is only a drafting aid.
+7. **Before money changes hands later, resolve taxes and payments.** Tennessee has specific rules for remotely accessed software, so a future paid study subscription cannot simply be assumed tax-exempt because it is educational. Have a tax professional determine classification and multistate obligations for the actual offering; then configure checkout, refunds, cancellation and bookkeeping. [Tennessee Revenue overview](https://revenue.support.tn.gov/hc/en-us/articles/360057266092-RAS-1-Remotely-Accessed-Software-Overview).
+
+## Ready-to-use inquiry drafts — not sent
+
+### No-cost business adviser
+
+> I operate Latham Counseling Services, LLC in Tennessee and am preparing a separate educational study product for adult nursing students and licensed nurses in the U.S. The first release will be free, account-free and ad-free, with no patient data or CE credit. Paid study accounts and advertising may come later. I would like help organizing the business setup, bookkeeping and referrals for entity/DBA, tax and insurance questions. Could you help me identify the appropriate next steps and low-cost resources?
+
+### Attorney / insurance broker
+
+> I am considering operating a nursing study app under my Tennessee LLC, Latham Counseling Services, LLC, possibly using the brand Mahtal Applied Services. It is educational, not for patient-care decisions, and will not award CE credit. Initial content is RN foundations and core assessment, with three independent nurse reviews and owner verification before release. Please assess the entity/brand arrangement and applicable coverage or exclusions, including whether separating this activity from my counseling practice is advisable. Please provide a scoped quote before starting paid work.
+
+Do not attach patient records, credentials, reviewer identities or insurance documents to public project files. Daniel retains responsibility for choosing providers, signing/filing, authorizing spending and final production approval.
