@@ -5,6 +5,8 @@ class Element {
  set textContent(v){this._text=v;} get textContent(){return this._text+this.children.map(c=>c.textContent).join(' ');}
  append(...nodes){nodes.forEach(n=>{n.parent=this;this.children.push(n);});} replaceChildren(...nodes){this.children=[];this._text='';this.append(...nodes);}
  remove(){this.parent.children=this.parent.children.filter(n=>n!==this);} setAttribute(){} scrollIntoView(){} focus(){}
+ querySelector(s){return this.children.flatMap(n=>[n,...n.descendants()]).find(n=>n.tagName===s);}
+ descendants(){return this.children.flatMap(n=>[n,...n.descendants()]);}
  querySelectorAll(s){return this.children.flatMap(n=>[...(s==='button'?n.tagName==='button':n.className.split(' ').includes(s.slice(1)))?[n]:[],...n.querySelectorAll(s)]);}
 }
 async function boot(catalog=original,saved={},deny=false){

@@ -1,12 +1,16 @@
 {
   "schemaVersion": 1,
-  "contentHash": "ce6ae7c4ed038bc9e600bce32fb3748f747b27c22ac04fecb101d73c1249aefb",
+  "contentHash": "f4dc25a0db1a815fc4b5f932f58f932ccd0ac749643d0561323117940009a2d5",
   "requiredTrainedNurses": 3,
   "ownerVerificationRequired": true,
   "files": [
     {
       "file": "app.js",
       "sha256": "27b8a4c4d5a571d8d65a1982999e02782dca0f6bf0eaf986f7c5a78619986808"
+    },
+    {
+      "file": "archive.html",
+      "sha256": "209d17cdeaae4aeeb518159a75ba022bc76761163192e0a0e99fe1401afc19dd"
     },
     {
       "file": "assessment.css",
@@ -18,7 +22,7 @@
     },
     {
       "file": "assessment.js",
-      "sha256": "224fba0c7cb1b6abf74e70a2d8b713ca1d06912515c1729b0264288a702e7c40"
+      "sha256": "ce12b464b195ea911598a36daffaa92aaadd4353c91b5e61821cd90462fbb0b0"
     },
     {
       "file": "assessment/catalog.json",
@@ -257,8 +261,32 @@
       "sha256": "f4244d9985e88eab2afc30afb02c38d64ac52a2a1064ab9f364be37cb28eb926"
     },
     {
+      "file": "community-import.js",
+      "sha256": "214bea32047a44af64d15f53bf39a1548827c4f9e17a2287c20b796547523204"
+    },
+    {
+      "file": "community-terms.html",
+      "sha256": "0c0d3b384971c5955764c35a1575061c08647dc2981dab7c5d64e1cbfc89c2d8"
+    },
+    {
+      "file": "community.css",
+      "sha256": "b68b0beb1176c333d071bda0923f7f5d3b412377e3a9acc3484e7cade94c6f03"
+    },
+    {
+      "file": "community.html",
+      "sha256": "2263e995d7126106a9b6b0a278d2f3b151293bbfa19981c57a2ec5803a1b3cc0"
+    },
+    {
+      "file": "community.js",
+      "sha256": "e43fac92d9373c5aab7d0bf89ccb4f01fe50bb8f36259dc790fb907d8b4f0d04"
+    },
+    {
       "file": "curriculum.js",
       "sha256": "4ab9f6290239d571d35c3da621472998345e0aa790eec94637142730c052cbf6"
+    },
+    {
+      "file": "daily.js",
+      "sha256": "a530bac395d0a81d7962ea060954d5d3025d2abe57c2825f83bf075a836689d6"
     },
     {
       "file": "expansion.js",
@@ -277,6 +305,10 @@
       "sha256": "375bbaa0282ce65dab953459f45e633ecb23ae7485359f61b372d565edf71c49"
     },
     {
+      "file": "privacy.html",
+      "sha256": "962984d910f78cd28f427974fd15c365ed26d6b608e48e40c8cce95dda939a56"
+    },
+    {
       "file": "register-sw.js",
       "sha256": "4862f7565f16e41fd7867d8ed95e344ead0f3622045970263ad63345cf32e2b1"
     },
@@ -290,7 +322,7 @@
     },
     {
       "file": "review.js",
-      "sha256": "2356f52a920d69fc9a667664b826ef266aa94f568e8315514977c1d9aa4b158d"
+      "sha256": "8eb5a52ca63ae134495175bc5afd12ec6683675644d5d78c7053d7b097da7fce"
     },
     {
       "file": "stories.js",
@@ -313,6 +345,10 @@
       "sha256": "d4bdb2aa964a7bf29feec0d14eaf0647c7aa4e54a7cb409a4b88b2ba56a906d6"
     },
     {
+      "file": "support.html",
+      "sha256": "58e722811b35c61ec588ae80a13332fe0eae04e5a773609e7a0b8d1d90541074"
+    },
+    {
       "file": "tools/build.cjs",
       "sha256": "937f081849bbbccc73ad82b8d9f9a456f836e4ed9943e3097e66a7ec7858b8a2"
     },
@@ -322,7 +358,7 @@
     },
     {
       "file": "tools/release-gate.cjs",
-      "sha256": "ed539082c8c80a16c1a51fa6e9bd1afbc2bf80772b154b8208bc15805be144db"
+      "sha256": "2da1e2f6f01130aa85fba9b0ad950ae0cc98a422e3a38be4f4b99113d48405d0"
     }
   ]
 }

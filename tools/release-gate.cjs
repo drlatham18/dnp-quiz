@@ -2,6 +2,7 @@
 const fs=require('node:fs'),path=require('node:path'),crypto=require('node:crypto');
 const ROOT=path.resolve(__dirname,'..');
 const CONTENT=['library.js','curriculum.js','stories.js','study-packs.js','expansion.js','assessment/catalog.json','assessment/media-sources.json','assessment.js','study-hub.js','app.js','assessment.css','index.html','assessment.html','review.html','review.js','study-state.js','register-sw.js','style.css','review-policy.json','tools/prepare-preview.cjs','tools/build.cjs','tools/release-gate.cjs'];
+CONTENT.push('privacy.html','community-terms.html','community.html','community.js','community-import.js','community.css','daily.js','archive.html','support.html');
 function manifest(root=ROOT){
  const files=CONTENT.slice();
  function walk(dir){for(const e of fs.readdirSync(path.join(root,dir),{withFileTypes:true})){const f=dir+'/'+e.name;if(e.isDirectory())walk(f);else files.push(f);}}

@@ -1,0 +1,97 @@
+{
+  "checkedOn": "2026-09-28",
+  "registeredAssets": 67,
+  "fileChecksumsMatch": true,
+  "commonsSources": [
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Chest_x-ray_plain_film_normal.jpg",
+      "declaredLicense": "CC BY-SA 4.0",
+      "upstreamLicense": "CC BY-SA 4.0",
+      "upstreamLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "upstreamCredit": "Ptrump16",
+      "licenseMatches": true
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Expiration-left-side-pneumo.jpg",
+      "declaredLicense": "Public domain",
+      "upstreamLicense": "Public domain",
+      "upstreamLicenseUrl": null,
+      "upstreamCredit": "Mynameisderek",
+      "licenseMatches": true
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Pleural_effusion.jpg",
+      "declaredLicense": "Public domain",
+      "upstreamLicense": "Public domain",
+      "upstreamLicenseUrl": null,
+      "upstreamCredit": "User InvictaHOG on en.wikipedia\n\nEdited by InvictaHOG, all edits released into public domain\nCommons upload by Magnus Manske 13:26, 28 April 2006 (UTC)",
+      "licenseMatches": true
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Ct-scan_of_the_brain_with_an_subdural_hematoma.jpg",
+      "declaredLicense": "CC BY-SA 3.0",
+      "upstreamLicense": "CC BY-SA 3.0",
+      "upstreamLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "upstreamCredit": "Lucien Monfils",
+      "licenseMatches": true
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Gallstones.PNG",
+      "declaredLicense": "CC BY-SA 3.0",
+      "upstreamLicense": "CC BY-SA 3.0",
+      "upstreamLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "upstreamCredit": "James Heilman, MD",
+      "licenseMatches": true
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:CT_of_a_normal_brain,_axial_19.png",
+      "declaredLicense": "CC0",
+      "upstreamLicense": "CC0",
+      "upstreamLicenseUrl": "http://creativecommons.org/publicdomain/zero/1.0/deed.en",
+      "upstreamCredit": "Mikael H\u00e4ggstr\u00f6m, M.D. Author info - Reusing images- Conflicts of interest:\u00a0 None\nMikael H\u00e4ggstr\u00f6m, M.D.Consent note: Written informed consent was obtained from the individual, including online publication.",
+      "licenseMatches": true
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Normal_axial_T2-weighted_MR_image_of_the_brain.jpg",
+      "declaredLicense": "CC BY-SA 4.0",
+      "upstreamLicense": "CC BY-SA 4.0",
+      "upstreamLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "upstreamCredit": "Novaksean",
+      "licenseMatches": true
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Right_kidney_seen_on_abdominal_ultrasound.jpg",
+      "declaredLicense": "CC BY-SA 4.0",
+      "upstreamLicense": "CC BY-SA 4.0",
+      "upstreamLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "upstreamCredit": "Ptrump16",
+      "licenseMatches": true
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Gallbladder_and_common_bile_duct_ultrasound.jpg",
+      "declaredLicense": "CC BY-SA 4.0",
+      "upstreamLicense": "CC BY-SA 4.0",
+      "upstreamLicenseUrl": "https://creativecommons.org/licenses/by-sa/4.0",
+      "upstreamCredit": "Ptrump16",
+      "licenseMatches": true
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Glioblastoma_multiforme_-_MRT_T2_ax.jpg",
+      "declaredLicense": "CC BY-SA 3.0",
+      "upstreamLicense": "CC BY-SA 3.0",
+      "upstreamLicenseUrl": "https://creativecommons.org/licenses/by-sa/3.0",
+      "upstreamCredit": "Hellerhoff",
+      "licenseMatches": true,
+      "verificationMethod": "Commons file-page licensing section; API rate limited"
+    },
+    {
+      "source": "https://commons.wikimedia.org/wiki/File:Ultrasonography_of_hydronephrosis_due_to_ureteropelvic_junction_obstruction.jpg",
+      "declaredLicense": "CC BY 4.0",
+      "upstreamLicense": "CC BY 4.0",
+      "upstreamLicenseUrl": "https://creativecommons.org/licenses/by/4.0",
+      "upstreamCredit": "Kristoffer Lindskov Hansen, Michael Bachmann Nielsen and Caroline Ewertsen",
+      "licenseMatches": true
+    }
+  ],
+  "clinicalApproval": false
+}

@@ -1,6 +1,7 @@
 const assert=require('node:assert/strict'),fs=require('node:fs');
 const {manifest,validateApprovals,assertExternalRelease}=require('./tools/release-gate.cjs');
 const hash=manifest().contentHash;
+for(const file of ['privacy.html','community-terms.html','daily.js','community.js'])assert(manifest().files.some(f=>f.file===file),'Review fingerprint must cover '+file);
 // In-memory test fixtures only. These are NOT real reviews or release authorizations.
 const a={contentHash:hash,ownerVerification:{verified:true,contentHash:hash,verifiedAt:'2026-09-21T00:00:00Z',evidenceReference:'TEST FIXTURE ONLY'},nurses:[1,2,3].map(n=>({reviewerId:'TEST-'+n,trainedNurse:true,decision:'approved',contentHash:hash,evidenceReference:'TEST FIXTURE ONLY',reviewedAt:'2026-09-21T00:00:00Z',checks:{accuracy:true,mediaFidelity:true,normalAbnormalDistinction:true,nursingImplications:true}}))};
 assert.deepEqual(validateApprovals(a,hash),[]);

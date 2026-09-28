@@ -56,7 +56,7 @@
       options.forEach(function(o){var b=btn(o.text,function(){if(answered)return;answered=true;var correct=o.index===q.answer;if(correct)right++;
         block.querySelectorAll('button').forEach(function(x){x.disabled=true;});b.classList.add(correct?'correct':'wrong');
         var feedback=el('div',null,'lesson-feedback');feedback.setAttribute('role','status');feedback.append(el('p',correct?'Correct.':'Review this. Best answer: '+q.options[q.answer]),el('p',q.rationale));
-        block.append(feedback,btn(index+1===lesson.questions.length?'Finish practice':'Next question',function(){index++;render();},'big-btn'));
+        block.append(feedback,btn(index+1===lesson.questions.length?'Finish practice':'Next question',function(){index++;render();var heading=block.querySelector('h3');heading.tabIndex=-1;heading.focus();},'big-btn'));
       },'opt');block.append(b);});
     }render();host.append(block);
   }

@@ -6,6 +6,9 @@ for(const f of ['dist/index.html','dist/library.js','dist/sw.js','dist/assessmen
 for(const name of ['data','review-private','work','.git','.env'])assert(!fs.existsSync('dist/'+name),'Private or unreleased source must not be bundled: '+name);
 assert.equal(fs.readFileSync('sw.js','utf8'),fs.readFileSync('dist/sw.js','utf8'));
 const release=JSON.parse(fs.readFileSync('dist/release.json'));assert.equal(release.contentHash,gate.manifest().contentHash);assert.equal(JSON.parse(fs.readFileSync('dist/review-manifest.json')).contentHash,release.contentHash);
+// GitHub Pages serves the repository root, not only dist. Retired native downloads
+// must not silently return through that separate publication surface.
+if(release.edition==='testing-preview'&&fs.existsSync('downloads'))assert(!fs.readdirSync('downloads',{recursive:true}).some(f=>/\.(apk|aab|ipa)$/i.test(f)),'Testing preview must not expose native downloads');
 assert.equal(release.questions,240);assert.equal(release.existingQuestions,160);
 assert.equal(release.testingDestination,'https://drlatham18.github.io/dnp-quiz/');
 if(release.edition!=='testing-preview')gate.assertExternalRelease();
