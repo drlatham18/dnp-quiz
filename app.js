@@ -530,7 +530,7 @@
   };
   $('clear-progress').onclick = function() {
     if (!confirm('Clear your saved practice results and missed questions on this device?')) return;
-    try { localStorage.removeItem('nursing-progress-v1'); localStorage.removeItem(LS_KEY); localStorage.removeItem('nursing-study-v2'); localStorage.removeItem('nursing-session-v1'); } catch (e) {}
+    try { localStorage.removeItem('nursing-progress-v1'); localStorage.removeItem(LS_KEY); localStorage.removeItem('nursing-study-v2'); localStorage.removeItem('nursing-session-v1'); localStorage.removeItem('nursing-lab-progress-v1'); localStorage.removeItem('nursing-lab-tutorials-v1'); } catch (e) {}
     renderProgress(); updateMissedBtn();
     if (window.renderNursingHub) window.renderNursingHub();
   };

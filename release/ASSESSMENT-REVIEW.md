@@ -11,7 +11,7 @@ Any release somewhere else, including a native app, requires the owner's explici
 - 160 existing source-linked practice questions, preserved.
 - 14 topic summaries built around the existing bank.
 - 4 expansion packs containing 80 new original draft questions with rationales and distractor explanations.
-- 30 paired Assessment Lab lessons and 90 comparison-practice prompts.
+- 30 paired Assessment Lab lessons and 90 scenario/interpretation practice questions, plus five required category introductions with three-question understanding checks.
 - Heart and lung sounds: published HLS-CMDS clinical-manikin recordings, with upstream normalization disclosed. They are simulations, not patient recordings.
 - Skin: original simplified vector diagrams in three illustrative tones, not clinical photographs or a clinically calibrated skin-tone atlas.
 - Imaging: source-attributed clinical images, with context/acquisition differences disclosed. These are different individuals, not before/after studies.
@@ -20,7 +20,7 @@ Any release somewhere else, including a native app, requires the owner's explici
 ## Review procedure
 
 1. Visit `/review.html` on the preview. Download the review inventory and retain its SHA-256 content fingerprint.
-2. Each trained nurse independently reviews the exact normal/abnormal pair, provenance, media processing, teaching text, answer/distractor logic, nursing scope, and limitations. Include patient-population applicability, ambiguous normal variants, tone diversity and whether the sample is representative.
+2. Each trained nurse independently reviews the exact normal/abnormal pair, provenance, media processing, teaching text, answer/distractor logic, category tutorial wording and quiz, nursing scope, and limitations. Include patient-population applicability, ambiguous normal variants, tone diversity and whether the sample is representative.
 3. Record changes or recommendations in the browser review workspace and export the notes. Notes remain local until exported. The webpage cannot verify training, collect official signatures, or approve a release.
 4. Resolve all concerns and regenerate the content fingerprint. Material revisions require renewed review of the new version. Do not reuse a stale review file.
 5. The owner verifies reviewer training/identity and all three approvals for the final fingerprint, then authorizes external release. Only then place the private attestation file in `review-private/approvals.json` (ignored by Git).
@@ -34,3 +34,7 @@ The attestation contains `contentHash`, three `nurses` entries (`reviewerId`, `t
 The first 30 lessons are learning prototypes, not competency certification. Review the clinical fidelity of every recording and image, schematic wound depth/appearance, laboratory contexts and escalation wording. Add multiple authentic examples and matched demographic/scan controls before using recognition accuracy as evidence of skill. Do not infer a valve diagnosis from a murmur or a clinical diagnosis from an isolated image. Do not equate an apparently normal recording/image with an exclusion of disease.
 
 Future collections in the agreed backlog: ECGs, circulation/perfusion, neuro/function, additional wound/skin conditions, expanded CT/MRI/ultrasound, maternal/newborn, pediatric and critical-care assessment. The first version does not claim that all of these future collections are populated.
+
+## Deployment-law research
+
+See [REGULATORY-REVIEW.md](REGULATORY-REVIEW.md) for the September 28, 2026 preliminary U.S. review, current data-flow observations and unresolved legal applicability questions. Tutorial completion is neither nurse approval nor legal clearance.

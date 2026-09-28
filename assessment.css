@@ -3,7 +3,7 @@
 .lab-hero { max-width:740px; margin:42px 0 30px; }.lab-hero h1 { font-size:clamp(2rem,5vw,3.2rem); letter-spacing:-.04em; margin:8px 0 14px; }.lab-hero p { margin-top:12px; }
 .lab-toolbar { margin-bottom:24px; }.lab-toolbar input,textarea,input[type=text] { width:100%; padding:12px; border:1px solid var(--border); border-radius:10px; font:inherit; background:var(--card); color:var(--text); margin:8px 0; }.lab-filters { display:flex; gap:16px; }.lab-filters label { flex:1; }
 .lab-grid { display:grid; grid-template-columns:repeat(3,minmax(0,1fr)); gap:16px; margin:24px 0; }
-.lab-tile { padding:20px; display:flex; flex-direction:column; gap:12px; min-height:240px; }.lab-tile h2 { font-size:1.2rem; }.lab-tile .link-btn { margin-top:auto; text-align:left; }
+.lab-tile,.tutorial-tile { padding:20px; display:flex; flex-direction:column; gap:12px; min-height:240px; }.lab-tile h2,.tutorial-tile h2 { font-size:1.2rem; }.lab-tile .link-btn,.tutorial-tile .link-btn { margin-top:auto; text-align:left; }
 .media-mark { width:42px; height:42px; display:grid; place-items:center; background:var(--accent-soft); color:var(--accent); border-radius:12px; font-size:1.2rem; }
 .badge { font-size:.75rem; padding:3px 8px; border:1px solid var(--border); border-radius:999px; display:inline-block; width:fit-content; }
 #lab-detail { margin:24px 0; scroll-margin-top:14px; }#lab-detail h2 { font-size:1.65rem; }#lab-detail h3 { margin:20px 0 8px; }#lab-detail p { margin:10px 0; }
