@@ -29,7 +29,11 @@ async function answer(u,q,choice=q.answer){
  assert.equal(original.tutorials.length,5);
  assert.deepEqual(new Set(original.tutorials.map(t=>t.group)),new Set(original.lessons.map(l=>l.group)));
  assert.equal(new Set(original.tutorials.map(t=>t.id)).size,5);
- const stems=new Set();for(const l of original.lessons){assert.equal(l.revision,2);for(const q of l.questions){assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);assert(!stems.has(q.stem));stems.add(q.stem);}}
+ const stems=new Set();for(const l of original.lessons){assert.equal(l.revision,l.id==='heart-s3'?3:2);for(const q of l.questions){assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);assert(!stems.has(q.stem));stems.add(q.stem);}}
+ const s3=original.lessons.find(l=>l.id==='heart-s3');assert.equal(s3.teaching.length,4);assert.equal(new Set(s3.teaching.map(t=>t.id)).size,4);
+ for(const q of s3.questions){assert(q.teachingRefs.length);for(const id of q.teachingRefs)assert(s3.teaching.some(t=>t.id===id));}
+ for(const t of s3.teaching){assert(t.paragraphs.length);assert(t.sources.every(s=>s.url.startsWith('https://')));}
+ assert.equal(s3.dialogue.segments.length,12);assert(s3.dialogue.presenterDisclosure.includes('synthetic'));for(const t of s3.dialogue.segments)for(const id of t.teachingRefs)assert(s3.teaching.some(p=>p.id===id));
  const u=await boot();assert(u.panel.textContent.includes('Required first lesson'));assert.equal(u.panel.querySelectorAll('.sample').length,0);
  const heart=original.tutorials.find(t=>t.group==='Heart sounds');
  for(const q of heart.questions)await answer(u,q,(q.answer+1)%q.options.length);
@@ -44,6 +48,7 @@ async function answer(u,q,choice=q.answer){
   assert(u.panel.textContent.includes(expected+' / 3 correct in this draft exercise.'));
  }
  const reload=await boot(original,u.saved);assert.equal(reload.panel.querySelectorAll('.sample').length,2);
+ const rendered=reload.panel.textContent;assert(rendered.indexOf('1. Learn before listening')<rendered.indexOf('2. Listen and compare'));assert(rendered.indexOf('2. Listen and compare')<rendered.indexOf('3. Practice what you learned'));for(const t of s3.teaching)assert(rendered.indexOf(t.title)<rendered.indexOf('Normal / expected reference'));
  const changed=structuredClone(original);changed.tutorials[0].paragraphs[0]+=' Updated instruction.';
  const stale=await boot(changed,u.saved);assert(stale.panel.textContent.includes('Required first lesson'));
  const corrupt=await boot(original,{'nursing-lab-tutorials-v1':'null'});assert(corrupt.panel.textContent.includes('Required first lesson'));

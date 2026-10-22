@@ -44,6 +44,7 @@
     card.append(el('p',asset.description,'hint'));
     var provenance=el('details');provenance.append(el('summary','Source, rights and processing'),el('p',asset.creator),el('p',asset.license),el('p',asset.transformations),link('View source',asset.source));if(asset.licenseUrl)provenance.append(el('p'),link('License terms',asset.licenseUrl));card.append(provenance);return card;
   }
+  function revisit(lesson,q,host){(q.teachingRefs||[]).forEach(function(id){var passage=(lesson.teaching||[]).find(function(t){return t.id===id;});if(!passage)return;host.append(btn('Review teaching: '+passage.title,function(){var target=$(id);if(target){target.scrollIntoView({block:'start'});target.querySelector('h3').focus();}},'link-btn'));});}
   function practice(lesson,host,onComplete){
     var block=el('section',null,'practice-block'),index=0,right=0;
     function render(){block.replaceChildren();
@@ -52,11 +53,11 @@
         var group=catalog.lessons.filter(function(l){return l.group===lesson.group;}),at=group.findIndex(function(l){return l.id===lesson.id;}),next=group[(at+1)%group.length];
         block.append(btn('Next comparison: '+next.title,function(){location.hash=next.id;},'big-btn'));return;}
       var q=lesson.questions[index],options=q.options.map(function(text,i){return {text:text,index:i};}).sort(function(){return Math.random()-.5;});
-      block.append(el('p','Practice '+(index+1)+' of '+lesson.questions.length,'q-meta'),el('h3',q.stem));var answered=false;
+      block.append(el('p','Practice '+(index+1)+' of '+lesson.questions.length,'q-meta'));revisit(lesson,q,block);block.append(el('h3',q.stem));var answered=false;
       options.forEach(function(o){var b=btn(o.text,function(){if(answered)return;answered=true;var correct=o.index===q.answer;if(correct)right++;
         block.querySelectorAll('button').forEach(function(x){x.disabled=true;});b.classList.add(correct?'correct':'wrong');
         var feedback=el('div',null,'lesson-feedback');feedback.setAttribute('role','status');feedback.append(el('p',correct?'Correct.':'Review this. Best answer: '+q.options[q.answer]),el('p',q.rationale));
-        block.append(feedback,btn(index+1===lesson.questions.length?'Finish practice':'Next question',function(){index++;render();var heading=block.querySelector('h3');heading.tabIndex=-1;heading.focus();},'big-btn'));
+        revisit(lesson,q,feedback);block.append(feedback,btn(index+1===lesson.questions.length?'Finish practice':'Next question',function(){index++;render();var heading=block.querySelector('h3');heading.tabIndex=-1;heading.focus();},'big-btn'));
       },'opt');block.append(b);});
     }render();host.append(block);
   }
@@ -70,13 +71,14 @@
       panel.scrollIntoView({block:'start'});panel.focus({preventScroll:true});return;
     }
     panel.append(el('p',lesson.group+' · Draft comparison','q-meta'),el('h2',lesson.title),el('p','0 / 3 nurse approvals verified · Testing only','badge'));
-    panel.append(btn('Review category introduction',function(){location.hash=required.id;},'link-btn'));
+    panel.append(btn(lesson.teaching?'Review safety introduction':'Review category introduction',function(){location.hash=required.id;},'link-btn'));
+    if(lesson.teaching){panel.append(el('h2','1. Learn before listening'));lesson.teaching.forEach(function(t){var section=el('section',null,'card');section.id=t.id;var heading=el('h3',t.title);heading.tabIndex=-1;section.append(heading);t.paragraphs.forEach(function(p){section.append(el('p',p));});var refs=el('div',null,'row-links');t.sources.forEach(function(s){refs.append(link(s.title,s.url));});section.append(refs);panel.append(section);});if(lesson.dialogue){var pilot=el('details',null,'card');pilot.append(el('summary','Optional conversation: '+lesson.dialogue.title+' (transcript draft)'),el('p',lesson.dialogue.status+'. '+lesson.dialogue.estimatedDuration+'.','hint'),el('p',lesson.dialogue.presenterDisclosure,'hint'));lesson.dialogue.segments.forEach(function(turn){pilot.append(el('h3',turn.speaker),el('p',turn.text));});panel.append(pilot);}panel.append(el('h2','2. Listen and compare'));lesson.listeningCues.forEach(function(p){panel.append(el('p',p));});}
     var compare=el('div',null,'compare-grid');function pairs(tone){compare.replaceChildren();var pair=lesson.tones&&lesson.tones[tone]||lesson;compare.append(sample(pair.normal,'Normal / expected reference'),sample(pair.abnormal,'Changed / abnormal example'));}
     if(lesson.tones){var label=el('label','Illustration tone'),select=el('select');['light','medium','deep'].forEach(function(t){var o=el('option',t[0].toUpperCase()+t.slice(1));o.value=t;select.append(o);});select.value='medium';select.onchange=function(){pairs(select.value);};label.append(select);panel.append(label);}
     pairs('medium');panel.append(compare);
     var details=el('details');details.open=true;details.append(el('summary','What to notice and why it matters'),el('h3','Notice the difference'),el('p',lesson.notice),el('p',lesson.difference,'learning-note'),el('h3','Context and limits'),el('p',lesson.context),el('h3','Connect to nursing assessment'),el('p',lesson.nursingAction));panel.append(details);
     var refs=el('div',null,'row-links');lesson.sources.forEach(function(s){refs.append(link(s.title,s.url));});panel.append(refs);
-    practice(lesson,panel);panel.append(btn('Back to comparisons',function(){location.hash='';}),link('Review this lesson','review.html#'+lesson.id));
+    if(lesson.teaching)panel.append(el('h2','3. Practice what you learned'),el('p','Each question links to the teaching above. Revisit it at any time; these are study questions, not a clinical competency test.','hint'));practice(lesson,panel);panel.append(btn('Back to comparisons',function(){location.hash='';}),link('Review this lesson','review.html#'+lesson.id));
     panel.scrollIntoView({block:'start'});panel.focus({preventScroll:true});
   }
   function render(){

@@ -21,6 +21,18 @@
         {
           "title": "Merck Manual · Cardiac auscultation",
           "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/approach-to-the-cardiac-patient/cardiac-auscultation"
+        },
+        {
+          "title": "UTMB: Heart sounds and murmurs",
+          "url": "https://www.utmb.edu/pedi_ed/CoreV2/Cardiology/cardiologyV2/cardiologyV23.html"
+        },
+        {
+          "title": "American Heart Association: Heart failure signs and symptoms",
+          "url": "https://www.heart.org/en/health-topics/heart-failure/warning-signs-of-heart-failure"
+        },
+        {
+          "title": "Merck Manual: Acute heart failure",
+          "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/heart-failure/acute-heart-failure"
         }
       ],
       "objectives": [
@@ -29,7 +41,7 @@
         "Connect the finding to a focused nursing assessment."
       ],
       "status": "awaiting-three-nurse-review",
-      "revision": 2,
+      "revision": 3,
       "questions": [
         {
           "stem": "A low-pitched extra sound occurs just after S2. Which timing best describes this finding?",
@@ -40,7 +52,11 @@
             "Inspiratory separation of the components of S2"
           ],
           "answer": 0,
-          "rationale": "S3 follows S2 during early filling. S4 precedes S1; an ejection sound occurs during systole. A split S2 consists of two valve-closure components rather than a separate filling sound."
+          "rationale": "S3 follows S2 during early filling. S4 precedes S1; an ejection sound occurs during systole. A split S2 consists of two valve-closure components rather than a separate filling sound.",
+          "teachingRefs": [
+            "heart-s3-landmarks",
+            "heart-s3-filling"
+          ]
         },
         {
           "stem": "A 74-year-old has a newly detected S3, increasing orthopnea and a 2-kg weight gain in three days. Which interpretation best connects these findings?",
@@ -51,7 +67,11 @@
             "Possible worsening congestion requiring prompt assessment"
           ],
           "answer": 3,
-          "rationale": "The symptom and weight trend make congestion the leading concern. Reduced compliance is more associated with S4. Depletion does not fit the weight gain and orthopnea; a physiologic S3 is more plausible in a healthy younger person."
+          "rationale": "The symptom and weight trend make congestion the leading concern. Reduced compliance is more associated with S4. Depletion does not fit the weight gain and orthopnea; a physiologic S3 is more plausible in a healthy younger person.",
+          "teachingRefs": [
+            "heart-s3-context",
+            "heart-s3-filling"
+          ]
         },
         {
           "stem": "Which assessment most directly helps evaluate whether a newly detected S3 is associated with pulmonary congestion?",
@@ -62,9 +82,184 @@
             "Apical-radial pulse comparison and rhythm regularity"
           ],
           "answer": 2,
-          "rationale": "Breathing effort, oxygenation and basal crackles directly address pulmonary involvement. The other assessments assess rhythm, orthostasis or peripheral perfusion and remain useful, but answer different questions."
+          "rationale": "Breathing effort, oxygenation and basal crackles directly address pulmonary involvement. The other assessments assess rhythm, orthostasis or peripheral perfusion and remain useful, but answer different questions.",
+          "teachingRefs": [
+            "heart-s3-assessment"
+          ]
         }
-      ]
+      ],
+      "teaching": [
+        {
+          "id": "heart-s3-landmarks",
+          "title": "First learn the timing words",
+          "paragraphs": [
+            "The ventricles are the lower heart chambers. Systole is their contraction and ejection phase; diastole is their relaxation and filling phase. S1 (the first heart sound, or “lub”) is associated with mitral and tricuspid valve closure near the start of systole. S2 (“dub”) comes from aortic and pulmonary valve closure at the transition to diastole.",
+            "Read one cycle as S1 → contraction/ejection → S2 → relaxation/filling → next S1. “Early diastolic” therefore means shortly after S2, not between S1 and S2."
+          ],
+          "sources": [
+            {
+              "title": "UTMB: heart sounds and cardiac timing",
+              "url": "https://www.utmb.edu/pedi_ed/CoreV2/Cardiology/cardiologyV2/cardiologyV23.html"
+            }
+          ]
+        },
+        {
+          "id": "heart-s3-filling",
+          "title": "Where S3 fits, and what it does not mean",
+          "paragraphs": [
+            "S3 is a brief, low-pitched extra sound during early ventricular filling, after S2. It is associated with the rapid-filling phase and its slowing; it is not another valve-closure component. Use timing rather than the loudness of this amplified example to describe it.",
+            "Compare the alternatives before practicing: S4 occurs late in filling, with atrial contraction just before S1; reduced ventricular compliance (a stiffer chamber) can contribute. Ventricular ejection is systolic, between S1 and S2. A split S2 is separation of its aortic and pulmonary closure components, which normally becomes wider on inspiration (breathing in). These are different timing patterns, not different names for S3.",
+            "An S3 can occur without disease in some younger people. In an older adult or with new symptoms it deserves clinical assessment. An isolated teaching sound does not establish heart failure or a specific cause."
+          ],
+          "sources": [
+            {
+              "title": "UTMB: S2 splitting, S3 and S4",
+              "url": "https://www.utmb.edu/pedi_ed/CoreV2/Cardiology/cardiologyV2/cardiologyV23.html"
+            },
+            {
+              "title": "Merck Manual: S3 and S4 in context",
+              "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/approach-to-the-cardiac-patient/cardiac-auscultation"
+            }
+          ]
+        },
+        {
+          "id": "heart-s3-context",
+          "title": "Connect a finding to the whole situation",
+          "paragraphs": [
+            "Congestion means fluid accumulating where it causes problems, including in the lungs. Orthopnea means breathlessness when lying flat. New or worsening breathlessness together with a rapid upward weight trend can raise concern about fluid retention. These clues must be assessed together; none alone proves the diagnosis.",
+            "In the practice scenario, a new S3 in a 74-year-old is accompanied by worsening orthopnea and a 2-kg gain over three days. The combination makes possible worsening congestion a concern to assess promptly, rather than assuming a harmless younger-person finding. The scenario’s weight change is not a universal diagnostic or treatment threshold. Fluid depletion (too little circulating fluid) does not explain that combination as well; stiffness alone does not account for the new congestion clues."
+          ],
+          "sources": [
+            {
+              "title": "American Heart Association: breathlessness and weight changes",
+              "url": "https://www.heart.org/en/health-topics/heart-failure/warning-signs-of-heart-failure"
+            },
+            {
+              "title": "Merck Manual: findings suggesting heart failure, with diagnostic limits",
+              "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/heart-failure/acute-heart-failure"
+            }
+          ]
+        },
+        {
+          "id": "heart-s3-assessment",
+          "title": "Choose an assessment that answers the question",
+          "paragraphs": [
+            "To explore possible pulmonary congestion in this study case, focus on breathing effort, oxygen saturation and lung sounds, including the bases. Crackles can occur with pulmonary congestion, but are not specific to heart failure. Normal oxygen saturation or an apparently normal recording does not exclude disease.",
+            "Match the assessment to the concern: orthostatic blood pressure and positional dizziness explore postural symptoms; pulse symmetry and capillary refill explore peripheral circulation; apical–radial pulse comparison explores pulse/rhythm differences. They can be useful, but do not address lung involvement as directly as the respiratory assessment.",
+            "A nurse integrates symptoms, observations and trends, documents the finding and communicates new or worsening concerns through the approved local pathway. Actual urgency depends on the person’s condition; do not delay an emergency response to use this app. This is an unapproved study lesson, not a bedside decision tool."
+          ],
+          "sources": [
+            {
+              "title": "OpenStax: focused assessment, symptoms and reporting",
+              "url": "https://openstax.org/books/clinical-nursing-skills/pages/24-3-nursing-assessment"
+            },
+            {
+              "title": "Merck Manual: pulmonary findings and diagnostic evaluation",
+              "url": "https://www.merckmanuals.com/professional/cardiovascular-disorders/heart-failure/acute-heart-failure"
+            }
+          ]
+        }
+      ],
+      "listeningCues": [
+        "Listen to the reference first and try to follow the repeating S1–S2 pattern. Then listen to the changed example for an extra sound after S2, before the next S1.",
+        "Use the same comfortable volume and replay as needed. These are matched manikin examples at the left lower sternal border; device loudness does not measure clinical severity.",
+        "If you cannot confidently locate the timing, revisit the timing explanation or record that difficulty for review. The recording cannot teach or establish a patient’s underlying diagnosis."
+      ],
+      "dialogue": {
+        "title": "Where does the extra sound fit?",
+        "status": "Script and transcript only; not recorded or clinically approved",
+        "estimatedDuration": "About 3 minutes; confirm pacing with the reviewed recording",
+        "presenterDisclosure": "Scripted new-nurse and instructor characters. No real clinician is depicted. Any generated voices or presenters must be labeled synthetic.",
+        "segments": [
+          {
+            "speaker": "New nurse",
+            "text": "I hear two examples, but I do not yet know how to explain the difference. What should I learn before listening?",
+            "teachingRefs": [
+              "heart-s3-landmarks"
+            ]
+          },
+          {
+            "speaker": "Instructor",
+            "text": "Start with timing. S1 is the first familiar sound, near the beginning of ventricular contraction. S2 marks the transition to relaxation and filling. The interval from S1 to S2 is systole; after S2 comes diastole. Those are landmarks, not a diagnosis.",
+            "teachingRefs": [
+              "heart-s3-landmarks"
+            ]
+          },
+          {
+            "speaker": "New nurse",
+            "text": "So when the question says an extra sound just after S2, it is asking about filling rather than ejection?",
+            "teachingRefs": [
+              "heart-s3-landmarks",
+              "heart-s3-filling"
+            ]
+          },
+          {
+            "speaker": "Instructor",
+            "text": "Yes. S3 is an extra low-pitched sound in early filling, associated with rapid filling and its slowing. Contrast S4: it occurs with atrial contraction late in filling, before the next S1. A split S2 is different again: its two valve-closure components separate, normally more during inspiration.",
+            "teachingRefs": [
+              "heart-s3-filling"
+            ]
+          },
+          {
+            "speaker": "New nurse",
+            "text": "Could I listen to S3 and conclude that someone has heart failure?",
+            "teachingRefs": [
+              "heart-s3-context"
+            ]
+          },
+          {
+            "speaker": "Instructor",
+            "text": "No. An S3 can occur without disease in some younger people. Age, symptoms and other findings change its significance. In our older-adult study case, the new sound accompanies orthopnea, which means breathlessness lying flat, and a rapid weight increase. Together they raise concern about congestion; they do not prove its cause.",
+            "teachingRefs": [
+              "heart-s3-context",
+              "heart-s3-filling"
+            ]
+          },
+          {
+            "speaker": "New nurse",
+            "text": "And the weight change in that question is a clue in a scenario, rather than a universal cutoff? What does congestion mean?",
+            "teachingRefs": [
+              "heart-s3-context"
+            ]
+          },
+          {
+            "speaker": "Instructor",
+            "text": "Correct. Congestion refers to problematic fluid accumulation, including in the lungs. For possible lung involvement, examine breathing effort, oxygen saturation and lung sounds. Crackles may occur, but are not specific to heart failure. Normal oxygen saturation does not rule out disease. Use the whole clinical assessment and approved care pathways.",
+            "teachingRefs": [
+              "heart-s3-assessment"
+            ]
+          },
+          {
+            "speaker": "New nurse",
+            "text": "Why would checking pulse symmetry or blood pressure when standing not be the best answer to that lung question?",
+            "teachingRefs": [
+              "heart-s3-assessment"
+            ]
+          },
+          {
+            "speaker": "Instructor",
+            "text": "Those checks can be useful, but address circulation or positional symptoms rather than lung involvement as directly. The question asks you to match an assessment to a concern. It is not asking you to diagnose from the recording or select a treatment.",
+            "teachingRefs": [
+              "heart-s3-assessment"
+            ]
+          },
+          {
+            "speaker": "New nurse",
+            "text": "Now I can listen for an extra sound after S2, then return to the explanation if I cannot place it. Are these patient recordings?",
+            "teachingRefs": [
+              "heart-s3-filling"
+            ]
+          },
+          {
+            "speaker": "Instructor",
+            "text": "These are manikin teaching recordings with amplification disclosed beside them. Use a comfortable volume; loudness does not establish severity. The authentic samples remain separate from this conversation. This is an unapproved study preview, not a bedside reference or certification. The practice questions link back to each teaching passage.",
+            "teachingRefs": [
+              "heart-s3-assessment",
+              "heart-s3-filling"
+            ]
+          }
+        ]
+      }
     },
     {
       "id": "heart-s4",

@@ -13,9 +13,11 @@ The package contains 240 study-bank questions (160 existing + 80 expansion), 30 
 
 Current broad-preview fingerprint (not the future narrowed production candidate):
 
-`f4dc25a0db1a815fc4b5f932f58f932ccd0ac749643d0561323117940009a2d5`
+`f74657a59e271d7e570f35636597c3ba641cbcf88f5c302b95c7f293f33de6c9`
 
 Always compare this with the fingerprint shown in the review workspace. Any material content/media/scoring/presentation revision requires review of the updated version; do not approve a stale fingerprint.
+
+The October 22 testing-preview update adds S3 teaching before its recordings and practice, an optional transcript-only dialogue, and explicit reviewer questions. Previous-version notes remain under their original browser-storage fingerprint; they are not converted to answers or approvals for this version. Export files now use schema version 2 with explicit `responses` alongside preserved legacy `checks`. The dialogue has no generated audio or video. Three trained-nurse reviews and owner verification remain required for the exact final release version.
 
 ## 2. Settled launch decisions — no need to answer again
 
