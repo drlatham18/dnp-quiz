@@ -5,6 +5,7 @@
   function entries(id){return engine.entries().filter(function(e){return e.slug===id;});}
   function openPack(pack){
     var panel=$('pack-detail');panel.replaceChildren();panel.hidden=false;
+    panel.append(button('← Topic library',function(){if(window.NursingSite)window.NursingSite.backToTopics();else{panel.hidden=true;$('pack-library').scrollIntoView({block:'start'});}},'link-btn'));
     panel.append(el('p','Topic pack · Read, then practice','q-meta'),el('h2',pack.title));panel.querySelector('h2').id='pack-title';
     panel.append(el('p','Teaching summary awaiting nurse review. Existing practice questions retain their source links.','hint'));
     var list=el('ul');pack.objectives.forEach(function(o){list.append(el('li',o));});panel.append(list,el('h3','The idea'),el('p',pack.lesson),el('h3','Work through an example'),el('p',pack.example),el('h3','A common mistake'),el('p',pack.pitfall));
@@ -12,9 +13,11 @@
     var sources=el('div',null,'row-links');sourceIds.forEach(function(id){var s=window.NURSING_CURRICULUM.sources[id];if(!s)return;var a=el('a',s.title);a.href=s.url;a.target='_blank';a.rel='noopener noreferrer';sources.append(a);});panel.append(el('h3','Read the sources'),sources);
     var qs=entries(pack.id), h=state.read(localStorage), due=state.due(h,qs.map(function(e){return e.q.id;}),Date.now());
     panel.append(button('Practice '+Math.min(10,qs.length)+' questions',function(){engine.start(qs);},'big-btn'));
-    panel.append(button('Practice all '+qs.length+' questions',function(){engine.start(qs,{limit:0});}));
+    if(qs.length>10)panel.append(button('Practice all '+qs.length+' questions',function(){engine.start(qs,{limit:0});}));
     if(due.length)panel.append(button('Review '+due.length+' due questions',function(){engine.start(qs.filter(function(e){return due.includes(e.q.id);}),{limit:0,fresh:false});}));
-    panel.append(button('Back to topic packs',function(){panel.hidden=true;$('pack-library').scrollIntoView({block:'start'});}));
+    var nextPacks=window.NURSING_PACKS.filter(function(p){return entries(p.id).length;});var at=nextPacks.findIndex(function(p){return p.id===pack.id;});var next=nextPacks[at+1];if(next)panel.append(button('Next topic: '+next.title,function(){openPack(next);},'link-btn'));
+    panel.append(button('Back to topic library',function(){if(window.NursingSite)window.NursingSite.backToTopics();else{panel.hidden=true;$('pack-library').scrollIntoView({block:'start'});}},'link-btn'));
+    if(window.NursingSite)window.NursingSite.openLesson(pack.id);
     panel.scrollIntoView({block:'start'});panel.focus({preventScroll:true});
   }
   window.renderNursingHub=function(){
@@ -26,10 +29,11 @@
     $('pack-list').replaceChildren();$('pack-count').textContent=packs.length+' topic packs in this learning path';
     packs.forEach(function(pack){var pqs=entries(pack.id),s=state.stats(h,pqs.map(function(e){return e.q.id;})),card=el('article',null,'pack-card');
       card.append(el('h3',pack.title),el('p',pack.objectives[0]+'.','hint'),el('p',pqs.length+' questions · '+s.seen+' explored · '+s.correct+' most recently correct','hint'));
-      var bar=el('progress');bar.max=pqs.length;bar.value=s.seen;bar.setAttribute('aria-label',pack.title+' questions explored');card.append(bar,button('Open pack →',function(){openPack(pack);},'link-btn'));$('pack-list').append(card);
+      var bar=el('progress');bar.max=pqs.length;bar.value=s.seen;bar.setAttribute('aria-label',pack.title+' questions explored');card.append(bar,button('Read lesson →',function(){openPack(pack);},'link-btn'));$('pack-list').append(card);
     });
     if(!packs.length)$('pack-list').append(el('p','No packs match. Try a broader topic.','hint'));
   };
+  window.NursingHub={openPack:openPack};
   $('quick-start').onclick=function(){engine.start(engine.entries());};$('resume-study').onclick=engine.resume;$('pack-search').oninput=window.renderNursingHub;
   window.renderNursingHub();
 })();

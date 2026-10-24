@@ -1,56 +1,16 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-<meta charset="UTF-8">
-<meta name="robots" content="noindex">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Nursing Learning Companion</title>
-<link rel="stylesheet" href="style.css?v=study-hub-1">
-<link rel="stylesheet" href="community.css">
-<link rel="manifest" href="manifest.webmanifest">
-<meta name="theme-color" content="#0f766e">
-<meta name="description" content="Nursing study practice with RN, BSN, NP, and DNP learning paths. Local progress, explanations, and offline study.">
-<link rel="apple-touch-icon" href="icons/icon-192.png">
-<link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>🩺</text></svg>">
-</head>
-<body>
-<div class="preview-banner" role="note">Testing preview · New lessons and assessment media await three-nurse review. Not for patient-care decisions. <a href="review.html">Review status</a></div>
-<div id="app">
-
-  <!-- ============ HOME / SETUP ============ -->
-  <section id="screen-home" class="screen">
-    <header class="hero">
-      <h1>🩺 Nursing Learning Companion</h1>
-      <p class="tagline">Nursing quizzes. Real reasoning. A little night-shift chaos.</p>
-    </header>
-
-    <div class="card study-start">
-      <p class="q-meta">Your next study session</p>
-      <h2>Learn a topic. Put it into practice.</h2>
-      <p>Start a full session, work through a topic pack, or revisit what needs another look.</p>
-      <button id="quick-start" class="big-btn">Start a 10-question session</button>
-      <button id="resume-study" class="big-btn secondary" hidden>Resume your session</button>
-      <button id="due-study" class="big-btn secondary" hidden>Review due questions</button>
-      <p id="study-status" class="hint" aria-live="polite"></p>
-      <div class="row-links"><a href="#pack-library">Explore topic packs</a><a href="assessment.html">Open Assessment Lab →</a></div>
-    </div>
-    <div class="card">
-      <h2>Your learning path</h2>
-      <label for="learning-track">Choose your level</label>
-      <select id="learning-track"></select>
-      <p id="track-description" class="hint"></p>
-      <p class="review-note">Testing library · 160 existing questions + 80 new draft questions. New packs await three-nurse review.</p>
-      <details class="hint"><summary>About the study library</summary><p>Original AI-assisted educational practice, checked against linked sources. Not independently certified by a nursing educator, a complete curriculum, clinical advice, or an exam-readiness assessment.</p></details>
-      <div id="track-sources" class="row-links"></div>
-      <p id="learning-progress" aria-live="polite"></p>
-    </div>
-    <section class="card" id="pack-library" aria-labelledby="packs-heading">
-      <p class="q-meta">Read · Practice · Revisit</p><h2 id="packs-heading">Your topic library</h2>
-      <label for="pack-search">Find a topic pack</label><input id="pack-search" type="search" placeholder="Search topics, objectives, or concepts">
-      <p id="pack-count" class="hint" aria-live="polite"></p><div id="pack-list" class="pack-grid"></div>
-    </section>
-    <section class="card" id="pack-detail" hidden tabindex="-1" aria-labelledby="pack-title"></section>
-    <div class="card">
+<!doctype html>
+<html lang="en"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><meta name="robots" content="noindex"><title>Nursing Learning Companion</title><link rel="stylesheet" href="style.css"><link rel="stylesheet" href="community.css"><link rel="stylesheet" href="site-ui.css"><link rel="manifest" href="manifest.webmanifest"><meta name="theme-color" content="#12614E"><link rel="apple-touch-icon" href="icons/icon-192.png"></head>
+<body><div class="preview-banner" role="note">Study prototype · Not for patient-care decisions. <a href="review.html">Clinical review status</a></div>
+<main id="app" tabindex="-1">
+<section id="screen-home" class="screen">
+<section id="learn-view">
+<header class="learn-intro" id="learn-intro"><p class="eyebrow">A LITTLE LEARNING, EVERY DAY</p><h1>Learn a topic.<br>Understand the why.</h1><p class="intro-copy">Short lessons, clear examples and practice with explanations. Choose one topic and take it at your pace.</p><button id="start-studying" class="big-btn primary-start">Start studying <span aria-hidden="true">→</span></button><button id="resume-study" class="link-btn" hidden>Resume your practice</button><ol class="study-steps"><li><span>01</span> Choose a topic</li><li><span>02</span> Read the lesson</li><li><span>03</span> Try a few questions</li></ol></header>
+<section id="pack-library" aria-labelledby="packs-heading"><div class="section-heading"><div><p class="eyebrow">LEARN</p><h2 id="packs-heading" tabindex="-1">What would you like to explore?</h2></div><label class="path-choice" for="learning-track">Your learning path<select id="learning-track"></select></label></div><p id="track-description" class="hint"></p><label for="pack-search" class="sr-only">Find a topic</label><input id="pack-search" type="search" placeholder="Find a topic, such as infection prevention"><p id="pack-count" class="hint" aria-live="polite"></p><div id="pack-list" class="pack-grid"></div>
+<a class="assessment-link card" href="assessment.html"><span><strong>Learn with sounds, images &amp; reports</strong><span class="hint">Paired examples, guided teaching and short practice.</span></span><span aria-hidden="true">→</span></a></section>
+<section class="card" id="pack-detail" hidden tabindex="-1" aria-labelledby="pack-title"></section>
+</section>
+<section id="practice-view" hidden aria-labelledby="practice-title"><header class="page-intro"><p class="eyebrow">PRACTICE</p><h1 id="practice-title" tabindex="-1">Put your learning to work.</h1><p>Try ten questions from your learning path. You’ll get explanations after each answer.</p></header><div class="card practice-start"><h2>A short practice session</h2><p>Take your time. Scores describe these exercises, not clinical readiness.</p><button id="quick-start" class="big-btn">Start 10-question practice</button><button id="resume-practice" class="link-btn" hidden>Resume your practice</button><button id="due-study" class="link-btn" hidden>Review due questions</button><p class="hint">Want to read first? <a href="#learn" data-site-view="learn">Choose a topic lesson</a>.</p></div>
+<details class="advanced-practice"><summary>Choose topics, length or practice mode</summary>    <div class="card">
       <h2>Build a custom session</h2>
       <label for="topic-search">Find a topic or concept</label>
       <input type="search" id="topic-search" placeholder="Search a concept — e.g. hand hygiene, ANOVA, PDSA…" autocomplete="off">
@@ -63,7 +23,7 @@
     </div>
 
     <div class="card">
-      <h2>2 · Quiz settings</h2>
+      <h2>Quiz settings</h2>
       <div class="setting-row">
         <span class="setting-label">Length</span>
         <div class="seg" id="seg-length">
@@ -82,11 +42,11 @@
       </div>
     </div>
 
-    <button id="start-btn" class="big-btn">Start quiz</button>
+    <button id="start-btn" class="big-btn">Start custom practice</button>
     <button id="start-case-btn" class="big-btn secondary">🧪 Unfolding case studies</button>
     <button id="review-missed-btn" class="big-btn ghost" hidden></button>
 
-    <div class="card daily-card">
+</details><details id="more-practice" class="advanced-practice"><summary>More ways to practice</summary>    <div class="card daily-card">
       <div class="daily-heading"><h2 id="daily-title">Question of the Day</h2><span class="difficulty" id="daily-difficulty">Daily practice</span></div>
       <p id="daily-stem">Loading today’s question…</p><p class="hint" id="daily-credit">Free, with an explanation after you answer</p>
       <button id="daily-start" class="big-btn" disabled>Try today’s question</button>
@@ -101,12 +61,9 @@
       <div id="story-rounds" class="story-rounds"></div>
       <p class="hint">3 concepts · 9 fictional narratives. Style changes the story, not its difficulty or correct answer. Independent educator review is pending.</p>
     </div>
-    <footer class="foot">
-      <div class="row-links"><button id="export-progress" class="link-btn">Export progress</button><button id="clear-progress" class="link-btn">Clear my progress</button><a href="privacy.html">Privacy</a><a href="support.html">Help</a></div>
-      <span id="bank-stats"></span> · For study use — verify against current guidelines.
-    </footer>
-  </section>
-
+</details></section>
+<footer class="site-footer"><details><summary>Your progress &amp; study settings</summary><p id="study-status" class="hint" aria-live="polite"></p><p id="learning-progress" aria-live="polite"></p><div class="row-links"><button id="export-progress" class="link-btn">Export progress</button><button id="clear-progress" class="link-btn">Clear my progress</button></div><p id="bank-stats"></p><div id="track-sources" class="row-links"></div></details><p>Testing library: 240 questions, including 80 draft questions. Three nurse reviews and owner verification are required before external release.</p><div class="row-links"><a href="feedback.html">Give site feedback</a><a href="review.html">Clinical-content review</a><a href="support.html">Help</a><a href="privacy.html">Privacy</a></div></footer>
+</section>
   <!-- ============ QUIZ ============ -->
   <section id="screen-quiz" class="screen" hidden>
     <div class="quiz-top">
@@ -154,12 +111,9 @@
     </div>
     <button id="retry-missed-btn" class="big-btn" hidden>Retry missed questions</button>
     <button id="continue-study" class="big-btn">Continue practicing</button>
-    <button id="home-btn" class="big-btn secondary">Back to home</button>
+    <button id="home-btn" class="big-btn secondary">Back to learning</button>
   </section>
-
-</div>
-
-<script src="preview-config.js"></script>
+</main><script src="preview-config.js"></script>
 <script src="library.js"></script>
 <script src="curriculum.js"></script>
 <script src="stories.js"></script>
@@ -168,6 +122,7 @@
 <script src="expansion.js"></script>
 <script src="app.js?v=study-hub-1"></script>
 <script src="study-hub.js"></script>
+<script src="site-ui.js"></script>
 <script src="daily.js"></script>
 <script src="register-sw.js?v=study-hub-1"></script>
 </body>
