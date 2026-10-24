@@ -117,7 +117,7 @@
 
   function updateBankStats() {
     var total = allQuestions().length;
-    $("bank-stats").textContent = total + " questions · " + activeTopics().length + " topics · " + activeCases().length + " case studies";
+    $("bank-stats").textContent = total + " questions in this path · " + activeTopics().length + " topics · " + activeCases().length + " case studies";
   }
 
   function updateMissedBtn() {
@@ -394,6 +394,7 @@
     });
     window.scrollTo(0, 0);
     if (id === 'screen-home' && window.renderNursingHub) window.renderNursingHub();
+    if (window.NursingSite) window.NursingSite.onScreen(id);
   }
 
   // ---------- wire up ----------
@@ -504,7 +505,7 @@
     $('learning-progress').textContent = p ? p.sessions + ' sessions · ' + p.answered + ' questions practiced · ' + Math.round(p.correct / p.answered * 100) + '% practice accuracy' : 'Your study progress stays on this device.';
   }
   function renderTrack() {
-    $('track-description').textContent = currentTrack().name + ' · ' + allQuestions().length + ' questions available in this testing preview.';
+    $('track-description').textContent = currentTrack().name + ' · ' + allQuestions().length + ' questions in this path, from a full library of ' + BANK.reduce(function(n,t){return n+t.questions.length;},0) + ' testing questions.';
     $('start-case-btn').hidden = !currentTrack().caseAccess;
     $('track-sources').innerHTML = '';
     currentTrack().sources.forEach(function(id) {
@@ -542,14 +543,20 @@
     try {
       var s=JSON.parse(localStorage.getItem('nursing-session-v1') || 'null');
       var ids=allQuestions().concat(storyEntries()).map(function(e){return e.q.id;});
-      if (!s || s.version!==1 || s.contentHash!==(window.NURSING_BUILD ? window.NURSING_BUILD.contentHash : 'legacy') || s.track!==trackId || !s.quiz || !Array.isArray(s.quiz.items) || !s.quiz.items.length || !Number.isInteger(s.quiz.idx) || s.quiz.idx<0 || s.quiz.idx>=s.quiz.items.length || !['practice','exam'].includes(s.quiz.mode)) return null;
+      if (!s || s.version!==1 || s.track!==trackId || !s.quiz || !Array.isArray(s.quiz.items) || !s.quiz.items.length || !Number.isInteger(s.quiz.idx) || s.quiz.idx<0 || s.quiz.idx>=s.quiz.items.length || !['practice','exam'].includes(s.quiz.mode)) return null;
       if (!s.quiz.items.every(function(i){return ids.includes(i.id) && typeof i.stem==='string' && Array.isArray(i.options) && i.options.every(function(o){return typeof o==='string';}) && Array.isArray(i.answer) && i.answer.every(function(n){return Number.isInteger(n) && n>=0 && n<i.options.length;}) && Array.isArray(i.picked);})) return null;
+      if (s.contentHash!==(window.NURSING_BUILD ? window.NURSING_BUILD.contentHash : 'legacy')) {
+        var current=allQuestions().concat(storyEntries());
+        if(!s.quiz.items.every(function(i){var e=current.find(function(e){return e.q.id===i.id;});if(!e)return false;var q=e.q;function sorted(a){return JSON.stringify(a.slice().sort());}var story=q.stories&&q.stories[i.storyStyle];var stem=story?story.title+'\n\n'+story.text:q.stem;return stem===i.stem&&q.type===i.type&&JSON.stringify(q.sources||[])===JSON.stringify(i.sources||[])&&JSON.stringify(q.distractorExplanations||[])===JSON.stringify(i.distractorExplanations||[])&&q.rationale===i.rationale&&sorted(q.options)===sorted(i.options)&&sorted(q.answer.map(function(n){return q.options[n];}))===sorted(i.answer.map(function(n){return i.options[n];}));}))return null;
+      }
+      if(s.quiz.idx===s.quiz.items.length-1&&s.quiz.items[s.quiz.idx].submitted)return null;
       // Rebuild the continuation pool from current source, not saved user input.
       s.quiz.entries=allQuestions().filter(function(e){return (s.quiz.entries||[]).some(function(old){return old.q && old.q.id===e.q.id;});});
       return s;
     } catch(e) { return null; }
   }
   window.NursingStudy = {
+    home:function(){show('screen-home');updateMissedBtn();},
     entries:allQuestions,
     track:function(){return trackId;},
     start:function(entries,opts){if(entries.length)startQuiz(entries,Object.assign({limit:10,mode:'practice',fresh:true},opts));},
