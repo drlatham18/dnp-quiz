@@ -36,12 +36,12 @@
         }
       ],
       "objectives": [
-        "Compare the expected and changed finding.",
-        "Describe the finding without overclaiming its cause.",
-        "Connect the finding to a focused nursing assessment."
+        "Place S1, S2 and S3 in the cardiac cycle and distinguish the timing alternatives used in this lesson.",
+        "Explain why the older-adult scenario raises concern without treating the recording as a diagnosis.",
+        "Choose a focused assessment for possible lung involvement in the study case and explain what the alternative checks address."
       ],
       "status": "awaiting-three-nurse-review",
-      "revision": 3,
+      "revision": 4,
       "questions": [
         {
           "stem": "A low-pitched extra sound occurs just after S2. Which timing best describes this finding?",
@@ -258,6 +258,11 @@
               "heart-s3-filling"
             ]
           }
+        ],
+        "objectives": [
+          "Place S1, S2 and S3 in the cardiac cycle and distinguish the timing alternatives used in this lesson.",
+          "Explain why the older-adult scenario raises concern without treating the recording as a diagnosis.",
+          "Choose a focused assessment for possible lung involvement in the study case and explain what the alternative checks address."
         ]
       }
     },

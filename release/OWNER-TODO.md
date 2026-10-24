@@ -13,11 +13,13 @@ The package contains 240 study-bank questions (160 existing + 80 expansion), 30 
 
 Current broad-preview fingerprint (not the future narrowed production candidate):
 
-`f74657a59e271d7e570f35636597c3ba641cbcf88f5c302b95c7f293f33de6c9`
+`be7ed1ada2a117d3fef63990a83b2574095ab9fdab3229d35c55bb14a75c3eb7`
 
 Always compare this with the fingerprint shown in the review workspace. Any material content/media/scoring/presentation revision requires review of the updated version; do not approve a stale fingerprint.
 
 The October 22 testing-preview update adds S3 teaching before its recordings and practice, an optional transcript-only dialogue, and explicit reviewer questions. Previous-version notes remain under their original browser-storage fingerprint; they are not converted to answers or approvals for this version. Export files now use schema version 2 with explicit `responses` alongside preserved legacy `checks`. The dialogue has no generated audio or video. Three trained-nurse reviews and owner verification remain required for the exact final release version.
+
+The October 24 follow-up puts that same teaching, transcript and question-to-passage map directly before the S3 reviewer prompts, makes the study objectives explicit, and prevents saved legacy metadata from overwriting the version/hash of a new export. The recording-ready script and objectives are in [S3-DIALOGUE-SCRIPT.md](S3-DIALOGUE-SCRIPT.md). No generated narration or clinical production approval is included.
 
 ## 2. Settled launch decisions — no need to answer again
 
