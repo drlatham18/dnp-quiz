@@ -29,7 +29,7 @@ async function answer(u,q,choice=q.answer){
  assert.equal(original.tutorials.length,5);
  assert.deepEqual(new Set(original.tutorials.map(t=>t.group)),new Set(original.lessons.map(l=>l.group)));
  assert.equal(new Set(original.tutorials.map(t=>t.id)).size,5);
- const stems=new Set();for(const l of original.lessons){assert.equal(l.revision,l.id==='heart-s3'?3:2);for(const q of l.questions){assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);assert(!stems.has(q.stem));stems.add(q.stem);}}
+ const stems=new Set();for(const l of original.lessons){assert.equal(l.revision,l.id==='heart-s3'?4:2);for(const q of l.questions){assert.equal(q.options.length,4);assert.equal(new Set(q.options).size,4);assert(Number.isInteger(q.answer)&&q.answer>=0&&q.answer<4);assert(!stems.has(q.stem));stems.add(q.stem);}}
  const s3=original.lessons.find(l=>l.id==='heart-s3');assert.equal(s3.teaching.length,4);assert.equal(new Set(s3.teaching.map(t=>t.id)).size,4);
  for(const q of s3.questions){assert(q.teachingRefs.length);for(const id of q.teachingRefs)assert(s3.teaching.some(t=>t.id===id));}
  for(const t of s3.teaching){assert(t.paragraphs.length);assert(t.sources.every(s=>s.url.startsWith('https://')));}
